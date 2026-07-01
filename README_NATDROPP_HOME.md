@@ -119,28 +119,25 @@ No se uso generacion nueva con OpenAI API. Se trabajo con producto real, pack re
 - Auditoria de assets botanicos visible: fondos/decorativos apuntan a `nd-single-leaf-*`, sin `nd-leaf-*` ni `nd-lavender-*` como background/src decorativo.
 - Formula sticky confirmado: `.nd-ingredient-system`, `.nd-emulsion-reveal` y producto final.
 - Preview gate confirmado con contrasena `natdrop4321`.
-- Deploy Vercel verificado con HTTP `200`.
+- Deploy Vercel verificado con Playwright en URL live.
+- Encoding UTF-8 verificado en live: acentos correctos y sin mojibake (`Jabón`, `España`, `fórmula`).
 - GitHub sincronizado en `main`.
 
 ## Capturas generadas
 
-- `dist/screenshots/natdropp-verified-390-hero.png`
-- `dist/screenshots/natdropp-verified-768-hero.png`
-- `dist/screenshots/natdropp-verified-1440-hero.png`
-- `dist/screenshots/natdropp-verified-1440-formula-mid.png`
-- `dist/screenshots/natdropp-verified-1440-formula-final.png`
-- `dist/screenshots/natdropp-verified-1440-faq.png`
-- `dist/screenshots/natdropp-verified-1440-closing.png`
-- `dist/screenshots/natdropp-polish2-390-password-gate.png`
-- `dist/screenshots/natdropp-target-1440-hero.png`
-- `dist/screenshots/natdropp-target-1440-formula-final.png`
-- `dist/screenshots/natdropp-icons-390-product-reveal.png`
-- `dist/qa-final-pass/hero-390.png`
-- `dist/qa-final-pass/hero-768.png`
-- `dist/qa-final-pass/hero-1440.png`
-- `dist/qa-final-polish/nd-formula-1440.png`
-- `dist/qa-final-polish/nd-faq-1440.png`
-- `dist/qa-final-polish/nd-final-1440.png`
+- `dist/qa-final/hero-390.png`
+- `dist/qa-final/formula-390.png`
+- `dist/qa-final/multiuse-390.png`
+- `dist/qa-final/final-390.png`
+- `dist/qa-final/hero-768.png`
+- `dist/qa-final/formula-768.png`
+- `dist/qa-final/multiuse-768.png`
+- `dist/qa-final/final-768.png`
+- `dist/qa-final/hero-1440.png`
+- `dist/qa-final/formula-1440.png`
+- `dist/qa-final/multiuse-1440.png`
+- `dist/qa-final/final-1440.png`
+- `dist/qa-live/live-hero-390.png`
 
 ## Limitaciones conocidas
 
