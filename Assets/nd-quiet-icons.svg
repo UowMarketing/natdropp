@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 120" role="img" aria-label="Natdropp linear icon system">
+  <g fill="none" stroke="#1D1D1F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M60 82c-18-18-22-44 0-68 22 24 18 50 0 68Zm0 0v22"/>
+    <path d="M156 92c28-10 42-32 42-66-34 0-56 18-66 48"/>
+    <path d="M270 88c-22-12-34-28-34-50 0-15 10-26 24-26s24 11 24 26c0 22-12 38-34 50Z"/>
+    <path d="M350 76c22 18 54 18 76 0M362 42h52M362 58h52"/>
+    <path d="M520 88c-18 0-32-14-32-32s14-32 32-32 32 14 32 32-14 32-32 32Z"/>
+    <path d="M612 88h60M642 28v60M616 56h52"/>
+  </g>
+</svg>

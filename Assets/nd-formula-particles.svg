@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 520" role="img" aria-label="Natural formula particles">
+  <g fill="none" stroke-linecap="round">
+    <path d="M72 392c76-64 142-86 224-61 73 22 128 20 197-25 46-30 93-43 150-38" stroke="#C8B8FF" stroke-width="2" opacity=".45"/>
+    <path d="M142 132c84 52 161 62 251 30 84-31 151-13 227 55" stroke="#D9A441" stroke-width="2" opacity=".34"/>
+  </g>
+  <g fill="#D9A441" opacity=".72">
+    <circle cx="115" cy="154" r="5"/><circle cx="184" cy="108" r="3"/><circle cx="643" cy="213" r="4"/><circle cx="536" cy="77" r="3"/>
+  </g>
+  <g fill="#5A4FD3" opacity=".5">
+    <circle cx="246" cy="384" r="4"/><circle cx="415" cy="412" r="3"/><circle cx="686" cy="344" r="5"/>
+  </g>
+  <g fill="#7E8B5B" opacity=".45">
+    <circle cx="86" cy="297" r="3"/><circle cx="331" cy="219" r="5"/><circle cx="585" cy="404" r="4"/>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 960" role="img" aria-label="Natdropp studio background">
+  <defs>
+    <radialGradient id="light" cx="58%" cy="36%" r="58%">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset=".52" stop-color="#FAFAF7"/>
+      <stop offset="1" stop-color="#F5F5F7"/>
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#FFFFFF" stop-opacity=".82"/>
+      <stop offset="1" stop-color="#ECE9FF" stop-opacity=".22"/>
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="960" fill="url(#light)"/>
+  <path d="M0 704c220-76 422-90 642-42 280 61 498 42 798-86v384H0Z" fill="url(#floor)"/>
+  <path d="M186 225c154-38 300-20 438 54 184 98 366 93 546-16" fill="none" stroke="#C8B8FF" stroke-width="2" opacity=".24"/>
+  <path d="M218 618c196-40 371-14 524 76 180 105 349 110 526 15" fill="none" stroke="#7E8B5B" stroke-width="2" opacity=".16"/>
+  <path d="M1110 156c-51 91-51 181 0 270" fill="none" stroke="#D9A441" stroke-width="8" stroke-linecap="round" opacity=".12"/>
+</svg>

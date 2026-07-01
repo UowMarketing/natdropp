@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520" role="img" aria-label="Formula emulsion drop">
+  <defs>
+    <radialGradient id="drop" cx="46%" cy="34%" r="68%">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".45" stop-color="#ECE9FF"/>
+      <stop offset=".78" stop-color="#C8B8FF"/>
+      <stop offset="1" stop-color="#5A4FD3"/>
+    </radialGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFFFF" stop-opacity=".92"/>
+      <stop offset="1" stop-color="#726DC9" stop-opacity=".74"/>
+    </linearGradient>
+  </defs>
+  <path d="M211 18C277 118 357 207 357 314c0 106-64 178-146 178S65 420 65 314C65 207 146 118 211 18Z" fill="url(#drop)" opacity=".95"/>
+  <path d="M211 18C277 118 357 207 357 314c0 106-64 178-146 178S65 420 65 314C65 207 146 118 211 18Z" fill="none" stroke="url(#edge)" stroke-width="8"/>
+  <path d="M157 129c-42 55-62 100-61 166" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round" opacity=".54"/>
+  <path d="M263 344c38-25 58-61 56-109" fill="none" stroke="#5A4FD3" stroke-width="10" stroke-linecap="round" opacity=".18"/>
+</svg>

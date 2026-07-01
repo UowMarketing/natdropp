@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-label="Trust background">
+  <rect width="1200" height="620" fill="#FAFAF7"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M104 456c178-92 325-93 500-2 144 74 300 62 491-36" stroke="#5A4FD3" stroke-width="2" opacity=".22"/>
+    <path d="M174 174c124-52 236-52 338 3 142 77 273 68 393-25" stroke="#7E8B5B" stroke-width="2" opacity=".24"/>
+    <path d="M838 473c38-68 42-132 13-192" stroke="#D9A441" stroke-width="6" opacity=".18"/>
+  </g>
+</svg>

@@ -1,0 +1,218 @@
+{
+  "generated_at": "2026-07-01T13:06:03.158259+00:00",
+  "source_root": "Assets",
+  "assets": [
+    {
+      "file": "assets/nd-product-main.webp",
+      "source": "Assets/prod ilustrativa.png",
+      "bytes": 38752,
+      "sha1": "4cb87447cd",
+      "dimensions": {
+        "width": 308,
+        "height": 991
+      }
+    },
+    {
+      "file": "assets/nd-product-main.png",
+      "source": "Assets/prod ilustrativa.png",
+      "bytes": 329905,
+      "sha1": "8d99a38521",
+      "dimensions": {
+        "width": 308,
+        "height": 991
+      }
+    },
+    {
+      "file": "assets/nd-product-250.webp",
+      "source": "Assets/2-Photoroom.png",
+      "bytes": 48896,
+      "sha1": "2860976038",
+      "dimensions": {
+        "width": 343,
+        "height": 1180
+      }
+    },
+    {
+      "file": "assets/nd-product-500.webp",
+      "source": "Assets/1-Photoroom (1).png",
+      "bytes": 46634,
+      "sha1": "f4af02fbd7",
+      "dimensions": {
+        "width": 347,
+        "height": 1180
+      }
+    },
+    {
+      "file": "assets/nd-product-1l.webp",
+      "source": "Assets/3-Photoroom.png",
+      "bytes": 53476,
+      "sha1": "412eecc760",
+      "dimensions": {
+        "width": 459,
+        "height": 1180
+      }
+    },
+    {
+      "file": "assets/nd-pack-hero.png",
+      "source": "generated",
+      "bytes": 969164,
+      "sha1": "c3db3da480",
+      "dimensions": {
+        "width": 1500,
+        "height": 1080
+      }
+    },
+    {
+      "file": "assets/nd-pack-hero.webp",
+      "source": "generated",
+      "bytes": 111160,
+      "sha1": "201764ae91",
+      "dimensions": {
+        "width": 1500,
+        "height": 1080
+      }
+    },
+    {
+      "file": "assets/nd-lavender-1.webp",
+      "source": "Assets/lavanda 1.png",
+      "bytes": 43518,
+      "sha1": "047c964db4",
+      "dimensions": {
+        "width": 365,
+        "height": 569
+      }
+    },
+    {
+      "file": "assets/nd-lavender-2.webp",
+      "source": "Assets/lavanda 2.png",
+      "bytes": 45612,
+      "sha1": "2f7104ee77",
+      "dimensions": {
+        "width": 520,
+        "height": 444
+      }
+    },
+    {
+      "file": "assets/nd-leaf-1.webp",
+      "source": "Assets/591591-pixels-hojas-de-arbol-11563585679lindrkulsp-Photoroom.png",
+      "bytes": 53624,
+      "sha1": "f63b4438f0",
+      "dimensions": {
+        "width": 689,
+        "height": 760
+      }
+    },
+    {
+      "file": "assets/nd-leaf-2.webp",
+      "source": "Assets/591591-pixels-hojas-de-arbol-11563585679lindrkulsp-Photoroom.png",
+      "bytes": 50004,
+      "sha1": "5806093700",
+      "dimensions": {
+        "width": 760,
+        "height": 627
+      }
+    },
+    {
+      "file": "assets/nd-leaf-3.webp",
+      "source": "Assets/591591-pixels-hojas-de-arbol-11563585679lindrkulsp-Photoroom.png",
+      "bytes": 34052,
+      "sha1": "e7b9d813d7",
+      "dimensions": {
+        "width": 620,
+        "height": 461
+      }
+    },
+    {
+      "file": "assets/nd-acene-badge.webp",
+      "source": "Assets/logo-acene-certificacion-web.png",
+      "bytes": 4376,
+      "sha1": "0752ffceb8",
+      "dimensions": {
+        "width": 417,
+        "height": 100
+      }
+    },
+    {
+      "file": "assets/nd-logo.svg",
+      "source": "assets/nd-logo.svg",
+      "bytes": 4592,
+      "sha1": "1005e5be2d",
+      "dimensions": null
+    },
+    {
+      "file": "assets/nd-favicon.svg",
+      "source": "assets/nd-favicon.svg",
+      "bytes": 1057,
+      "sha1": "758dee46c8",
+      "dimensions": null
+    },
+    {
+      "file": "assets/nd-liquid-ribbon.svg",
+      "source": "generated",
+      "bytes": 1010,
+      "sha1": "11d30827f6",
+      "dimensions": null
+    },
+    {
+      "file": "assets/nd-emulsion-drop.svg",
+      "source": "generated",
+      "bytes": 1160,
+      "sha1": "ebe795fbe7",
+      "dimensions": null
+    },
+    {
+      "file": "assets/nd-formula-particles.svg",
+      "source": "generated",
+      "bytes": 895,
+      "sha1": "ad84691aa6",
+      "dimensions": null
+    },
+    {
+      "file": "assets/nd-botanical-shadow.svg",
+      "source": "generated",
+      "bytes": 666,
+      "sha1": "e2b0796323",
+      "dimensions": null
+    },
+    {
+      "file": "assets/nd-multiuse-bg.svg",
+      "source": "generated",
+      "bytes": 796,
+      "sha1": "5c64955ed1",
+      "dimensions": null
+    },
+    {
+      "file": "assets/nd-trust-bg.svg",
+      "source": "generated",
+      "bytes": 540,
+      "sha1": "f306bf9433",
+      "dimensions": null
+    },
+    {
+      "file": "assets/nd-hero-studio.svg",
+      "source": "generated",
+      "bytes": 1092,
+      "sha1": "2d9e1796f1",
+      "dimensions": null
+    },
+    {
+      "file": "assets/nd-dossier-bg.svg",
+      "source": "generated",
+      "bytes": 669,
+      "sha1": "c3c95f15c9",
+      "dimensions": null
+    },
+    {
+      "file": "assets/nd-quiet-icons.svg",
+      "source": "generated",
+      "bytes": 640,
+      "sha1": "3bac865465",
+      "dimensions": null
+    }
+  ],
+  "notes": [
+    "Original files are copied into assets/raw without destructive edits.",
+    "Raster derivatives are regenerated from local Natdropp product and botanical assets.",
+    "Decorative formula assets are SVG/CSS-safe abstract graphics, not product or certification claims."
+  ]
+}

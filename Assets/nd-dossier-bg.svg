@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 860" role="img" aria-label="Formula dossier background">
+  <rect width="1180" height="860" fill="#FFFFFF"/>
+  <g fill="none">
+    <path d="M92 152h996M92 286h996M92 420h996M92 554h996M92 688h996" stroke="#1D1D1F" stroke-opacity=".08"/>
+    <path d="M212 84v692M500 84v692M788 84v692" stroke="#1D1D1F" stroke-opacity=".045"/>
+    <path d="M99 735c142-62 264-58 367 12 123 84 259 77 408-22 74-49 143-65 207-47" stroke="#5A4FD3" stroke-opacity=".18" stroke-width="2"/>
+    <path d="M132 203c118-36 224-28 318 24 116 65 236 57 360-24" stroke="#D9A441" stroke-opacity=".22" stroke-width="2"/>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 760" role="img" aria-label="Soft botanical shadow">
+  <g fill="none" stroke="#7E8B5B" stroke-linecap="round" opacity=".16">
+    <path d="M360 704C334 555 340 420 392 286c29-75 32-137 8-192" stroke-width="12"/>
+    <path d="M391 306c-82-26-139-67-172-124" stroke-width="7"/>
+    <path d="M372 426c83-18 143-56 181-114" stroke-width="7"/>
+    <path d="M350 565c-76-20-136-58-179-115" stroke-width="7"/>
+    <path d="M222 185c55-16 100-7 137 26" stroke-width="5"/>
+    <path d="M552 313c-52 3-92 24-122 63" stroke-width="5"/>
+    <path d="M172 451c55-14 103-5 144 29" stroke-width="5"/>
+  </g>
+</svg>

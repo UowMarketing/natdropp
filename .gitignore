@@ -1,0 +1,21 @@
+.vercel/
+dist/screenshots/
+dist/server-*.log
+Assets/raw/
+Assets/PNGS/
+*.zip
+data.txt
+web.txt
+products_export.csv
+Assets/*.jpg
+Assets/ChatGPT*.png
+Assets/*Photoroom*.png
+Assets/lavanda*.png
+Assets/logo*.png
+Assets/oliva.jpg
+Assets/vit.jpg
+Assets/cert.png
+Assets/prod ilustrativa.png
+Assets/png*.png
+Assets/transparent*.png
+Assets/lavender-with-ai-generated-free-png*
