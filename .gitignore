@@ -1,5 +1,6 @@
 .vercel/
 dist/screenshots/
+dist/qa-*/
 dist/server-*.log
 Assets/raw/
 Assets/PNGS/
@@ -19,5 +20,3 @@ Assets/prod ilustrativa.png
 Assets/png*.png
 Assets/transparent*.png
 Assets/lavender-with-ai-generated-free-png*
-
-.vercel

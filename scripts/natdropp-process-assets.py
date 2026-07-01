@@ -180,16 +180,16 @@ def paste_product(canvas: Image.Image, source: Path, height: int, center_x: int,
     y = baseline - product.height
 
     shadow_pad = int(80 * shadow_scale)
-    shadow_w = int(product.width * 1.36 * shadow_scale) + shadow_pad * 2
-    shadow_h = int(72 * shadow_scale) + shadow_pad
+    shadow_w = int(product.width * 1.18 * shadow_scale) + shadow_pad * 2
+    shadow_h = int(48 * shadow_scale) + shadow_pad
     shadow = Image.new("RGBA", (shadow_w, shadow_h), (0, 0, 0, 0))
     shadow_alpha = Image.new("L", (shadow_w, shadow_h), 0)
     shadow_alpha_draw = Image.new("RGBA", (shadow_w, shadow_h), (0, 0, 0, 0))
     from PIL import ImageDraw
 
     draw = ImageDraw.Draw(shadow_alpha_draw)
-    draw.ellipse((shadow_pad, int(shadow_pad * .34), shadow_w - shadow_pad, shadow_h - int(shadow_pad * .34)), fill=(31, 24, 20, 76))
-    shadow_alpha_draw = shadow_alpha_draw.filter(ImageFilter.GaussianBlur(22))
+    draw.ellipse((shadow_pad, int(shadow_pad * .42), shadow_w - shadow_pad, shadow_h - int(shadow_pad * .38)), fill=(31, 24, 20, 38))
+    shadow_alpha_draw = shadow_alpha_draw.filter(ImageFilter.GaussianBlur(28))
     shadow.alpha_composite(shadow_alpha_draw)
     canvas.alpha_composite(shadow, (int(center_x - shadow_w / 2), baseline - int(shadow_h * .58)))
 
@@ -198,23 +198,10 @@ def paste_product(canvas: Image.Image, source: Path, height: int, center_x: int,
 
 def save_pack_hero(product_1l: Path, product_500: Path, product_250: Path) -> list[dict]:
     canvas = Image.new("RGBA", (1500, 1080), (0, 0, 0, 0))
-    from PIL import ImageDraw
-
-    floor = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
-    draw = ImageDraw.Draw(floor)
-    draw.ellipse((235, 840, 1265, 1050), fill=(29, 29, 31, 22))
-    floor = floor.filter(ImageFilter.GaussianBlur(34))
-    canvas.alpha_composite(floor)
 
     paste_product(canvas, product_1l, 820, 502, 920, 1.15)
     paste_product(canvas, product_500, 760, 780, 920, 1.03)
     paste_product(canvas, product_250, 642, 1007, 920, .92)
-
-    highlight = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
-    draw = ImageDraw.Draw(highlight)
-    draw.ellipse((252, 720, 1200, 1026), fill=(255, 255, 255, 18))
-    highlight = highlight.filter(ImageFilter.GaussianBlur(28))
-    canvas.alpha_composite(highlight)
 
     png = OUT / "nd-pack-hero.png"
     webp = OUT / "nd-pack-hero.webp"

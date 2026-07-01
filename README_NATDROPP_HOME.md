@@ -81,7 +81,7 @@ No destruye originales: copia fuentes en `Assets/raw` y regenera derivados optim
 - Hero con pack recto, sin inclinaciones ni superposiciones sobre botellas.
 - Producto protagonista con composicion de estudio y fondo editorial.
 - Hojas globales semitransparentes con movimiento natural de scroll, giro y caida suave.
-- Ramas de olivo/lavanda como capas de borde, nunca delante de producto o texto critico.
+- Fondos y acentos botanicos visibles resueltos con hojas individuales `nd-single-leaf-*`; no se usan ramas ni clusters como fondo decorativo.
 - Historia de formula reconstruida con stage sticky mas corto, pasos legibles, ingredientes vectoriales, emulsion central y revelado final del producto.
 - Chips de multiuso con iconos SVG y cards de Lavanda Flash con padding corregido.
 - FAQ compacta en tres columnas desktop, dos en tablet y una columna mobile.
@@ -116,6 +116,7 @@ No se uso generacion nueva con OpenAI API. Se trabajo con producto real, pack re
 - Revision de imagenes rotas: `0`.
 - Revision de errores de consola: `0`.
 - Motion global confirmado: `nd-leaf-rain` con scroll y caida/giro.
+- Auditoria de assets botanicos visible: fondos/decorativos apuntan a `nd-single-leaf-*`, sin `nd-leaf-*` ni `nd-lavender-*` como background/src decorativo.
 - Formula sticky confirmado: `.nd-ingredient-system`, `.nd-emulsion-reveal` y producto final.
 - Preview gate confirmado con contrasena `natdrop4321`.
 - Deploy Vercel verificado con HTTP `200`.

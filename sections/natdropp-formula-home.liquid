@@ -11,11 +11,6 @@
   assign nd_product_1l_url = 'nd-product-1l.webp' | asset_url
   assign nd_pack_hero_url = 'nd-pack-hero.webp' | asset_url
   assign nd_acene_url = 'nd-acene-badge.webp' | asset_url
-  assign nd_lavender_1_url = 'nd-lavender-1.webp' | asset_url
-  assign nd_lavender_2_url = 'nd-lavender-2.webp' | asset_url
-  assign nd_leaf_1_url = 'nd-leaf-1.webp' | asset_url
-  assign nd_leaf_2_url = 'nd-leaf-2.webp' | asset_url
-  assign nd_leaf_3_url = 'nd-leaf-3.webp' | asset_url
   assign nd_single_leaf_1_url = 'nd-single-leaf-1.webp' | asset_url
   assign nd_single_leaf_2_url = 'nd-single-leaf-2.webp' | asset_url
   assign nd_single_leaf_3_url = 'nd-single-leaf-3.webp' | asset_url
@@ -3046,61 +3041,61 @@
 
     #nd-formula-home .nd-transition-band::after {
       --nd-section-rot: -9deg;
-      width: 280px;
-      height: 240px;
-      right: -48px;
-      bottom: -54px;
-      background-image: url("{{ nd_leaf_3_url }}");
+      width: 120px;
+      height: 74px;
+      right: -28px;
+      bottom: -10px;
+      background-image: url("{{ nd_single_leaf_3_url }}");
     }
 
     #nd-formula-home .nd-reveal-product::before {
       --nd-section-rot: 10deg;
-      width: 360px;
-      height: 320px;
-      right: -80px;
-      top: 38px;
-      background-image: url("{{ nd_lavender_2_url }}");
-      opacity: .085;
+      width: 104px;
+      height: 104px;
+      right: -26px;
+      top: 42px;
+      background-image: url("{{ nd_single_leaf_4_url }}");
+      opacity: .075;
     }
 
     #nd-formula-home .nd-ingredients::after {
       --nd-section-rot: 13deg;
-      width: 340px;
-      height: 300px;
-      left: -92px;
+      width: 116px;
+      height: 74px;
+      left: -34px;
       bottom: 56px;
-      background-image: url("{{ nd_leaf_2_url }}");
+      background-image: url("{{ nd_single_leaf_1_url }}");
       opacity: .075;
     }
 
     #nd-formula-home .nd-formats::before {
       --nd-section-rot: -14deg;
-      width: 320px;
-      height: 280px;
-      right: -86px;
+      width: 106px;
+      height: 106px;
+      right: -32px;
       top: 22px;
-      background-image: url("{{ nd_lavender_1_url }}");
+      background-image: url("{{ nd_single_leaf_4_url }}");
       opacity: .08;
     }
 
     #nd-formula-home .nd-faq::before {
       --nd-section-rot: 8deg;
-      width: 300px;
-      height: 260px;
-      right: -76px;
+      width: 118px;
+      height: 78px;
+      right: -36px;
       top: 42px;
-      background-image: url("{{ nd_leaf_1_url }}");
+      background-image: url("{{ nd_single_leaf_3_url }}");
       opacity: .075;
     }
 
     #nd-formula-home .nd-final::before {
       --nd-section-rot: -10deg;
-      width: 360px;
-      height: 310px;
-      left: -80px;
-      bottom: -58px;
-      background-image: url("{{ nd_leaf_3_url }}");
-      opacity: .09;
+      width: 112px;
+      height: 72px;
+      left: -34px;
+      bottom: 18px;
+      background-image: url("{{ nd_single_leaf_1_url }}");
+      opacity: .075;
     }
 
     #nd-formula-home .nd-hero-botanical {
@@ -5672,11 +5667,11 @@
     #nd-formula-home .nd-edge-sprig {
       position: absolute;
       display: block;
-      width: var(--sprig-w, 220px);
+      width: var(--sprig-w, 120px);
       height: auto;
       pointer-events: none;
       object-fit: contain;
-      opacity: var(--sprig-o, .14);
+      opacity: var(--sprig-o, .09);
       filter: saturate(.86) contrast(1.02) drop-shadow(0 18px 28px rgba(52, 52, 58, .08));
       transform: translate3d(0, calc(var(--nd-section-drift, 0px) * var(--sprig-drift, .26)), 0) rotate(var(--sprig-r, 0deg));
       transform-origin: center;
@@ -5684,23 +5679,23 @@
     }
 
     #nd-formula-home .nd-edge-sprig-hero {
-      --sprig-w: min(26vw, 260px);
-      --sprig-o: .26;
+      --sprig-w: min(12vw, 138px);
+      --sprig-o: .1;
       --sprig-r: -10deg;
       --sprig-drift: .32;
       z-index: 2;
-      right: -9%;
-      top: -2%;
+      right: 1%;
+      top: 5%;
     }
 
     #nd-formula-home .nd-edge-sprig-product {
-      --sprig-w: min(24vw, 230px);
-      --sprig-o: .14;
+      --sprig-w: min(11vw, 120px);
+      --sprig-o: .075;
       --sprig-r: 14deg;
       --sprig-drift: -.22;
       z-index: 1;
-      left: -8%;
-      top: 6%;
+      left: -2%;
+      top: 10%;
     }
 
     #nd-formula-home .nd-reveal-product,
@@ -5732,22 +5727,22 @@
     }
 
     #nd-formula-home .nd-ingredients::before {
-      width: min(28vw, 260px);
-      height: min(32vw, 300px);
-      left: -118px;
+      width: min(12vw, 118px);
+      height: min(8vw, 74px);
+      left: -36px;
       top: 12%;
-      background-image: url("{{ nd_leaf_2_url }}");
+      background-image: url("{{ nd_single_leaf_3_url }}");
       --sprig-r: 16deg;
     }
 
     #nd-formula-home .nd-formats::before {
-      width: min(28vw, 250px);
-      height: min(32vw, 300px);
-      right: -120px;
+      width: min(11vw, 108px);
+      height: min(11vw, 108px);
+      right: -34px;
       top: 6%;
-      background-image: url("{{ nd_lavender_2_url }}");
+      background-image: url("{{ nd_single_leaf_4_url }}");
       --sprig-r: -12deg;
-      opacity: .085;
+      opacity: .075;
     }
 
     #nd-formula-home .nd-formula-scroll {
@@ -5885,44 +5880,44 @@
       content: "";
       position: absolute;
       z-index: 1;
-      width: 190px;
-      height: 230px;
-      background: url("{{ nd_lavender_1_url }}") center / contain no-repeat;
-      opacity: .075;
+      width: 96px;
+      height: 62px;
+      background: url("{{ nd_single_leaf_1_url }}") center / contain no-repeat;
+      opacity: .07;
       pointer-events: none;
       filter: saturate(.9) contrast(1.02);
       transform: translate3d(0, calc(var(--nd-section-drift, 0px) * .2), 0) rotate(-12deg);
     }
 
     #nd-formula-home .nd-format-card:nth-child(1)::before {
-      left: -70px;
-      top: 30px;
+      left: -24px;
+      top: 42px;
     }
 
     #nd-formula-home .nd-format-card:nth-child(2)::before {
-      right: -78px;
+      right: -24px;
       top: 44px;
-      background-image: url("{{ nd_leaf_2_url }}");
+      background-image: url("{{ nd_single_leaf_3_url }}");
       transform: translate3d(0, calc(var(--nd-section-drift, 0px) * -.18), 0) rotate(18deg);
     }
 
     #nd-formula-home .nd-format-card:nth-child(3)::before {
-      left: -74px;
+      left: -22px;
       bottom: 82px;
       top: auto;
-      background-image: url("{{ nd_lavender_2_url }}");
+      background-image: url("{{ nd_single_leaf_4_url }}");
     }
 
     #nd-formula-home .nd-final-product::before {
       content: "";
       position: absolute;
       z-index: 1;
-      right: -74px;
+      right: -28px;
       top: 22px;
-      width: min(34vw, 250px);
-      height: min(38vw, 300px);
-      background: url("{{ nd_lavender_2_url }}") center / contain no-repeat;
-      opacity: .09;
+      width: min(12vw, 116px);
+      height: min(12vw, 116px);
+      background: url("{{ nd_single_leaf_4_url }}") center / contain no-repeat;
+      opacity: .075;
       pointer-events: none;
       filter: saturate(.88) contrast(1.02);
       transform: translate3d(0, calc(var(--nd-section-drift, 0px) * -.2), 0) rotate(-10deg);
@@ -5990,17 +5985,17 @@
       }
 
       #nd-formula-home .nd-edge-sprig-hero {
-        --sprig-w: 165px;
-        right: -70px;
-        top: -16px;
-        opacity: .22;
+        --sprig-w: 86px;
+        right: -18px;
+        top: 18px;
+        opacity: .075;
       }
 
       #nd-formula-home .nd-edge-sprig-product {
-        --sprig-w: 150px;
-        left: -58px;
-        top: 10px;
-        opacity: .11;
+        --sprig-w: 78px;
+        left: -18px;
+        top: 18px;
+        opacity: .065;
       }
 
       #nd-formula-home .nd-step-panel .nd-h2 {
@@ -6064,6 +6059,580 @@
         min-height: 430px;
       }
     }
+
+    /* Final polish pass: smoother formula scroll, clean hero product, readable cards and botanical depth. */
+    #nd-formula-home {
+      --nd-ink: #34343A;
+      --nd-scroll-fall: 0px;
+      --nd-section-drift: 0px;
+    }
+
+    #nd-formula-home .nd-eyebrow,
+    #nd-formula-home .nd-step-count {
+      font-size: clamp(13px, 1vw, 15px) !important;
+      line-height: 1.1;
+      font-weight: 920;
+      color: #5A4FD3;
+      letter-spacing: 0;
+    }
+
+    #nd-formula-home .nd-hero {
+      min-height: min(980px, calc(100vh - 20px));
+      background:
+        radial-gradient(ellipse at 73% 18%, rgba(200, 184, 255, .24), transparent 34%),
+        radial-gradient(ellipse at 53% 80%, rgba(218, 248, 85, .15), transparent 32%),
+        radial-gradient(ellipse at 16% 26%, rgba(255, 255, 255, .9), transparent 36%),
+        linear-gradient(180deg, #FAFAF7 0%, #F5F5F7 100%) !important;
+    }
+
+    #nd-formula-home .nd-hero-grid {
+      grid-template-columns: minmax(360px, .92fr) minmax(560px, 1.08fr);
+      align-items: center;
+      gap: clamp(36px, 5.5vw, 86px);
+    }
+
+    #nd-formula-home .nd-hero-visual {
+      min-height: clamp(590px, 55vw, 760px);
+      overflow: visible;
+    }
+
+    #nd-formula-home .nd-studio-plate {
+      inset: -8% -14% -8%;
+      background:
+        radial-gradient(ellipse at 52% 58%, rgba(255, 255, 255, .98) 0 30%, rgba(255, 255, 255, .58) 54%, transparent 76%),
+        radial-gradient(ellipse at 51% 84%, rgba(52, 52, 58, .075), transparent 28%),
+        radial-gradient(ellipse at 80% 18%, rgba(200, 184, 255, .15), transparent 34%),
+        radial-gradient(ellipse at 16% 72%, rgba(218, 248, 85, .13), transparent 34%);
+    }
+
+    #nd-formula-home .nd-studio-plate::after {
+      opacity: .24;
+      filter: blur(22px);
+    }
+
+    #nd-formula-home .nd-product-campaign {
+      width: min(100%, 760px);
+      height: clamp(505px, 47vw, 675px);
+      margin-inline: auto;
+    }
+
+    #nd-formula-home .nd-product-campaign::before {
+      display: none !important;
+    }
+
+    #nd-formula-home .nd-hero-pack {
+      width: min(92%, 700px) !important;
+      bottom: 3%;
+      filter: drop-shadow(0 30px 34px rgba(52, 52, 58, .17));
+      transform: translate3d(-50%, calc(var(--nd-progress) * -10px), 70px);
+    }
+
+    #nd-formula-home .nd-edge-sprig-hero {
+      --sprig-w: min(11vw, 128px);
+      --sprig-o: .075;
+      right: -3%;
+      top: 6%;
+      z-index: 1;
+    }
+
+    #nd-formula-home .nd-hero-splash span,
+    #nd-formula-home .nd-liquid-streak {
+      z-index: 0;
+      opacity: .12;
+      filter: blur(32px);
+    }
+
+    #nd-formula-home .nd-formula-scroll {
+      min-height: 190vh !important;
+    }
+
+    #nd-formula-home .nd-formula-stage {
+      padding: clamp(26px, 4vh, 46px) 0 !important;
+    }
+
+    #nd-formula-home .nd-formula-layout {
+      grid-template-columns: minmax(330px, .72fr) minmax(560px, 1.28fr) !important;
+      gap: clamp(36px, 5vw, 70px) !important;
+      align-items: center;
+    }
+
+    #nd-formula-home .nd-step-panel {
+      max-width: 540px;
+      align-self: center;
+    }
+
+    #nd-formula-home .nd-step-panel .nd-h2 {
+      font-size: clamp(42px, 3.6vw, 58px) !important;
+      line-height: .98;
+    }
+
+    #nd-formula-home .nd-step-panel .nd-lede {
+      margin-top: 18px;
+      font-size: clamp(16px, 1.1vw, 18px);
+      line-height: 1.52;
+    }
+
+    #nd-formula-home .nd-step-copy {
+      margin-top: 20px;
+      border-top: 1px solid rgba(52, 52, 58, .14);
+    }
+
+    #nd-formula-home .nd-step-copy article {
+      min-height: 66px !important;
+      padding: 11px 0 11px 58px !important;
+      color: rgba(52, 52, 58, .58);
+      opacity: .62;
+      border-bottom: 1px solid rgba(52, 52, 58, .11);
+      transform: none !important;
+      background: transparent;
+    }
+
+    #nd-formula-home .nd-step-copy article.is-active {
+      color: #34343A;
+      opacity: 1;
+      background: linear-gradient(90deg, rgba(255, 255, 255, .64), rgba(255, 255, 255, 0));
+      border-radius: 0 16px 16px 0;
+    }
+
+    #nd-formula-home .nd-step-copy article::before {
+      top: 15px !important;
+      color: rgba(90, 79, 211, .78);
+    }
+
+    #nd-formula-home .nd-step-copy h3 {
+      font-size: 15.5px !important;
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+
+    #nd-formula-home .nd-step-copy p {
+      max-width: 430px;
+      margin-top: 5px;
+      font-size: 12.8px !important;
+      line-height: 1.32 !important;
+      color: rgba(52, 52, 58, .66);
+    }
+
+    #nd-formula-home .nd-formula-canvas {
+      height: min(66vh, 640px) !important;
+      min-height: 520px !important;
+      border-radius: 42px;
+    }
+
+    #nd-formula-home .nd-ing {
+      opacity: clamp(0, calc(.88 - var(--nd-progress) * 1.18), .88);
+      transition: opacity .26s linear, transform .26s linear;
+    }
+
+    #nd-formula-home .nd-emulsion-reveal {
+      opacity: clamp(.2, calc(var(--nd-progress) * 1.9), 1);
+      transform: translate(-50%, -50%) scale(calc(.68 + var(--nd-progress) * .34));
+    }
+
+    #nd-formula-home .nd-formula-product {
+      width: min(25%, 215px) !important;
+      opacity: clamp(0, calc((var(--nd-progress) - .3) * 3.6), 1) !important;
+      transform: translate3d(-50%, calc((1 - var(--nd-progress)) * 18px), 0) scale(calc(.92 + var(--nd-progress) * .08));
+    }
+
+    #nd-formula-home .nd-product-stage {
+      padding-left: 28px;
+      padding-right: 28px;
+    }
+
+    #nd-formula-home .nd-product-stage img:not(.nd-edge-sprig) {
+      z-index: 4;
+    }
+
+    #nd-formula-home .nd-edge-sprig-product {
+      left: auto;
+      right: -18px;
+      top: 9%;
+      z-index: 1;
+      opacity: .065;
+    }
+
+    #nd-formula-home .nd-specs li {
+      padding: 24px !important;
+      gap: 6px 16px;
+    }
+
+    #nd-formula-home .nd-use-board {
+      background:
+        radial-gradient(ellipse at 78% 28%, rgba(236, 233, 255, .72), transparent 38%),
+        radial-gradient(ellipse at 26% 80%, rgba(218, 248, 85, .12), transparent 34%),
+        linear-gradient(145deg, rgba(255, 255, 255, .82), rgba(245, 245, 247, .9));
+    }
+
+    #nd-formula-home .nd-use-tags {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    #nd-formula-home .nd-use-tags span {
+      min-height: 44px !important;
+      padding: 10px 13px !important;
+      gap: 10px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, .78);
+      border: 1px solid rgba(52, 52, 58, .1);
+      color: rgba(52, 52, 58, .76);
+    }
+
+    #nd-formula-home .nd-use-tags svg {
+      flex: 0 0 19px;
+      width: 19px;
+      height: 19px;
+      stroke-width: 2.15;
+    }
+
+    #nd-formula-home .nd-faq-grid {
+      display: block !important;
+    }
+
+    #nd-formula-home .nd-faq-grid > .nd-reveal:first-child {
+      display: grid !important;
+      grid-template-columns: minmax(0, .82fr) minmax(340px, .72fr);
+      gap: clamp(24px, 4vw, 62px);
+      align-items: end;
+      margin-bottom: 26px;
+    }
+
+    #nd-formula-home .nd-accordion {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    #nd-formula-home .nd-accordion details {
+      min-height: 0;
+      border-radius: 18px;
+    }
+
+    #nd-formula-home .nd-accordion summary {
+      min-height: 86px;
+      display: flex;
+      align-items: center;
+      padding: 18px 52px 18px 18px;
+    }
+
+    #nd-formula-home .nd-final-grid {
+      grid-template-columns: minmax(0, .94fr) minmax(300px, .62fr) !important;
+      align-items: center;
+      gap: clamp(28px, 5vw, 70px);
+    }
+
+    #nd-formula-home .nd-final-product {
+      min-height: clamp(320px, 36vw, 470px);
+    }
+
+    #nd-formula-home .nd-final-product img {
+      width: min(50%, 270px) !important;
+    }
+
+    #nd-formula-home .nd-bg-leaf {
+      opacity: calc(var(--o, .12) * .95);
+      transform:
+        translate3d(calc(var(--nd-scroll, 0) * var(--wind, 22px)), calc(var(--nd-scroll, 0) * var(--depth, 160px)), 0)
+        rotate(calc(var(--r, 0deg) + (var(--nd-scroll, 0) * 26deg)));
+    }
+
+    #nd-formula-home .nd-bg-leaf-a { --wind: 20px; }
+    #nd-formula-home .nd-bg-leaf-b { --wind: -24px; }
+    #nd-formula-home .nd-bg-leaf-c { --wind: 18px; }
+    #nd-formula-home .nd-bg-leaf-d { --wind: -20px; }
+    #nd-formula-home .nd-bg-leaf-e { --wind: 14px; }
+    #nd-formula-home .nd-bg-leaf-f { --wind: -18px; }
+
+    #nd-formula-home .nd-reveal-product::after,
+    #nd-formula-home .nd-multiuse::after,
+    #nd-formula-home .nd-ingredients::after,
+    #nd-formula-home .nd-trust::before {
+      content: "";
+      position: absolute;
+      display: block;
+      pointer-events: none;
+      z-index: 1;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      opacity: .07;
+      filter: saturate(.82) contrast(1.02) drop-shadow(0 16px 26px rgba(126, 139, 91, .06));
+      transform: translate3d(0, calc(var(--nd-section-drift, 0px) * .18), 0) rotate(var(--edge-rot, 0deg));
+    }
+
+    #nd-formula-home .nd-reveal-product::after {
+      width: clamp(92px, 12vw, 154px);
+      height: clamp(58px, 8vw, 98px);
+      left: -34px;
+      bottom: 10%;
+      background-image: url("{{ nd_single_leaf_3_url }}");
+      --edge-rot: -18deg;
+    }
+
+    #nd-formula-home .nd-multiuse::after {
+      width: clamp(86px, 11vw, 148px);
+      height: clamp(86px, 11vw, 148px);
+      right: -34px;
+      top: 10%;
+      background-image: url("{{ nd_single_leaf_4_url }}");
+      --edge-rot: 12deg;
+    }
+
+    #nd-formula-home .nd-ingredients::after {
+      width: clamp(96px, 12vw, 160px);
+      height: clamp(62px, 8vw, 104px);
+      right: -40px;
+      top: 18%;
+      background-image: url("{{ nd_single_leaf_1_url }}");
+      --edge-rot: -10deg;
+    }
+
+    #nd-formula-home .nd-trust::before {
+      width: clamp(86px, 11vw, 148px);
+      height: clamp(54px, 8vw, 96px);
+      left: -34px;
+      top: 12%;
+      background-image: url("{{ nd_single_leaf_3_url }}");
+      --edge-rot: 18deg;
+    }
+
+    @media (max-width: 980px) {
+      #nd-formula-home .nd-formula-scroll {
+        min-height: auto !important;
+      }
+
+      #nd-formula-home .nd-formula-stage {
+        position: relative !important;
+        padding: 64px 0 !important;
+      }
+
+      #nd-formula-home .nd-formula-layout {
+        grid-template-columns: 1fr !important;
+        gap: 28px !important;
+      }
+
+      #nd-formula-home .nd-step-copy {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        border-top: 0;
+      }
+
+      #nd-formula-home .nd-step-copy article {
+        min-height: auto !important;
+        padding: 14px 14px 14px 44px !important;
+        border: 1px solid rgba(52, 52, 58, .1);
+        border-radius: 18px;
+        background: rgba(255, 255, 255, .7);
+        opacity: 1;
+      }
+
+      #nd-formula-home .nd-step-copy article::before {
+        left: 14px;
+        top: 16px !important;
+      }
+    }
+
+    @media (max-width: 780px) {
+      #nd-formula-home .nd-hero {
+        min-height: auto;
+      }
+
+      #nd-formula-home .nd-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      #nd-formula-home .nd-hero-visual {
+        min-height: clamp(360px, 88vw, 470px) !important;
+      }
+
+      #nd-formula-home .nd-product-campaign {
+        width: 100%;
+        height: clamp(330px, 80vw, 430px) !important;
+      }
+
+      #nd-formula-home .nd-hero-pack {
+        width: min(108%, 540px) !important;
+        bottom: 2%;
+        filter: drop-shadow(0 22px 24px rgba(52, 52, 58, .14));
+      }
+
+      #nd-formula-home .nd-edge-sprig-hero {
+        --sprig-w: 72px;
+        right: -22px;
+        top: 12px;
+        opacity: .06;
+      }
+
+      #nd-formula-home .nd-hero-claim {
+        gap: 0;
+        border-top: 1px solid rgba(52, 52, 58, .11);
+      }
+
+      #nd-formula-home .nd-hero-claim span {
+        padding: 8px 0;
+        border-right: 0;
+        border-bottom: 1px solid rgba(52, 52, 58, .08);
+      }
+
+      #nd-formula-home .nd-step-panel .nd-h2 {
+        font-size: clamp(34px, 9vw, 48px) !important;
+      }
+
+      #nd-formula-home .nd-step-copy {
+        grid-template-columns: 1fr;
+      }
+
+      #nd-formula-home .nd-formula-canvas {
+        height: clamp(410px, 104vw, 500px) !important;
+        min-height: 410px !important;
+      }
+
+      #nd-formula-home .nd-formula-product {
+        width: 128px !important;
+      }
+
+      #nd-formula-home .nd-use-tags {
+        grid-template-columns: 1fr !important;
+      }
+
+      #nd-formula-home .nd-faq-grid > .nd-reveal:first-child {
+        display: block !important;
+      }
+
+      #nd-formula-home .nd-accordion {
+        grid-template-columns: 1fr !important;
+      }
+
+      #nd-formula-home .nd-accordion summary {
+        min-height: auto;
+      }
+
+      #nd-formula-home .nd-final-grid {
+        grid-template-columns: 1fr !important;
+      }
+
+      #nd-formula-home .nd-final-product {
+        order: 0;
+        min-height: 310px;
+      }
+
+      #nd-formula-home .nd-final-product img {
+        width: min(44%, 190px) !important;
+      }
+
+      #nd-formula-home .nd-bg-leaf {
+        opacity: calc(var(--o, .12) * .62);
+      }
+    }
+
+    @media (max-width: 430px) {
+      #nd-formula-home .nd-hero-visual {
+        min-height: 350px !important;
+      }
+
+      #nd-formula-home .nd-product-campaign {
+        height: 330px !important;
+      }
+
+      #nd-formula-home .nd-hero-pack {
+        width: 112% !important;
+      }
+
+      #nd-formula-home .nd-formula-canvas {
+        height: 395px !important;
+        min-height: 395px !important;
+      }
+
+      #nd-formula-home .nd-use-tags span {
+        min-height: 42px !important;
+      }
+    }
+
+    /* Approval polish: content never disappears while scroll motion loads. */
+    #nd-formula-home .nd-reveal {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+
+    #nd-formula-home .nd-formula-scroll {
+      min-height: 145vh !important;
+    }
+
+    #nd-formula-home .nd-formula-stage {
+      padding: clamp(18px, 3.2vh, 38px) 0 !important;
+      min-height: 86svh !important;
+    }
+
+    #nd-formula-home .nd-formula-layout {
+      align-items: center !important;
+    }
+
+    #nd-formula-home .nd-step-panel {
+      padding-top: 0 !important;
+    }
+
+    #nd-formula-home .nd-step-copy article {
+      color: rgba(52, 52, 58, .7) !important;
+      opacity: .82 !important;
+    }
+
+    #nd-formula-home .nd-step-copy article.is-active {
+      color: #34343A !important;
+      opacity: 1 !important;
+    }
+
+    #nd-formula-home .nd-step-copy p {
+      color: rgba(52, 52, 58, .72) !important;
+    }
+
+    #nd-formula-home .nd-formula-canvas {
+      background:
+        radial-gradient(ellipse at 64% 50%, rgba(255, 255, 255, .98), rgba(255, 255, 255, .72) 38%, rgba(236, 233, 255, .34) 78%),
+        radial-gradient(ellipse at 20% 22%, rgba(218, 248, 85, .13), transparent 42%),
+        linear-gradient(135deg, rgba(250, 250, 247, .9), rgba(255, 255, 255, .78)) !important;
+      height: min(60vh, 590px) !important;
+      min-height: 500px !important;
+    }
+
+    #nd-formula-home .nd-use-board,
+    #nd-formula-home .nd-final {
+      min-height: auto !important;
+    }
+
+    #nd-formula-home .nd-final {
+      padding-block: clamp(76px, 10vw, 132px) !important;
+    }
+
+    @media (max-width: 980px) {
+      #nd-formula-home .nd-formula-scroll {
+        min-height: auto !important;
+      }
+
+      #nd-formula-home .nd-formula-stage {
+        padding: 54px 0 66px !important;
+      }
+
+      #nd-formula-home .nd-step-panel .nd-lede {
+        color: rgba(52, 52, 58, .76) !important;
+      }
+    }
+
+    @media (max-width: 780px) {
+      #nd-formula-home .nd-step-copy article {
+        background: rgba(255, 255, 255, .82) !important;
+        box-shadow: 0 16px 38px rgba(52, 52, 58, .055);
+      }
+
+      #nd-formula-home .nd-formula-canvas {
+        margin-top: 10px !important;
+      }
+
+      #nd-formula-home .nd-final {
+        padding-block: 68px !important;
+      }
+    }
   </style>
 
   <div class="nd-root">
@@ -6115,7 +6684,7 @@
 
           <div class="nd-hero-visual nd-reveal" aria-label="Lavanda Flash en formatos 1 litro, 500 mililitros y 250 mililitros">
             <div class="nd-studio-plate" aria-hidden="true"></div>
-            <img class="nd-edge-sprig nd-edge-sprig-hero" src="{{ nd_leaf_2_url }}" width="360" height="420" alt="" loading="eager" aria-hidden="true">
+            <img class="nd-edge-sprig nd-edge-sprig-hero" src="{{ nd_single_leaf_2_url }}" width="180" height="180" alt="" loading="eager" aria-hidden="true">
             <div class="nd-hero-splash" aria-hidden="true"><span></span><span></span><span></span></div>
             <div class="nd-product-campaign" data-nd-parallax>
               <span class="nd-liquid-streak" aria-hidden="true"></span>
@@ -6195,7 +6764,7 @@
     <section class="nd-section nd-reveal-product" aria-labelledby="nd-product-title">
       <div class="nd-shell nd-product-reveal-grid">
         <div class="nd-product-stage nd-reveal">
-          <img class="nd-edge-sprig nd-edge-sprig-product" src="{{ nd_lavender_1_url }}" width="360" height="520" alt="" loading="lazy" aria-hidden="true">
+          <img class="nd-edge-sprig nd-edge-sprig-product" src="{{ nd_single_leaf_1_url }}" width="180" height="120" alt="" loading="lazy" aria-hidden="true">
           <img src="{{ nd_product_500_url }}" width="520" height="1180" alt="Lavanda Flash formato 500 ml" loading="lazy">
         </div>
         <div class="nd-product-copy nd-reveal">
@@ -6469,7 +7038,7 @@
           var rect = formula.getBoundingClientRect();
           var scrollable = Math.max(1, rect.height - window.innerHeight);
           var rawProgress = clamp((0 - rect.top) / scrollable, 0, 1);
-          var progress = clamp((rawProgress * 1.1) + 0.035, 0, 1);
+          var progress = clamp((rawProgress * 1.32) + 0.06, 0, 1);
           formula.style.setProperty('--nd-progress', progress.toFixed(4));
           if (stepItems.length) {
             var active = Math.min(stepItems.length - 1, Math.floor(clamp(progress * stepItems.length, 0, stepItems.length - .001)));
