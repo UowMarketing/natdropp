@@ -1,6 +1,7 @@
 .agents
 .git
 .vercel
+github-publish
 Assets/*
 !Assets/nd-*
 dist/screenshots
