@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Iterable
 
 from PIL import Image
+from PIL import ImageEnhance
 from PIL import ImageFilter
 
 
@@ -140,6 +141,37 @@ def save_transformed_webp(
     return asset_record(target, source)
 
 
+def save_single_leaf_webps(source: Path) -> list[dict]:
+    copy_raw(source)
+    base = load_image(source, trim=False).convert("RGBA")
+    crops = [
+        ("nd-single-leaf-1.webp", (528, 270, 734, 402), -7, False, 220),
+        ("nd-single-leaf-2.webp", (178, 512, 338, 780), 10, False, 260),
+        ("nd-single-leaf-3.webp", (548, 730, 744, 838), -12, False, 190),
+        ("nd-single-leaf-4.webp", (292, 330, 472, 462), 16, True, 210),
+    ]
+    records: list[dict] = []
+    for target_name, box, rotate, flip, max_side in crops:
+        image = trim_alpha(base.crop(box), padding=18).convert("RGBA")
+        if flip:
+            image = image.transpose(Image.Transpose.FLIP_LEFT_RIGHT)
+        if rotate:
+            image = image.rotate(rotate, expand=True, resample=Image.Resampling.BICUBIC)
+            image = trim_alpha(image, padding=12).convert("RGBA")
+        alpha = image.getchannel("A")
+        rgb = image.convert("RGB")
+        rgb = ImageEnhance.Color(rgb).enhance(.56)
+        rgb = ImageEnhance.Brightness(rgb).enhance(.88)
+        rgb = ImageEnhance.Contrast(rgb).enhance(.96)
+        image = rgb.convert("RGBA")
+        image.putalpha(alpha)
+        image.thumbnail((max_side, max_side), Image.Resampling.LANCZOS)
+        target = OUT / target_name
+        image.save(target, "WEBP", quality=82, method=6)
+        records.append(asset_record(target, source))
+    return records
+
+
 def paste_product(canvas: Image.Image, source: Path, height: int, center_x: int, baseline: int, shadow_scale: float = 1.0) -> None:
     product = load_product_cutout(source)
     ratio = height / product.height
@@ -255,6 +287,7 @@ def main() -> None:
         generated.append(save_transformed_webp(leaf, "nd-leaf-1.webp", 760, 0, False))
         generated.append(save_transformed_webp(leaf, "nd-leaf-2.webp", 760, -16, True))
         generated.append(save_transformed_webp(leaf, "nd-leaf-3.webp", 620, 24, False))
+        generated.extend(save_single_leaf_webps(leaf))
     if acene:
         generated.append(save_webp(acene, "nd-acene-badge.webp", 480, 86, True))
 

@@ -37,6 +37,7 @@ Incluye schema para configurar:
 
 - Preview local: `dist/natdropp-preview.html`
 - Preview deployable: `index.html`
+- Contrasena del preview: `natdrop4321`
 
 Se regenera con:
 
@@ -62,12 +63,16 @@ Assets principales usados:
 - `nd-leaf-1.webp`
 - `nd-leaf-2.webp`
 - `nd-leaf-3.webp`
+- `nd-single-leaf-1.webp`
+- `nd-single-leaf-2.webp`
+- `nd-single-leaf-3.webp`
+- `nd-single-leaf-4.webp`
 - `nd-acene-badge.webp`
 - `nd-pack-hero.webp`
 
 El pipeline esta en:
 
-`scripts/natdropp-process-assets.js`
+`scripts/natdropp-process-assets.py`
 
 No destruye originales: copia fuentes en `Assets/raw` y regenera derivados optimizados.
 
@@ -87,7 +92,7 @@ No destruye originales: copia fuentes en `Assets/raw` y regenera derivados optim
 
 El Custom Liquid usa URLs CDN reales ya subidas a Shopify para producto, logo, ACENE, olivo y lavanda, por lo que puede pegarse directamente.
 
-Para usar la seccion formal del theme, subir los assets `nd-*` a la carpeta `assets` del theme.
+Tambien embebe como data URI el pack hero y las hojas sueltas generadas para que el archivo pegado sea autocontenido. Para usar la seccion formal del theme, subir los assets `nd-*` a la carpeta `assets` del theme.
 
 ## Cambios rapidos
 
@@ -105,11 +110,12 @@ No se uso generacion nueva con OpenAI API. Se trabajo con producto real, pack re
 - `scripts/natdropp-build-section.py`
 - `scripts/natdropp-build-preview.py`
 - Validacion Shopify Liquid: `sections/natdropp-formula-home.liquid` valido.
-- QA Playwright/Chromium instalado en 390 px, 768 px, 1440 px y 1920 px.
+- QA Playwright/Chromium en 390 px, 768 px y 1440 px.
 - Revision de overflow horizontal: `0`.
 - Revision de imagenes rotas: `0`.
 - Motion global confirmado: `nd-leaf-rain` con scroll y caida/giro.
 - Formula sticky confirmado: `.nd-ingredient-system`, `.nd-emulsion-reveal` y producto final.
+- Preview gate confirmado con contrasena `natdrop4321`.
 - Deploy Vercel verificado con HTTP `200`.
 - GitHub sincronizado en `main`.
 
@@ -122,11 +128,16 @@ No se uso generacion nueva con OpenAI API. Se trabajo con producto real, pack re
 - `dist/screenshots/natdropp-verified-1440-formula-final.png`
 - `dist/screenshots/natdropp-verified-1440-faq.png`
 - `dist/screenshots/natdropp-verified-1440-closing.png`
+- `dist/screenshots/natdropp-polish2-390-password-gate.png`
+- `dist/screenshots/natdropp-target-1440-hero.png`
+- `dist/screenshots/natdropp-target-1440-formula-final.png`
+- `dist/screenshots/natdropp-icons-390-product-reveal.png`
 
 ## Limitaciones conocidas
 
 - La disponibilidad, precio y variantes finales dependen del producto real en Shopify.
 - La seccion formal requiere que los assets `nd-*` esten en `assets` del theme.
 - El Custom Liquid esta pensado para pegarse debajo del header existente del theme.
+- La contrasena del preview es una barrera client-side para compartir el enlace; no sustituye una proteccion server-side de Vercel.
 - El proyecto Vercel se creo por CLI desde el paquete local; el repo GitHub contiene el mismo paquete publicado.
 - En QA local `file://`, Chromium puede bloquear la carga de Google Fonts por sandbox/red; en Shopify/Vercel la fuente se carga por HTTPS y existe fallback system UI.
