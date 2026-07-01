@@ -82,7 +82,8 @@ No destruye originales: copia fuentes en `Assets/raw` y regenera derivados optim
 - Producto protagonista con composicion de estudio y fondo editorial.
 - Hojas globales semitransparentes con movimiento natural de scroll, giro y caida suave.
 - Ramas de olivo/lavanda como capas de borde, nunca delante de producto o texto critico.
-- Historia de formula reconstruida con stage sticky, ingredientes vectoriales, emulsion central y revelado final del producto.
+- Historia de formula reconstruida con stage sticky mas corto, pasos legibles, ingredientes vectoriales, emulsion central y revelado final del producto.
+- Chips de multiuso con iconos SVG y cards de Lavanda Flash con padding corregido.
 - FAQ compacta en tres columnas desktop, dos en tablet y una columna mobile.
 - CTA final reequilibrado con mas contenido de confianza y producto menos invasivo.
 - Botones y CTAs con contraste corregido.
@@ -113,6 +114,7 @@ No se uso generacion nueva con OpenAI API. Se trabajo con producto real, pack re
 - QA Playwright/Chromium en 390 px, 768 px y 1440 px.
 - Revision de overflow horizontal: `0`.
 - Revision de imagenes rotas: `0`.
+- Revision de errores de consola: `0`.
 - Motion global confirmado: `nd-leaf-rain` con scroll y caida/giro.
 - Formula sticky confirmado: `.nd-ingredient-system`, `.nd-emulsion-reveal` y producto final.
 - Preview gate confirmado con contrasena `natdrop4321`.
@@ -132,6 +134,12 @@ No se uso generacion nueva con OpenAI API. Se trabajo con producto real, pack re
 - `dist/screenshots/natdropp-target-1440-hero.png`
 - `dist/screenshots/natdropp-target-1440-formula-final.png`
 - `dist/screenshots/natdropp-icons-390-product-reveal.png`
+- `dist/qa-final-pass/hero-390.png`
+- `dist/qa-final-pass/hero-768.png`
+- `dist/qa-final-pass/hero-1440.png`
+- `dist/qa-final-polish/nd-formula-1440.png`
+- `dist/qa-final-polish/nd-faq-1440.png`
+- `dist/qa-final-polish/nd-final-1440.png`
 
 ## Limitaciones conocidas
 
@@ -140,4 +148,4 @@ No se uso generacion nueva con OpenAI API. Se trabajo con producto real, pack re
 - El Custom Liquid esta pensado para pegarse debajo del header existente del theme.
 - La contrasena del preview es una barrera client-side para compartir el enlace; no sustituye una proteccion server-side de Vercel.
 - El proyecto Vercel se creo por CLI desde el paquete local; el repo GitHub contiene el mismo paquete publicado.
-- En QA local `file://`, Chromium puede bloquear la carga de Google Fonts por sandbox/red; en Shopify/Vercel la fuente se carga por HTTPS y existe fallback system UI.
+- No se cargan fuentes externas; la pila tipografica usa Manrope si esta disponible localmente y fallback Inter/system UI.

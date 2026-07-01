@@ -24,8 +24,6 @@
 
 <section id="nd-formula-home" class="nd-home" data-nd-home data-nd-motion="{{ section.settings.enable_motion }}">
   <style>
-    @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap");
-
     #nd-formula-home,
     #nd-formula-home * {
       box-sizing: border-box;
@@ -5143,40 +5141,40 @@
     }
 
     #nd-formula-home .nd-benefits::after {
-      width: min(34vw, 360px);
-      height: min(34vw, 360px);
-      right: -145px;
-      top: 12%;
-      background-image: url("{{ nd_leaf_2_url }}");
+      width: clamp(82px, 11vw, 148px);
+      height: clamp(54px, 8vw, 96px);
+      right: clamp(-44px, -3vw, -18px);
+      top: 14%;
+      background-image: url("{{ nd_single_leaf_1_url }}");
       --accent-rot: -18deg;
     }
 
     #nd-formula-home .nd-multiuse::before {
-      width: min(36vw, 380px);
-      height: min(36vw, 380px);
-      left: -165px;
-      bottom: 2%;
-      background-image: url("{{ nd_leaf_2_url }}");
+      width: clamp(72px, 10vw, 132px);
+      height: clamp(72px, 10vw, 132px);
+      left: clamp(-40px, -3vw, -16px);
+      bottom: 8%;
+      background-image: url("{{ nd_single_leaf_4_url }}");
       --accent-rot: 11deg;
       opacity: .065;
     }
 
     #nd-formula-home .nd-trust::after {
-      width: min(32vw, 340px);
-      height: min(32vw, 340px);
-      right: -150px;
-      bottom: 7%;
-      background-image: url("{{ nd_leaf_3_url }}");
+      width: clamp(86px, 12vw, 156px);
+      height: clamp(44px, 7vw, 82px);
+      right: clamp(-42px, -3vw, -18px);
+      bottom: 10%;
+      background-image: url("{{ nd_single_leaf_3_url }}");
       --accent-rot: -10deg;
       opacity: .07;
     }
 
     #nd-formula-home .nd-final::before {
-      width: min(36vw, 390px);
-      height: min(36vw, 390px);
-      left: -165px;
-      top: 8%;
-      background-image: url("{{ nd_leaf_3_url }}");
+      width: clamp(76px, 10vw, 138px);
+      height: clamp(50px, 7vw, 88px);
+      left: clamp(-38px, -3vw, -16px);
+      top: 12%;
+      background-image: url("{{ nd_single_leaf_1_url }}");
       --accent-rot: 12deg;
       opacity: .06;
     }
@@ -5209,21 +5207,22 @@
     }
 
     #nd-formula-home .nd-hero-visual::before {
-      width: min(42%, 320px);
-      height: min(42%, 320px);
-      left: -7%;
-      bottom: 13%;
-      background-image: url("{{ nd_leaf_3_url }}");
+      width: clamp(88px, 13vw, 160px);
+      height: clamp(54px, 9vw, 102px);
+      left: 4%;
+      bottom: 17%;
+      background-image: url("{{ nd_single_leaf_3_url }}");
+      opacity: .08;
       transform: translate3d(0, calc(var(--nd-progress) * -18px), 0) rotate(-14deg);
     }
 
     #nd-formula-home .nd-hero-visual::after {
-      width: min(36%, 290px);
-      height: min(36%, 290px);
-      right: -6%;
-      top: 10%;
-      background-image: url("{{ nd_single_leaf_2_url }}");
-      opacity: .07;
+      width: clamp(76px, 11vw, 138px);
+      height: clamp(76px, 11vw, 138px);
+      right: 3%;
+      top: 13%;
+      background-image: url("{{ nd_single_leaf_4_url }}");
+      opacity: .06;
       transform: translate3d(0, calc(var(--nd-progress) * 16px), 0) rotate(10deg);
     }
 
@@ -5335,8 +5334,7 @@
     }
 
     #nd-formula-home .nd-formula-botanical {
-      z-index: 1;
-      opacity: .085;
+      display: none !important;
     }
 
     #nd-formula-home .nd-hero-lavender,
@@ -5646,6 +5644,426 @@
         opacity: calc(var(--o, .1) * .6);
       }
     }
+
+    #nd-formula-home .nd-eyebrow,
+    #nd-formula-home .nd-step-count {
+      font-size: clamp(12px, .92vw, 14px);
+      font-weight: 920;
+      color: #5A4FD3;
+    }
+
+    #nd-formula-home .nd-hero-pack {
+      width: min(88%, 700px);
+      bottom: 4%;
+    }
+
+    #nd-formula-home .nd-hero-splash span {
+      z-index: 0;
+      opacity: .42;
+      filter: blur(18px);
+    }
+
+    #nd-formula-home .nd-liquid-streak {
+      opacity: .1;
+      filter: blur(38px);
+      z-index: 0;
+    }
+
+    #nd-formula-home .nd-edge-sprig {
+      position: absolute;
+      display: block;
+      width: var(--sprig-w, 220px);
+      height: auto;
+      pointer-events: none;
+      object-fit: contain;
+      opacity: var(--sprig-o, .14);
+      filter: saturate(.86) contrast(1.02) drop-shadow(0 18px 28px rgba(52, 52, 58, .08));
+      transform: translate3d(0, calc(var(--nd-section-drift, 0px) * var(--sprig-drift, .26)), 0) rotate(var(--sprig-r, 0deg));
+      transform-origin: center;
+      will-change: transform;
+    }
+
+    #nd-formula-home .nd-edge-sprig-hero {
+      --sprig-w: min(26vw, 260px);
+      --sprig-o: .26;
+      --sprig-r: -10deg;
+      --sprig-drift: .32;
+      z-index: 2;
+      right: -9%;
+      top: -2%;
+    }
+
+    #nd-formula-home .nd-edge-sprig-product {
+      --sprig-w: min(24vw, 230px);
+      --sprig-o: .14;
+      --sprig-r: 14deg;
+      --sprig-drift: -.22;
+      z-index: 1;
+      left: -8%;
+      top: 6%;
+    }
+
+    #nd-formula-home .nd-reveal-product,
+    #nd-formula-home .nd-ingredients,
+    #nd-formula-home .nd-formats {
+      position: relative;
+      overflow: hidden;
+    }
+
+    #nd-formula-home .nd-reveal-product > *,
+    #nd-formula-home .nd-ingredients > *,
+    #nd-formula-home .nd-formats > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    #nd-formula-home .nd-ingredients::before,
+    #nd-formula-home .nd-formats::before {
+      content: "";
+      position: absolute;
+      pointer-events: none;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      opacity: .095;
+      filter: saturate(.86) contrast(1.03);
+      transform: translate3d(0, calc(var(--nd-section-drift, 0px) * .2), 0) rotate(var(--sprig-r, 0deg));
+      z-index: 1;
+    }
+
+    #nd-formula-home .nd-ingredients::before {
+      width: min(28vw, 260px);
+      height: min(32vw, 300px);
+      left: -118px;
+      top: 12%;
+      background-image: url("{{ nd_leaf_2_url }}");
+      --sprig-r: 16deg;
+    }
+
+    #nd-formula-home .nd-formats::before {
+      width: min(28vw, 250px);
+      height: min(32vw, 300px);
+      right: -120px;
+      top: 6%;
+      background-image: url("{{ nd_lavender_2_url }}");
+      --sprig-r: -12deg;
+      opacity: .085;
+    }
+
+    #nd-formula-home .nd-formula-scroll {
+      min-height: 268vh !important;
+    }
+
+    #nd-formula-home .nd-formula-stage {
+      padding: clamp(38px, 5vh, 64px) 0 !important;
+    }
+
+    #nd-formula-home .nd-formula-layout {
+      grid-template-columns: minmax(360px, .72fr) minmax(620px, 1.28fr);
+      gap: clamp(48px, 5vw, 78px);
+    }
+
+    #nd-formula-home .nd-step-panel {
+      max-width: 560px;
+    }
+
+    #nd-formula-home .nd-step-panel .nd-h2 {
+      font-size: clamp(46px, 4vw, 64px);
+      line-height: .98;
+      color: #34343A;
+    }
+
+    #nd-formula-home .nd-step-copy {
+      gap: 0;
+      margin-top: 22px;
+      border-top: 1px solid rgba(52, 52, 58, .14);
+    }
+
+    #nd-formula-home .nd-step-copy article {
+      min-height: 74px;
+      padding: 13px 0 13px 58px;
+      color: rgba(52, 52, 58, .72);
+      opacity: .78;
+      transform: none;
+      transition: opacity .28s ease, color .28s ease, transform .28s ease, background .28s ease;
+    }
+
+    #nd-formula-home .nd-step-copy article::before {
+      top: 16px;
+      color: rgba(90, 79, 211, .82);
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    #nd-formula-home .nd-step-copy article.is-active {
+      color: #34343A;
+      opacity: 1;
+      transform: translateX(6px);
+    }
+
+    #nd-formula-home .nd-step-copy h3 {
+      color: inherit;
+      font-size: 16px;
+      font-weight: 860;
+    }
+
+    #nd-formula-home .nd-step-copy p {
+      max-width: 420px;
+      color: rgba(52, 52, 58, .68);
+      font-size: 13px;
+      line-height: 1.36;
+      font-weight: 590;
+    }
+
+    #nd-formula-home .nd-progress-track {
+      margin-top: 18px;
+      height: 5px;
+    }
+
+    #nd-formula-home .nd-formula-canvas {
+      height: min(70vh, 680px);
+      min-height: 560px;
+    }
+
+    #nd-formula-home .nd-ing {
+      transition: opacity .18s linear, transform .18s linear;
+    }
+
+    #nd-formula-home .nd-emulsion-reveal {
+      opacity: clamp(.16, calc(var(--nd-progress) * 1.7), 1);
+      transform: translate(-50%, -50%) scale(calc(.64 + var(--nd-progress) * .36));
+    }
+
+    #nd-formula-home .nd-formula-product {
+      opacity: clamp(0, calc((var(--nd-progress) - .38) * 2.9), 1);
+      transform: translate3d(-50%, calc((1 - var(--nd-progress)) * 24px), 0) scale(calc(.92 + var(--nd-progress) * .08));
+    }
+
+    #nd-formula-home .nd-specs li {
+      display: grid;
+      grid-template-columns: 46px 1fr;
+      gap: 4px 14px;
+      align-items: start;
+      min-height: 112px;
+      padding: 22px !important;
+    }
+
+    #nd-formula-home .nd-specs li > span:not(.nd-spec-icon) {
+      display: block;
+      min-width: 0;
+    }
+
+    #nd-formula-home .nd-specs li strong {
+      margin: 0 0 7px;
+      line-height: 1.12;
+    }
+
+    #nd-formula-home .nd-use-tags span {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      min-height: 42px;
+      padding: 10px 12px;
+    }
+
+    #nd-formula-home .nd-use-tags span::before {
+      display: none !important;
+    }
+
+    #nd-formula-home .nd-use-tags svg {
+      flex: 0 0 20px;
+      width: 20px;
+      height: 20px;
+      fill: none;
+      stroke: #5A4FD3;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    #nd-formula-home .nd-format-card::before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      width: 190px;
+      height: 230px;
+      background: url("{{ nd_lavender_1_url }}") center / contain no-repeat;
+      opacity: .075;
+      pointer-events: none;
+      filter: saturate(.9) contrast(1.02);
+      transform: translate3d(0, calc(var(--nd-section-drift, 0px) * .2), 0) rotate(-12deg);
+    }
+
+    #nd-formula-home .nd-format-card:nth-child(1)::before {
+      left: -70px;
+      top: 30px;
+    }
+
+    #nd-formula-home .nd-format-card:nth-child(2)::before {
+      right: -78px;
+      top: 44px;
+      background-image: url("{{ nd_leaf_2_url }}");
+      transform: translate3d(0, calc(var(--nd-section-drift, 0px) * -.18), 0) rotate(18deg);
+    }
+
+    #nd-formula-home .nd-format-card:nth-child(3)::before {
+      left: -74px;
+      bottom: 82px;
+      top: auto;
+      background-image: url("{{ nd_lavender_2_url }}");
+    }
+
+    #nd-formula-home .nd-final-product::before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      right: -74px;
+      top: 22px;
+      width: min(34vw, 250px);
+      height: min(38vw, 300px);
+      background: url("{{ nd_lavender_2_url }}") center / contain no-repeat;
+      opacity: .09;
+      pointer-events: none;
+      filter: saturate(.88) contrast(1.02);
+      transform: translate3d(0, calc(var(--nd-section-drift, 0px) * -.2), 0) rotate(-10deg);
+    }
+
+    #nd-formula-home .nd-final-product img {
+      position: relative;
+      z-index: 3;
+    }
+
+    #nd-formula-home .nd-reveal.is-visible {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+    }
+
+    @media (max-width: 980px) {
+      #nd-formula-home .nd-formula-scroll {
+        min-height: auto !important;
+      }
+
+      #nd-formula-home .nd-formula-stage {
+        position: relative !important;
+        min-height: auto !important;
+        overflow: visible !important;
+        padding: 70px 0 !important;
+      }
+
+      #nd-formula-home .nd-formula-layout {
+        grid-template-columns: 1fr !important;
+        gap: 28px;
+      }
+
+      #nd-formula-home .nd-step-panel {
+        max-width: none;
+      }
+
+      #nd-formula-home .nd-step-copy article {
+        opacity: 1;
+        transform: none !important;
+      }
+
+      #nd-formula-home .nd-formula-canvas {
+        margin-top: 4px;
+        height: 560px;
+        min-height: 560px;
+      }
+    }
+
+    @media (max-width: 780px) {
+      #nd-formula-home .nd-hero {
+        padding-top: 22px;
+      }
+
+      #nd-formula-home .nd-hero-grid {
+        gap: 12px;
+      }
+
+      #nd-formula-home .nd-hero-actions {
+        margin-top: 24px;
+      }
+
+      #nd-formula-home .nd-hero-pack {
+        width: min(98%, 520px);
+        bottom: 5%;
+      }
+
+      #nd-formula-home .nd-edge-sprig-hero {
+        --sprig-w: 165px;
+        right: -70px;
+        top: -16px;
+        opacity: .22;
+      }
+
+      #nd-formula-home .nd-edge-sprig-product {
+        --sprig-w: 150px;
+        left: -58px;
+        top: 10px;
+        opacity: .11;
+      }
+
+      #nd-formula-home .nd-step-panel .nd-h2 {
+        font-size: clamp(38px, 10vw, 52px);
+      }
+
+      #nd-formula-home .nd-step-copy article {
+        min-height: auto;
+        padding: 12px 0 12px 42px;
+      }
+
+      #nd-formula-home .nd-step-copy article::before {
+        top: 14px;
+      }
+
+      #nd-formula-home .nd-formula-canvas {
+        height: 470px;
+        min-height: 470px;
+      }
+
+      #nd-formula-home .nd-product-stage {
+        min-height: 440px;
+      }
+
+      #nd-formula-home .nd-product-stage img:not(.nd-edge-sprig) {
+        width: min(50%, 225px);
+      }
+
+      #nd-formula-home .nd-specs li {
+        min-height: auto;
+        padding: 18px !important;
+      }
+
+      #nd-formula-home .nd-use-tags span {
+        min-height: 44px;
+      }
+
+      #nd-formula-home .nd-ingredients::before,
+      #nd-formula-home .nd-formats::before {
+        width: 170px;
+        height: 210px;
+        opacity: .06;
+      }
+    }
+
+    @media (max-width: 430px) {
+      #nd-formula-home .nd-hero-visual {
+        min-height: 318px;
+      }
+
+      #nd-formula-home .nd-product-campaign {
+        height: 300px;
+      }
+
+      #nd-formula-home .nd-hero-pack {
+        width: 104%;
+      }
+
+      #nd-formula-home .nd-formula-canvas {
+        height: 430px;
+        min-height: 430px;
+      }
+    }
   </style>
 
   <div class="nd-root">
@@ -5697,9 +6115,8 @@
 
           <div class="nd-hero-visual nd-reveal" aria-label="Lavanda Flash en formatos 1 litro, 500 mililitros y 250 mililitros">
             <div class="nd-studio-plate" aria-hidden="true"></div>
+            <img class="nd-edge-sprig nd-edge-sprig-hero" src="{{ nd_leaf_2_url }}" width="360" height="420" alt="" loading="eager" aria-hidden="true">
             <div class="nd-hero-splash" aria-hidden="true"><span></span><span></span><span></span></div>
-            <img class="nd-hero-botanical nd-hero-leaf" src="{{ nd_leaf_3_url }}" width="620" height="461" alt="" loading="eager" aria-hidden="true">
-            <img class="nd-hero-botanical nd-hero-lavender" src="{{ nd_lavender_2_url }}" width="520" height="444" alt="" loading="eager" aria-hidden="true">
             <div class="nd-product-campaign" data-nd-parallax>
               <span class="nd-liquid-streak" aria-hidden="true"></span>
               <img class="nd-hero-pack" src="{{ nd_pack_hero_url }}" width="1500" height="1080" alt="Lavanda Flash en formatos 1 litro, 500 ml y 250 ml" fetchpriority="high">
@@ -5749,8 +6166,6 @@
                 <span class="nd-cinema-orbit nd-orbit-b"></span>
                 <span class="nd-cinema-orbit nd-orbit-c"></span>
               </div>
-              <img class="nd-formula-botanical nd-formula-olive" src="{{ nd_leaf_2_url }}" width="380" height="420" alt="" loading="lazy">
-              <img class="nd-formula-botanical nd-formula-leaf-accent" src="{{ nd_leaf_1_url }}" width="520" height="560" alt="" loading="lazy">
               <div class="nd-ingredient-system" aria-hidden="true">
                 <span class="nd-ing nd-ing-olive"><svg viewBox="0 0 64 64"><path d="M12 44c15-30 31-36 43-35-2 22-17 36-43 35Z"/><path d="M20 39c12-4 23-13 31-26"/></svg><em>Oliva BIO</em></span>
                 <span class="nd-ing nd-ing-coco"><svg viewBox="0 0 64 64"><path d="M20 48c-9-9-7-25 5-32 13-7 30 1 33 16-11 0-20 6-24 17-5 1-10 1-14-1Z"/><path d="M36 20c-5 7-7 15-6 24"/></svg><em>Coco</em></span>
@@ -5780,6 +6195,7 @@
     <section class="nd-section nd-reveal-product" aria-labelledby="nd-product-title">
       <div class="nd-shell nd-product-reveal-grid">
         <div class="nd-product-stage nd-reveal">
+          <img class="nd-edge-sprig nd-edge-sprig-product" src="{{ nd_lavender_1_url }}" width="360" height="520" alt="" loading="lazy" aria-hidden="true">
           <img src="{{ nd_product_500_url }}" width="520" height="1180" alt="Lavanda Flash formato 500 ml" loading="lazy">
         </div>
         <div class="nd-product-copy nd-reveal">
@@ -5787,10 +6203,10 @@
           <h2 class="nd-h2" id="nd-product-title">Lavanda Flash.</h2>
           <p class="nd-lede">Jabón líquido de Castilla BIO elaborado con aceite de oliva BIO y aceite esencial de lavanda. Suave, versátil, natural, vegano y libre de ingredientes nocivos.</p>
           <ul class="nd-specs" aria-label="Especificaciones de Lavanda Flash">
-            <li><span class="nd-spec-icon"><svg viewBox="0 0 48 48"><path d="M24 6l5 11 12 1-9 8 3 12-11-6-11 6 3-12-9-8 12-1Z"/></svg></span><strong>BIO, Natural & Vegan</strong>Certificación ACENE confirmada en los assets reales.</li>
-            <li><span class="nd-spec-icon"><svg viewBox="0 0 48 48"><path d="M8 35c13-25 24-30 34-29-1 20-14 31-34 29Z"/><path d="M15 32c9-3 17-11 24-22"/></svg></span><strong>Base de oliva</strong>Aceite de oliva BIO como base mediterránea de la fórmula.</li>
-            <li><span class="nd-spec-icon"><svg viewBox="0 0 48 48"><path d="M15 21a7 7 0 1 0 0-14 7 7 0 0 0 0 14Z"/><path d="M32 24a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z"/><path d="M4 42c1-9 5-14 12-14s11 5 12 14"/><path d="M26 42c1-7 5-11 10-11 4 0 7 3 8 11"/></svg></span><strong>Toda la familia</strong>Para todo tipo de pieles, incluidas pieles sensibles y atópicas.</li>
-            <li><span class="nd-spec-icon"><svg viewBox="0 0 48 48"><path d="M12 12h24v24H12Z"/><path d="M18 18h12v12H18Z"/><path d="M24 6v8M24 34v8M6 24h8M34 24h8"/></svg></span><strong>Multiuso</strong>Manos, cuerpo, rostro, afeitado y limpieza diluida del hogar.</li>
+            <li><span class="nd-spec-icon"><svg viewBox="0 0 48 48"><path d="M24 6l5 11 12 1-9 8 3 12-11-6-11 6 3-12-9-8 12-1Z"/></svg></span><span><strong>BIO, Natural & Vegan</strong>Certificación ACENE confirmada en los assets reales.</span></li>
+            <li><span class="nd-spec-icon"><svg viewBox="0 0 48 48"><path d="M8 35c13-25 24-30 34-29-1 20-14 31-34 29Z"/><path d="M15 32c9-3 17-11 24-22"/></svg></span><span><strong>Base de oliva</strong>Aceite de oliva BIO como base mediterránea de la fórmula.</span></li>
+            <li><span class="nd-spec-icon"><svg viewBox="0 0 48 48"><path d="M15 21a7 7 0 1 0 0-14 7 7 0 0 0 0 14Z"/><path d="M32 24a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z"/><path d="M4 42c1-9 5-14 12-14s11 5 12 14"/><path d="M26 42c1-7 5-11 10-11 4 0 7 3 8 11"/></svg></span><span><strong>Toda la familia</strong>Para todo tipo de pieles, incluidas pieles sensibles y atópicas.</span></li>
+            <li><span class="nd-spec-icon"><svg viewBox="0 0 48 48"><path d="M12 12h24v24H12Z"/><path d="M18 18h12v12H18Z"/><path d="M24 6v8M24 34v8M6 24h8M34 24h8"/></svg></span><span><strong>Multiuso</strong>Manos, cuerpo, rostro, afeitado y limpieza diluida del hogar.</span></li>
           </ul>
           <div class="nd-hero-actions">
             <a class="nd-btn nd-btn-primary" href="{{ nd_product_url }}">Ver Lavanda Flash</a>
@@ -5828,9 +6244,9 @@
             <h2 class="nd-h2" id="nd-multiuse-title">Del baño al hogar, sin cambiar de fórmula.</h2>
             <p class="nd-lede">Manos, ducha, rostro, afeitado, familia, hogar diluido, ropa, vajilla, suelos y mascotas. Un básico diario con lectura cosmética y uso práctico.</p>
             <div class="nd-use-groups">
-              <div class="nd-use-group"><h3>Cuidado personal</h3><div class="nd-use-tags"><span>Manos</span><span>Ducha</span><span>Rostro</span><span>Afeitado</span></div></div>
-              <div class="nd-use-group"><h3>Familia</h3><div class="nd-use-tags"><span>Bebés y niños</span><span>Uso diario</span><span>Piel sensible</span></div></div>
-              <div class="nd-use-group"><h3>Hogar diluido</h3><div class="nd-use-tags"><span>Ropa</span><span>Vajilla</span><span>Suelos</span><span>Mascotas</span></div></div>
+              <div class="nd-use-group"><h3>Cuidado personal</h3><div class="nd-use-tags"><span><svg viewBox="0 0 24 24"><path d="M7 11V5a2 2 0 0 1 4 0v5"/><path d="M11 10V4a2 2 0 0 1 4 0v7"/><path d="M15 11V7a2 2 0 0 1 4 0v6c0 5-3 8-7 8H9c-3 0-5-2-5-5v-5a2 2 0 0 1 4 0v3"/></svg>Manos</span><span><svg viewBox="0 0 24 24"><path d="M8 4h8"/><path d="M10 4v5l-3 4a6 6 0 0 0 10 0l-3-4V4"/><path d="M8 16h8"/></svg>Ducha</span><span><svg viewBox="0 0 24 24"><path d="M12 21c5-3 7-7 7-11a7 7 0 0 0-14 0c0 4 2 8 7 11Z"/><path d="M9 11h.01M15 11h.01"/><path d="M9 15c2 1 4 1 6 0"/></svg>Rostro</span><span><svg viewBox="0 0 24 24"><path d="M6 20l12-12"/><path d="M14 4l6 6"/><path d="M4 18l2 2"/><path d="M8 16l-2-2"/></svg>Afeitado</span></div></div>
+              <div class="nd-use-group"><h3>Familia</h3><div class="nd-use-tags"><span><svg viewBox="0 0 24 24"><path d="M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M17 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="M3 21c.6-4 3-6 6-6s5.4 2 6 6"/><path d="M14 21c.5-2.6 2-4 4-4 1.8 0 3.2 1.2 4 4"/></svg>Bebés y niños</span><span><svg viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M5 8h14"/><path d="M6 16h12"/></svg>Uso diario</span><span><svg viewBox="0 0 24 24"><path d="M4 20c5-11 10-16 17-17-1 9-6 14-17 17Z"/><path d="M7 17c5-2 9-5 12-11"/></svg>Piel sensible</span></div></div>
+              <div class="nd-use-group"><h3>Hogar diluido</h3><div class="nd-use-tags"><span><svg viewBox="0 0 24 24"><path d="M7 4h10l2 6v10H5V10Z"/><path d="M5 10h14"/><path d="M9 14h6"/></svg>Ropa</span><span><svg viewBox="0 0 24 24"><path d="M6 3h12v7a6 6 0 0 1-12 0Z"/><path d="M12 16v5"/><path d="M8 21h8"/></svg>Vajilla</span><span><svg viewBox="0 0 24 24"><path d="M4 18h16"/><path d="M7 18V9l5-4 5 4v9"/></svg>Suelos</span><span><svg viewBox="0 0 24 24"><path d="M7 12c0-4 3-7 5-7s5 3 5 7c0 4-2 7-5 7s-5-3-5-7Z"/><path d="M7 12H4"/><path d="M20 12h-3"/><path d="M9 6 6 3"/><path d="m15 6 3-3"/></svg>Mascotas</span></div></div>
             </div>
           </div>
           <div class="nd-use-stage" aria-hidden="true">
@@ -6015,7 +6431,7 @@
               revealObserver.unobserve(entry.target);
             }
           });
-        }, { rootMargin: '0px 0px -10% 0px', threshold: 0.14 });
+        }, { rootMargin: '0px 0px -4% 0px', threshold: 0.08 });
         revealItems.forEach(function (item) { revealObserver.observe(item); });
       } else {
         revealItems.forEach(function (item) { item.classList.add('is-visible'); });
@@ -6052,10 +6468,11 @@
         if (formula) {
           var rect = formula.getBoundingClientRect();
           var scrollable = Math.max(1, rect.height - window.innerHeight);
-          var progress = clamp((0 - rect.top) / scrollable, 0, 1);
+          var rawProgress = clamp((0 - rect.top) / scrollable, 0, 1);
+          var progress = clamp((rawProgress * 1.1) + 0.035, 0, 1);
           formula.style.setProperty('--nd-progress', progress.toFixed(4));
           if (stepItems.length) {
-            var active = Math.min(stepItems.length - 1, Math.floor(progress * stepItems.length));
+            var active = Math.min(stepItems.length - 1, Math.floor(clamp(progress * stepItems.length, 0, stepItems.length - .001)));
             stepItems.forEach(function (item, index) {
               item.classList.toggle('is-active', index === active);
             });
