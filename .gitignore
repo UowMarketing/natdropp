@@ -4,6 +4,10 @@ dist/qa-*/
 dist/server-*.log
 Assets/raw/
 Assets/PNGS/
+Assets/DESIGN.md
+Assets/theme.css
+Assets/tokens.json
+Assets/variables.css
 *.zip
 data.txt
 web.txt
@@ -19,4 +23,5 @@ Assets/cert.png
 Assets/prod ilustrativa.png
 Assets/png*.png
 Assets/transparent*.png
+Assets/transparent*.webp
 Assets/lavender-with-ai-generated-free-png*
