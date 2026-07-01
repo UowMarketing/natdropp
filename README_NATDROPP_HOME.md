@@ -77,10 +77,11 @@ No destruye originales: copia fuentes en `Assets/raw` y regenera derivados optim
 - Producto protagonista con composicion de estudio y fondo editorial.
 - Hojas globales semitransparentes con movimiento natural de scroll, giro y caida suave.
 - Ramas de olivo/lavanda como capas de borde, nunca delante de producto o texto critico.
-- Historia de formula con movimiento por progreso de scroll, particulas de formula y producto limpio.
-- FAQ compacta en dos columnas desktop y una columna mobile.
+- Historia de formula reconstruida con stage sticky, ingredientes vectoriales, emulsion central y revelado final del producto.
+- FAQ compacta en tres columnas desktop, dos en tablet y una columna mobile.
 - CTA final reequilibrado con mas contenido de confianza y producto menos invasivo.
 - Botones y CTAs con contraste corregido.
+- `.theme-check.yml` desactiva solo `UndefinedObject` porque el validador local no reconoce `section.settings`, aunque es Liquid valido en secciones Shopify.
 
 ## Shopify Files / Theme assets
 
@@ -104,19 +105,23 @@ No se uso generacion nueva con OpenAI API. Se trabajo con producto real, pack re
 - `scripts/natdropp-build-section.py`
 - `scripts/natdropp-build-preview.py`
 - Validacion Shopify Liquid: `sections/natdropp-formula-home.liquid` valido.
-- QA Playwright/Chromium instalado en 390 px, 768 px y 1440 px.
+- QA Playwright/Chromium instalado en 390 px, 768 px, 1440 px y 1920 px.
 - Revision de overflow horizontal: `0`.
 - Revision de imagenes rotas: `0`.
-- Motion global confirmado: `nd-leaf-fall`.
-- Formula flow confirmado: `.nd-formula-flow`.
+- Motion global confirmado: `nd-leaf-rain` con scroll y caida/giro.
+- Formula sticky confirmado: `.nd-ingredient-system`, `.nd-emulsion-reveal` y producto final.
 - Deploy Vercel verificado con HTTP `200`.
 - GitHub sincronizado en `main`.
 
 ## Capturas generadas
 
-- `dist/screenshots/natdropp-vercel-root-390-final.png`
-- `dist/screenshots/natdropp-vercel-root-768-final.png`
-- `dist/screenshots/natdropp-vercel-root-1440-final.png`
+- `dist/screenshots/natdropp-verified-390-hero.png`
+- `dist/screenshots/natdropp-verified-768-hero.png`
+- `dist/screenshots/natdropp-verified-1440-hero.png`
+- `dist/screenshots/natdropp-verified-1440-formula-mid.png`
+- `dist/screenshots/natdropp-verified-1440-formula-final.png`
+- `dist/screenshots/natdropp-verified-1440-faq.png`
+- `dist/screenshots/natdropp-verified-1440-closing.png`
 
 ## Limitaciones conocidas
 
@@ -124,3 +129,4 @@ No se uso generacion nueva con OpenAI API. Se trabajo con producto real, pack re
 - La seccion formal requiere que los assets `nd-*` esten en `assets` del theme.
 - El Custom Liquid esta pensado para pegarse debajo del header existente del theme.
 - El proyecto Vercel se creo por CLI desde el paquete local; el repo GitHub contiene el mismo paquete publicado.
+- En QA local `file://`, Chromium puede bloquear la carga de Google Fonts por sandbox/red; en Shopify/Vercel la fuente se carga por HTTPS y existe fallback system UI.

@@ -3381,6 +3381,1414 @@
         gap: 12px;
       }
     }
+
+    /* Production art-direction override */
+    #nd-formula-home {
+      --nd-ink: #34343A;
+      --nd-body: #44444C;
+      --nd-muted: rgba(52, 52, 58, .66);
+      --nd-soft: #F7F7F3;
+      background:
+        radial-gradient(circle at 18% 0%, rgba(218, 248, 85, .12), transparent 32%),
+        radial-gradient(circle at 82% 8%, rgba(200, 184, 255, .18), transparent 36%),
+        linear-gradient(180deg, #FBFBF8 0%, #F5F5F7 58%, #FFFFFF 100%);
+    }
+
+    #nd-formula-home .nd-root {
+      background:
+        linear-gradient(90deg, rgba(126, 139, 91, .035) 0 1px, transparent 1px 100%) 0 0 / 96px 96px,
+        linear-gradient(180deg, rgba(90, 79, 211, .026) 0 1px, transparent 1px 100%) 0 0 / 96px 96px;
+      overflow: visible;
+    }
+
+    #nd-formula-home .nd-root::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      opacity: .26;
+      background:
+        radial-gradient(circle at 18% 16%, rgba(218, 248, 85, .2), transparent 26%),
+        radial-gradient(circle at 88% 30%, rgba(90, 79, 211, .16), transparent 28%),
+        radial-gradient(circle at 44% 86%, rgba(217, 164, 65, .12), transparent 30%);
+      filter: blur(18px);
+    }
+
+    #nd-formula-home .nd-h1,
+    #nd-formula-home .nd-h2,
+    #nd-formula-home .nd-h3 {
+      color: var(--nd-ink);
+      font-weight: 820;
+      letter-spacing: -.015em;
+    }
+
+    #nd-formula-home .nd-h1 {
+      max-width: 760px;
+      font-size: clamp(62px, 7vw, 120px);
+      line-height: .87;
+    }
+
+    #nd-formula-home .nd-h2 {
+      font-size: clamp(46px, 5.4vw, 92px);
+      line-height: .94;
+    }
+
+    #nd-formula-home .nd-lede {
+      color: rgba(52, 52, 58, .78);
+      font-size: clamp(17px, 1.38vw, 21px);
+      line-height: 1.58;
+      font-weight: 620;
+    }
+
+    #nd-formula-home .nd-eyebrow,
+    #nd-formula-home .nd-step-count {
+      font-size: clamp(13px, 1vw, 16px);
+      font-weight: 900;
+      color: #5046CC;
+      letter-spacing: .01em;
+    }
+
+    #nd-formula-home .nd-eyebrow::before,
+    #nd-formula-home .nd-step-count::before {
+      width: 54px;
+      height: 3px;
+      margin-right: 12px;
+      background: linear-gradient(90deg, #5046CC 0%, #DAF855 100%);
+    }
+
+    #nd-formula-home .nd-btn {
+      min-height: 52px;
+      padding: 0 24px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 850;
+      letter-spacing: 0;
+    }
+
+    #nd-formula-home .nd-btn-primary {
+      color: #FFFFFF;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, .18), rgba(255, 255, 255, 0)),
+        linear-gradient(180deg, #665BE4 0%, #4D43C5 100%);
+      border-color: rgba(90, 79, 211, .78);
+      box-shadow:
+        0 18px 44px rgba(90, 79, 211, .28),
+        inset 0 1px 0 rgba(255, 255, 255, .34);
+    }
+
+    #nd-formula-home .nd-btn-primary:hover {
+      transform: translateY(-2px);
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, .22), rgba(255, 255, 255, 0)),
+        linear-gradient(180deg, #5E53DA 0%, #443AB6 100%);
+      box-shadow:
+        0 24px 58px rgba(90, 79, 211, .34),
+        inset 0 1px 0 rgba(255, 255, 255, .36);
+    }
+
+    #nd-formula-home .nd-btn-secondary {
+      min-height: 52px;
+      padding: 0 18px;
+      color: #34343A;
+      background: rgba(255, 255, 255, .74);
+      border: 1px solid rgba(52, 52, 58, .12);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, .72);
+      backdrop-filter: blur(18px);
+    }
+
+    #nd-formula-home .nd-btn-secondary:hover {
+      color: #4D43C5;
+      background: rgba(255, 255, 255, .92);
+      border-color: rgba(90, 79, 211, .22);
+    }
+
+    #nd-formula-home .nd-page-botanics {
+      z-index: 2;
+      opacity: .72;
+      mix-blend-mode: multiply;
+    }
+
+    #nd-formula-home .nd-page-leaf {
+      opacity: .085;
+      filter: saturate(.88) contrast(1.05) drop-shadow(0 18px 34px rgba(126, 139, 91, .08));
+    }
+
+    #nd-formula-home .nd-page-lavender-a,
+    #nd-formula-home .nd-page-lavender-b {
+      opacity: .105;
+    }
+
+    #nd-formula-home .nd-leaf-rain {
+      position: fixed;
+      inset: -22vh 0 -10vh;
+      z-index: 3;
+      pointer-events: none;
+      overflow: hidden;
+      mix-blend-mode: multiply;
+      opacity: .9;
+    }
+
+    #nd-formula-home .nd-leaf-rain i {
+      position: absolute;
+      left: var(--x, 50%);
+      top: var(--y, -10%);
+      width: var(--w, 24px);
+      height: calc(var(--w, 24px) * 1.9);
+      border-radius: 78% 6% 72% 10%;
+      background:
+        linear-gradient(115deg, rgba(255, 255, 255, .5), rgba(255, 255, 255, 0) 38%),
+        linear-gradient(135deg, rgba(126, 139, 91, .4), rgba(218, 248, 85, .22));
+      box-shadow: inset -1px -4px 8px rgba(72, 84, 48, .08), 0 10px 24px rgba(126, 139, 91, .08);
+      opacity: var(--o, .18);
+      transform-origin: 48% 82%;
+      transform: translate3d(var(--wind, 0px), var(--nd-scroll-fall, 0px), 0) rotate(var(--r, 0deg));
+      animation: nd-real-leaf-drift var(--d, 18s) cubic-bezier(.46, 0, .2, 1) infinite;
+      animation-delay: var(--delay, 0s);
+      will-change: transform, opacity;
+    }
+
+    #nd-formula-home .nd-leaf-rain i::after {
+      content: "";
+      position: absolute;
+      left: 48%;
+      top: 12%;
+      bottom: 10%;
+      width: 1px;
+      border-radius: 99px;
+      background: rgba(126, 139, 91, .24);
+      transform: rotate(-12deg);
+    }
+
+    @keyframes nd-real-leaf-drift {
+      0% { translate: 0 -18vh; rotate: -10deg; opacity: 0; }
+      10% { opacity: var(--o, .18); }
+      42% { translate: 18px 40vh; rotate: 64deg; }
+      72% { translate: -26px 76vh; rotate: 128deg; }
+      100% { translate: 20px 124vh; rotate: 220deg; opacity: 0; }
+    }
+
+    #nd-formula-home .nd-leaf-rain i:nth-child(1) { --x: 6%; --y: -12%; --w: 24px; --o: .18; --r: 12deg; --d: 24s; --delay: -8s; --wind: 0px; }
+    #nd-formula-home .nd-leaf-rain i:nth-child(2) { --x: 18%; --y: -34%; --w: 18px; --o: .14; --r: -24deg; --d: 29s; --delay: -17s; --wind: -10px; }
+    #nd-formula-home .nd-leaf-rain i:nth-child(3) { --x: 32%; --y: -18%; --w: 20px; --o: .16; --r: 42deg; --d: 26s; --delay: -4s; --wind: 12px; }
+    #nd-formula-home .nd-leaf-rain i:nth-child(4) { --x: 46%; --y: -42%; --w: 15px; --o: .13; --r: -8deg; --d: 31s; --delay: -21s; --wind: 22px; }
+    #nd-formula-home .nd-leaf-rain i:nth-child(5) { --x: 59%; --y: -24%; --w: 22px; --o: .15; --r: 18deg; --d: 28s; --delay: -12s; --wind: -18px; }
+    #nd-formula-home .nd-leaf-rain i:nth-child(6) { --x: 72%; --y: -16%; --w: 17px; --o: .15; --r: -36deg; --d: 23s; --delay: -2s; --wind: 8px; }
+    #nd-formula-home .nd-leaf-rain i:nth-child(7) { --x: 88%; --y: -38%; --w: 26px; --o: .13; --r: 28deg; --d: 34s; --delay: -26s; --wind: -20px; }
+    #nd-formula-home .nd-leaf-rain i:nth-child(8) { --x: 96%; --y: -10%; --w: 16px; --o: .12; --r: -18deg; --d: 27s; --delay: -14s; --wind: -30px; }
+    #nd-formula-home .nd-leaf-rain i:nth-child(9) { --x: 12%; --y: 18%; --w: 14px; --o: .11; --r: 51deg; --d: 36s; --delay: -30s; --wind: 18px; }
+    #nd-formula-home .nd-leaf-rain i:nth-child(10) { --x: 66%; --y: 4%; --w: 19px; --o: .13; --r: -42deg; --d: 32s; --delay: -18s; --wind: -4px; }
+    #nd-formula-home .nd-leaf-rain i:nth-child(11) { --x: 41%; --y: 14%; --w: 12px; --o: .11; --r: 9deg; --d: 39s; --delay: -33s; --wind: 24px; }
+    #nd-formula-home .nd-leaf-rain i:nth-child(12) { --x: 78%; --y: 26%; --w: 15px; --o: .12; --r: 74deg; --d: 35s; --delay: -27s; --wind: -16px; }
+
+    #nd-formula-home .nd-hero {
+      min-height: clamp(820px, 100svh, 1040px);
+      padding: clamp(38px, 4vw, 70px) 0 clamp(62px, 7vw, 118px);
+      background:
+        radial-gradient(ellipse at 74% 42%, rgba(236, 233, 255, .86), transparent 40%),
+        radial-gradient(ellipse at 54% 14%, rgba(218, 248, 85, .18), transparent 28%),
+        linear-gradient(180deg, #FFFFFF 0%, #FBFBF8 58%, #F4F4F0 100%);
+      overflow: hidden;
+    }
+
+    #nd-formula-home .nd-hero::before {
+      content: "";
+      position: absolute;
+      inset: 8% -10% auto 38%;
+      height: 70%;
+      z-index: 0;
+      border-radius: 52% 48% 48% 52%;
+      background:
+        radial-gradient(ellipse at 58% 52%, rgba(255, 255, 255, .94) 0 22%, rgba(255, 255, 255, .4) 46%, transparent 70%),
+        radial-gradient(ellipse at 28% 38%, rgba(218, 248, 85, .32), transparent 38%),
+        radial-gradient(ellipse at 74% 32%, rgba(90, 79, 211, .18), transparent 48%);
+      filter: blur(6px);
+      transform: translate3d(0, calc(var(--nd-progress) * -24px), 0);
+    }
+
+    #nd-formula-home .nd-hero::after {
+      content: "";
+      position: absolute;
+      left: 6%;
+      right: 4%;
+      bottom: 7%;
+      height: 28%;
+      z-index: 0;
+      background: radial-gradient(ellipse, rgba(52, 52, 58, .08), transparent 66%);
+      filter: blur(22px);
+    }
+
+    #nd-formula-home .nd-hero-inner,
+    #nd-formula-home .nd-hero-grid,
+    #nd-formula-home .nd-hero-top {
+      position: relative;
+      z-index: 4;
+    }
+
+    #nd-formula-home .nd-hero-grid {
+      grid-template-columns: minmax(390px, .84fr) minmax(620px, 1.16fr);
+      gap: clamp(44px, 5vw, 90px);
+      align-items: center;
+    }
+
+    #nd-formula-home .nd-hero-meta {
+      color: #34343A;
+      display: grid;
+      gap: 8px;
+      background: transparent;
+      border: 0;
+      box-shadow: none;
+      backdrop-filter: none;
+    }
+
+    #nd-formula-home .nd-hero-title-accent {
+      color: #5A4FD3;
+      text-shadow: 0 12px 38px rgba(90, 79, 211, .18);
+    }
+
+    #nd-formula-home .nd-hero-claim {
+      gap: 10px 18px;
+      color: rgba(52, 52, 58, .72);
+      font-size: 13px;
+      font-weight: 850;
+    }
+
+    #nd-formula-home .nd-hero-proof {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      max-width: 680px;
+      margin-top: 34px;
+      border: 0;
+    }
+
+    #nd-formula-home .nd-proof-tile {
+      min-height: 138px;
+      display: grid;
+      align-content: start;
+      gap: 9px;
+      padding: 18px;
+      border-radius: 24px;
+      border: 1px solid rgba(52, 52, 58, .1);
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, .86), rgba(255, 255, 255, .58));
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, .74);
+      backdrop-filter: blur(18px);
+      transition: transform .36s cubic-bezier(.2, .8, .2, 1), border-color .36s ease, box-shadow .36s ease;
+    }
+
+    #nd-formula-home .nd-proof-tile:hover {
+      transform: translateY(-4px);
+      border-color: rgba(90, 79, 211, .24);
+      box-shadow: 0 18px 44px rgba(52, 52, 58, .1), inset 0 1px 0 rgba(255, 255, 255, .8);
+    }
+
+    #nd-formula-home .nd-proof-tile:not(:last-child) {
+      margin: 0;
+      border-right: 1px solid rgba(52, 52, 58, .1);
+    }
+
+    #nd-formula-home .nd-proof-icon {
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      color: #4F45C9;
+      background: linear-gradient(145deg, rgba(236, 233, 255, .94), rgba(218, 248, 85, .28));
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, .8);
+    }
+
+    #nd-formula-home .nd-proof-icon svg {
+      width: 30px;
+      height: 30px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    #nd-formula-home .nd-proof-tile strong {
+      color: #34343A;
+      font-size: 16px;
+      font-weight: 900;
+    }
+
+    #nd-formula-home .nd-proof-tile > span:not(.nd-proof-icon) {
+      margin: 0;
+      color: rgba(52, 52, 58, .62);
+      font-size: 12.5px;
+      line-height: 1.38;
+      font-weight: 640;
+    }
+
+    #nd-formula-home .nd-hero-visual {
+      min-height: clamp(650px, 64vw, 850px);
+      isolation: isolate;
+      perspective: 1400px;
+    }
+
+    #nd-formula-home .nd-studio-plate {
+      inset: 7% -1% 5% -3%;
+      z-index: 0;
+      border-radius: 58px;
+      background:
+        radial-gradient(ellipse at 52% 50%, rgba(255, 255, 255, .98) 0 28%, rgba(255, 255, 255, .62) 48%, transparent 74%),
+        radial-gradient(ellipse at 70% 24%, rgba(218, 248, 85, .25), transparent 34%),
+        radial-gradient(ellipse at 22% 78%, rgba(126, 139, 91, .12), transparent 34%),
+        linear-gradient(145deg, rgba(255, 255, 255, .78), rgba(236, 233, 255, .52));
+      box-shadow:
+        0 70px 150px rgba(90, 79, 211, .16),
+        inset 0 1px 0 rgba(255, 255, 255, .86);
+      transform: translateY(calc(var(--nd-progress) * -16px));
+    }
+
+    #nd-formula-home .nd-studio-plate::after {
+      left: 16%;
+      right: 12%;
+      bottom: 9%;
+      height: 20%;
+      background: radial-gradient(ellipse, rgba(52, 52, 58, .2), rgba(52, 52, 58, 0) 68%);
+      filter: blur(16px);
+      opacity: .76;
+    }
+
+    #nd-formula-home .nd-hero-splash {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      overflow: hidden;
+      border-radius: 58px;
+    }
+
+    #nd-formula-home .nd-hero-splash span {
+      position: absolute;
+      display: block;
+      border-radius: 48% 52% 54% 46%;
+      filter: blur(7px);
+      opacity: .72;
+      transform: translate3d(0, calc(var(--nd-progress) * var(--move, -18px)), 0) rotate(var(--rot, 0deg));
+      animation: nd-splash-breathe 10s ease-in-out infinite alternate;
+      animation-delay: var(--delay, 0s);
+    }
+
+    #nd-formula-home .nd-hero-splash span:nth-child(1) {
+      --move: -24px;
+      --rot: -8deg;
+      --delay: -2s;
+      width: 62%;
+      height: 28%;
+      left: 11%;
+      top: 31%;
+      background: radial-gradient(ellipse at 50% 50%, rgba(217, 164, 65, .22), transparent 66%);
+    }
+
+    #nd-formula-home .nd-hero-splash span:nth-child(2) {
+      --move: 18px;
+      --rot: 10deg;
+      --delay: -5s;
+      width: 46%;
+      height: 28%;
+      right: 2%;
+      top: 18%;
+      background: radial-gradient(ellipse at 50% 50%, rgba(200, 184, 255, .28), transparent 68%);
+    }
+
+    #nd-formula-home .nd-hero-splash span:nth-child(3) {
+      --move: -12px;
+      --rot: 12deg;
+      --delay: -7s;
+      width: 38%;
+      height: 24%;
+      left: 4%;
+      bottom: 20%;
+      background: radial-gradient(ellipse at 50% 50%, rgba(218, 248, 85, .2), transparent 68%);
+    }
+
+    @keyframes nd-splash-breathe {
+      from { scale: .98; }
+      to { scale: 1.04; }
+    }
+
+    #nd-formula-home .nd-hero-botanical {
+      z-index: 2;
+      opacity: .2;
+      filter: saturate(.92) contrast(1.04) drop-shadow(0 18px 34px rgba(52, 52, 58, .1));
+      pointer-events: none;
+    }
+
+    #nd-formula-home .nd-hero-leaf {
+      left: -1%;
+      bottom: 8%;
+      width: min(25%, 230px);
+      transform: translate3d(calc(var(--nd-progress) * 32px), calc(var(--nd-progress) * -12px), 0) rotate(-9deg);
+    }
+
+    #nd-formula-home .nd-hero-lavender {
+      right: 2%;
+      top: 4%;
+      width: min(22%, 218px);
+      opacity: .16;
+      transform: translate3d(calc(var(--nd-progress) * -30px), calc(var(--nd-progress) * 18px), 0) rotate(10deg);
+    }
+
+    #nd-formula-home .nd-product-campaign {
+      z-index: 5;
+      width: min(100%, 850px);
+      height: clamp(610px, 60vw, 800px);
+      transform: translateY(calc(var(--nd-progress) * -20px));
+    }
+
+    #nd-formula-home .nd-product-campaign::before {
+      inset: 18% 8% 0 7%;
+      z-index: 0;
+      border-radius: 50%;
+      background: radial-gradient(ellipse, rgba(52, 52, 58, .16), transparent 66%);
+      filter: blur(20px);
+    }
+
+    #nd-formula-home .nd-liquid-streak {
+      z-index: 1;
+      left: 6%;
+      right: 5%;
+      top: 36%;
+      height: 150px;
+      opacity: .32;
+      filter: blur(28px);
+      transform: rotate(-5deg) translate3d(calc(var(--nd-progress) * -10px), 0, -20px);
+    }
+
+    #nd-formula-home .nd-product-group {
+      z-index: 6;
+      transform: translate3d(0, calc(var(--nd-progress) * -20px), 80px);
+    }
+
+    #nd-formula-home .nd-bottle {
+      filter: drop-shadow(0 34px 38px rgba(52, 52, 58, .22));
+      transition: transform .5s cubic-bezier(.2, .8, .2, 1), filter .5s ease;
+    }
+
+    #nd-formula-home .nd-bottle-1l {
+      left: 9%;
+      bottom: 4%;
+      width: 39%;
+      transform: rotate(0deg);
+    }
+
+    #nd-formula-home .nd-bottle-500 {
+      left: 39%;
+      bottom: 4%;
+      width: 33%;
+      transform: rotate(0deg) translateY(-4%);
+    }
+
+    #nd-formula-home .nd-bottle-250 {
+      right: 5%;
+      bottom: 4%;
+      width: 27%;
+      transform: rotate(0deg) translateY(3%);
+    }
+
+    #nd-formula-home .nd-hero-visual:hover .nd-bottle-500 {
+      transform: rotate(0deg) translateY(-6%);
+      filter: drop-shadow(0 42px 48px rgba(52, 52, 58, .24));
+    }
+
+    #nd-formula-home .nd-transition-band {
+      padding: clamp(76px, 8vw, 122px) 0;
+      background:
+        radial-gradient(ellipse at 88% 72%, rgba(126, 139, 91, .12), transparent 32%),
+        linear-gradient(180deg, #F5F5F7, #FFFFFF);
+    }
+
+    #nd-formula-home .nd-intro-grid {
+      grid-template-columns: minmax(0, .82fr) minmax(420px, 1fr);
+      gap: clamp(44px, 6vw, 88px);
+    }
+
+    #nd-formula-home .nd-intro-list p {
+      color: rgba(52, 52, 58, .76);
+      font-size: 17px;
+      font-weight: 670;
+    }
+
+    #nd-formula-home .nd-formula {
+      background:
+        radial-gradient(ellipse at 16% 14%, rgba(218, 248, 85, .16), transparent 34%),
+        radial-gradient(ellipse at 84% 30%, rgba(90, 79, 211, .15), transparent 38%),
+        linear-gradient(180deg, #FFFFFF 0%, #F6F5FB 48%, #FBFBF8 100%);
+      overflow: visible;
+    }
+
+    #nd-formula-home .nd-formula-scroll {
+      min-height: 420vh;
+    }
+
+    #nd-formula-home .nd-formula-stage {
+      min-height: 100svh;
+      padding: clamp(54px, 6vw, 90px) 0;
+    }
+
+    #nd-formula-home .nd-formula-layout {
+      grid-template-columns: minmax(360px, .76fr) minmax(640px, 1.24fr);
+      gap: clamp(54px, 6vw, 98px);
+      align-items: center;
+    }
+
+    #nd-formula-home .nd-step-panel {
+      align-self: center;
+      max-width: 520px;
+    }
+
+    #nd-formula-home .nd-step-copy {
+      margin-top: 34px;
+      border-top-color: rgba(52, 52, 58, .12);
+    }
+
+    #nd-formula-home .nd-step-copy article {
+      padding: 18px 0 18px 64px;
+      color: rgba(52, 52, 58, .43);
+      opacity: .5;
+    }
+
+    #nd-formula-home .nd-step-copy article::before {
+      color: rgba(90, 79, 211, .75);
+      font-weight: 900;
+      font-size: 12px;
+    }
+
+    #nd-formula-home .nd-step-copy article.is-active {
+      color: #34343A;
+      opacity: 1;
+      transform: translateX(12px);
+    }
+
+    #nd-formula-home .nd-step-copy h3 {
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    #nd-formula-home .nd-step-copy p {
+      color: rgba(52, 52, 58, .7);
+      font-size: 14.5px;
+      line-height: 1.48;
+      font-weight: 620;
+    }
+
+    #nd-formula-home .nd-formula-canvas {
+      height: min(82vh, 820px);
+      min-height: 610px;
+      border-radius: 54px;
+      background:
+        linear-gradient(90deg, rgba(52, 52, 58, .032) 1px, transparent 1px) 0 0 / 84px 84px,
+        linear-gradient(180deg, rgba(52, 52, 58, .028) 1px, transparent 1px) 0 0 / 84px 84px,
+        radial-gradient(ellipse at 50% 52%, rgba(255, 255, 255, .99) 0 26%, rgba(255, 255, 255, .72) 48%, transparent 72%),
+        radial-gradient(ellipse at 24% 24%, rgba(218, 248, 85, .22), transparent 36%),
+        radial-gradient(ellipse at 76% 22%, rgba(200, 184, 255, .25), transparent 40%),
+        linear-gradient(145deg, rgba(255, 255, 255, .88), rgba(236, 233, 255, .48));
+      box-shadow: 0 50px 130px rgba(52, 52, 58, .13), inset 0 1px 0 rgba(255, 255, 255, .9);
+      isolation: isolate;
+    }
+
+    #nd-formula-home .nd-formula-canvas::before {
+      inset: 13% 18% 18%;
+      z-index: 1;
+      border-radius: 48% 52% 54% 46%;
+      background:
+        radial-gradient(ellipse at 52% 48%, rgba(255, 255, 255, .92), rgba(255, 255, 255, .18) 62%, transparent 74%),
+        radial-gradient(ellipse at 50% 54%, rgba(218, 248, 85, .22), transparent 68%);
+      opacity: calc(.34 + var(--nd-progress) * .36);
+      transform: scale(calc(.86 + var(--nd-progress) * .24));
+      filter: blur(1px);
+    }
+
+    #nd-formula-home .nd-formula-canvas::after {
+      left: 34%;
+      right: 34%;
+      bottom: 7%;
+      z-index: 1;
+      height: 12%;
+      opacity: calc(.22 + var(--nd-progress) * .42);
+      filter: blur(18px);
+    }
+
+    #nd-formula-home .nd-cinema-field {
+      position: absolute;
+      inset: 8%;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    #nd-formula-home .nd-cinema-orbit {
+      position: absolute;
+      inset: var(--inset, 10%);
+      border-radius: 50%;
+      border: 1px solid rgba(90, 79, 211, .12);
+      opacity: calc(.18 + (1 - var(--nd-progress)) * .34);
+      transform: rotate(var(--rot, 0deg)) scale(calc(.96 + var(--nd-progress) * .08));
+      animation: nd-cinema-orbit 22s linear infinite;
+    }
+
+    #nd-formula-home .nd-orbit-a { --inset: 8%; --rot: -6deg; }
+    #nd-formula-home .nd-orbit-b { --inset: 18%; --rot: 18deg; animation-duration: 28s; animation-direction: reverse; border-color: rgba(217, 164, 65, .15); }
+    #nd-formula-home .nd-orbit-c { --inset: 27%; --rot: 40deg; animation-duration: 34s; border-color: rgba(126, 139, 91, .14); }
+
+    @keyframes nd-cinema-orbit {
+      to { rotate: 360deg; }
+    }
+
+    #nd-formula-home .nd-formula-botanical {
+      z-index: 3;
+      opacity: .13;
+      filter: saturate(.92) contrast(1.04) drop-shadow(0 18px 34px rgba(52, 52, 58, .08));
+    }
+
+    #nd-formula-home .nd-formula-olive {
+      width: min(34%, 250px);
+      left: 4%;
+      bottom: 10%;
+      opacity: .16;
+      transform: translate3d(calc(var(--nd-progress) * 56px), calc(var(--nd-progress) * -22px), 0) rotate(-12deg);
+    }
+
+    #nd-formula-home .nd-formula-lavender {
+      width: min(30%, 230px);
+      right: 4%;
+      top: 4%;
+      opacity: .14;
+      transform: translate3d(calc(var(--nd-progress) * -46px), calc(var(--nd-progress) * 20px), 0) rotate(10deg);
+    }
+
+    #nd-formula-home .nd-formula-leaf-accent {
+      width: min(24%, 180px);
+      left: 14%;
+      top: 8%;
+      opacity: .1;
+      transform: translate3d(calc(var(--nd-progress) * 30px), calc(var(--nd-progress) * 28px), 0) rotate(18deg);
+    }
+
+    #nd-formula-home .nd-ingredient-system {
+      position: absolute;
+      inset: 0;
+      z-index: 5;
+      pointer-events: none;
+    }
+
+    #nd-formula-home .nd-ing {
+      position: absolute;
+      left: var(--left);
+      top: var(--top);
+      display: grid;
+      justify-items: center;
+      gap: 10px;
+      color: var(--color, #5A4FD3);
+      opacity: clamp(0, calc(.96 - var(--nd-progress) * 1.2), .96);
+      transform:
+        translate3d(calc(var(--tx, 0px) * var(--nd-progress)), calc(var(--ty, 0px) * var(--nd-progress)), 0)
+        scale(calc(1 - var(--nd-progress) * .08));
+      transform-origin: center;
+      transition: opacity .2s linear;
+      will-change: transform, opacity;
+    }
+
+    #nd-formula-home .nd-ing svg {
+      width: var(--size, 82px);
+      height: var(--size, 82px);
+      padding: 14px;
+      border-radius: 28px;
+      fill: rgba(255, 255, 255, .64);
+      stroke: currentColor;
+      stroke-width: 3.1;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      background:
+        linear-gradient(145deg, rgba(255, 255, 255, .86), rgba(255, 255, 255, .48));
+      box-shadow:
+        0 18px 44px rgba(52, 52, 58, .1),
+        inset 0 1px 0 rgba(255, 255, 255, .84);
+      backdrop-filter: blur(16px);
+    }
+
+    #nd-formula-home .nd-ing em {
+      display: block;
+      padding: 8px 12px;
+      border-radius: 999px;
+      color: #34343A;
+      background: rgba(255, 255, 255, .78);
+      border: 1px solid rgba(52, 52, 58, .08);
+      font-size: 12px;
+      line-height: 1;
+      font-style: normal;
+      font-weight: 900;
+      white-space: nowrap;
+      box-shadow: 0 12px 30px rgba(52, 52, 58, .08);
+    }
+
+    #nd-formula-home .nd-ing-olive { --left: 8%; --top: 30%; --tx: 248px; --ty: 96px; --color: #7E8B5B; --size: 86px; }
+    #nd-formula-home .nd-ing-coco { --left: 20%; --top: 68%; --tx: 182px; --ty: -158px; --color: #D9A441; --size: 80px; }
+    #nd-formula-home .nd-ing-lavender { --left: 66%; --top: 13%; --tx: -172px; --ty: 184px; --color: #5A4FD3; --size: 84px; }
+    #nd-formula-home .nd-ing-water { --left: 43%; --top: 12%; --tx: -12px; --ty: 184px; --color: #726DC9; --size: 92px; }
+    #nd-formula-home .nd-ing-mineral { --left: 73%; --top: 62%; --tx: -220px; --ty: -98px; --color: #707070; --size: 78px; }
+    #nd-formula-home .nd-ing-vitamin { --left: 13%; --top: 54%; --tx: 286px; --ty: -48px; --color: #D9A441; --size: 78px; }
+
+    #nd-formula-home .nd-emulsion-reveal {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 6;
+      width: clamp(170px, 18vw, 250px);
+      aspect-ratio: 1;
+      transform: translate(-50%, -50%) scale(calc(.58 + var(--nd-progress) * .42));
+      opacity: clamp(.12, calc(var(--nd-progress) * 1.42), 1);
+      pointer-events: none;
+    }
+
+    #nd-formula-home .nd-emulsion-glow {
+      position: absolute;
+      inset: -26%;
+      border-radius: 50%;
+      background:
+        radial-gradient(circle, rgba(218, 248, 85, .26), transparent 54%),
+        radial-gradient(circle, rgba(90, 79, 211, .18), transparent 68%);
+      filter: blur(14px);
+      opacity: calc(.34 + var(--nd-progress) * .48);
+    }
+
+    #nd-formula-home .nd-emulsion-drop {
+      position: absolute;
+      inset: 16%;
+      border-radius: 60% 40% 58% 42% / 56% 50% 50% 44%;
+      background:
+        radial-gradient(circle at 34% 26%, rgba(255, 255, 255, .96) 0 8%, rgba(255, 255, 255, 0) 26%),
+        radial-gradient(circle at 60% 72%, rgba(90, 79, 211, .38), rgba(90, 79, 211, 0) 62%),
+        linear-gradient(145deg, rgba(236, 233, 255, .94), rgba(218, 248, 85, .18) 48%, rgba(217, 164, 65, .22));
+      border: 1px solid rgba(255, 255, 255, .68);
+      box-shadow:
+        0 26px 60px rgba(90, 79, 211, .16),
+        inset 0 1px 0 rgba(255, 255, 255, .74);
+      animation: nd-emulsion-morph 7s ease-in-out infinite alternate;
+    }
+
+    @keyframes nd-emulsion-morph {
+      from { border-radius: 62% 38% 56% 44% / 58% 48% 52% 42%; }
+      to { border-radius: 44% 56% 46% 54% / 48% 58% 42% 52%; }
+    }
+
+    #nd-formula-home .nd-splash-dot {
+      position: absolute;
+      display: block;
+      border-radius: 50%;
+      opacity: clamp(0, calc(var(--nd-progress) * 1.4), .9);
+      transform: scale(calc(.7 + var(--nd-progress) * .55));
+    }
+
+    #nd-formula-home .nd-splash-dot-a {
+      width: 10px;
+      height: 10px;
+      left: 8%;
+      top: 44%;
+      background: #D9A441;
+      box-shadow: 0 0 0 12px rgba(217, 164, 65, .08);
+    }
+
+    #nd-formula-home .nd-splash-dot-b {
+      width: 8px;
+      height: 8px;
+      right: 14%;
+      top: 32%;
+      background: #5A4FD3;
+      box-shadow: 0 0 0 10px rgba(90, 79, 211, .08);
+    }
+
+    #nd-formula-home .nd-splash-dot-c {
+      width: 9px;
+      height: 9px;
+      left: 32%;
+      bottom: 14%;
+      background: #DAF855;
+      box-shadow: 0 0 0 11px rgba(218, 248, 85, .12);
+    }
+
+    #nd-formula-home .nd-formula-lab {
+      position: absolute;
+      inset: 0;
+      z-index: 8;
+      pointer-events: none;
+    }
+
+    #nd-formula-home .nd-formula-product {
+      left: 50%;
+      right: auto;
+      bottom: 6%;
+      width: min(28%, 240px);
+      opacity: clamp(0, calc((var(--nd-progress) - .52) * 2.65), 1);
+      transform: translate3d(-50%, calc((1 - var(--nd-progress)) * 36px), 0) scale(calc(.9 + var(--nd-progress) * .1));
+      filter: drop-shadow(0 30px 36px rgba(52, 52, 58, .22));
+    }
+
+    #nd-formula-home .nd-product-stage,
+    #nd-formula-home .nd-use-board,
+    #nd-formula-home .nd-dossier,
+    #nd-formula-home .nd-trust-panel {
+      box-shadow: 0 34px 90px rgba(52, 52, 58, .09), inset 0 1px 0 rgba(255, 255, 255, .86);
+    }
+
+    #nd-formula-home .nd-specs li {
+      grid-template-columns: 52px 1fr;
+      gap: 16px;
+      padding: 18px 0;
+      color: rgba(52, 52, 58, .68);
+    }
+
+    #nd-formula-home .nd-spec-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 18px;
+      color: #4F45C9;
+      background: linear-gradient(145deg, rgba(236, 233, 255, .92), rgba(218, 248, 85, .24));
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, .84);
+    }
+
+    #nd-formula-home .nd-spec-icon svg,
+    #nd-formula-home .nd-benefit-icon svg {
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2.6;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    #nd-formula-home .nd-benefits {
+      background:
+        radial-gradient(ellipse at 22% 10%, rgba(218, 248, 85, .16), transparent 34%),
+        radial-gradient(ellipse at 80% 72%, rgba(90, 79, 211, .13), transparent 34%),
+        linear-gradient(180deg, #FFFFFF, #F6F5FB 68%, #FFFFFF);
+    }
+
+    #nd-formula-home .nd-benefit-card {
+      position: relative;
+      overflow: hidden;
+      border-color: rgba(52, 52, 58, .1);
+      background:
+        radial-gradient(ellipse at 92% 8%, rgba(218, 248, 85, .13), transparent 42%),
+        linear-gradient(180deg, rgba(255, 255, 255, .9), rgba(255, 255, 255, .62));
+      transition: transform .36s cubic-bezier(.2, .8, .2, 1), box-shadow .36s ease, border-color .36s ease;
+    }
+
+    #nd-formula-home .nd-benefit-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(90, 79, 211, .22);
+      box-shadow: 0 24px 58px rgba(52, 52, 58, .1), inset 0 1px 0 rgba(255, 255, 255, .82);
+    }
+
+    #nd-formula-home .nd-benefit-icon {
+      width: 56px;
+      height: 56px;
+      color: #5147CC;
+      background: linear-gradient(145deg, rgba(236, 233, 255, .92), rgba(218, 248, 85, .22));
+      border-radius: 20px;
+    }
+
+    #nd-formula-home .nd-benefit-icon svg {
+      width: 34px;
+      height: 34px;
+    }
+
+    #nd-formula-home .nd-use-board {
+      background:
+        radial-gradient(ellipse at 70% 42%, rgba(255, 255, 255, .96), rgba(255, 255, 255, 0) 54%),
+        radial-gradient(ellipse at 14% 12%, rgba(218, 248, 85, .2), transparent 36%),
+        radial-gradient(ellipse at 92% 22%, rgba(200, 184, 255, .24), transparent 42%),
+        linear-gradient(145deg, #FFFFFF, #F3F2FB);
+      border: 1px solid rgba(255, 255, 255, .76);
+    }
+
+    #nd-formula-home .nd-use-tags span,
+    #nd-formula-home .nd-no-list span {
+      min-height: 42px;
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .78);
+      border: 1px solid rgba(52, 52, 58, .1);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, .76);
+      color: rgba(52, 52, 58, .76);
+      font-weight: 760;
+    }
+
+    #nd-formula-home .nd-use-stage img {
+      filter: drop-shadow(0 34px 42px rgba(52, 52, 58, .22));
+      transform: translateY(calc(var(--nd-section-drift, 0px) * -.12));
+    }
+
+    #nd-formula-home .nd-ingredients {
+      background:
+        radial-gradient(ellipse at 78% 6%, rgba(218, 248, 85, .14), transparent 32%),
+        linear-gradient(180deg, #FFFFFF, #FAFAF7);
+    }
+
+    #nd-formula-home .nd-dossier {
+      border-radius: 34px;
+      background:
+        linear-gradient(90deg, rgba(52, 52, 58, .03) 1px, transparent 1px) 0 0 / 72px 72px,
+        linear-gradient(180deg, rgba(52, 52, 58, .025) 1px, transparent 1px) 0 0 / 72px 72px,
+        rgba(255, 255, 255, .86);
+      border: 1px solid rgba(52, 52, 58, .1);
+    }
+
+    #nd-formula-home .nd-ingredient-row {
+      border-radius: 22px;
+      background: rgba(255, 255, 255, .6);
+      border: 1px solid rgba(52, 52, 58, .07);
+      transition: transform .3s ease, background .3s ease, border-color .3s ease;
+    }
+
+    #nd-formula-home .nd-ingredient-row:hover {
+      transform: translateY(-3px);
+      background: rgba(255, 255, 255, .92);
+      border-color: rgba(90, 79, 211, .16);
+    }
+
+    #nd-formula-home .nd-formats {
+      background:
+        radial-gradient(ellipse at 14% 18%, rgba(200, 184, 255, .2), transparent 34%),
+        radial-gradient(ellipse at 84% 72%, rgba(218, 248, 85, .14), transparent 34%),
+        linear-gradient(180deg, #F7F7F3, #FFFFFF);
+    }
+
+    #nd-formula-home .nd-format-card {
+      background:
+        radial-gradient(ellipse at 50% 38%, rgba(255, 255, 255, .96), transparent 52%),
+        linear-gradient(180deg, rgba(255, 255, 255, .88), rgba(255, 255, 255, .56));
+      border-color: rgba(52, 52, 58, .1);
+      transition: transform .36s cubic-bezier(.2, .8, .2, 1), box-shadow .36s ease, border-color .36s ease;
+    }
+
+    #nd-formula-home .nd-format-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(90, 79, 211, .22);
+      box-shadow: 0 28px 68px rgba(52, 52, 58, .12), inset 0 1px 0 rgba(255, 255, 255, .82);
+    }
+
+    #nd-formula-home .nd-faq {
+      background:
+        radial-gradient(ellipse at 8% 24%, rgba(218, 248, 85, .14), transparent 30%),
+        radial-gradient(ellipse at 92% 10%, rgba(200, 184, 255, .18), transparent 34%),
+        linear-gradient(180deg, #FFFFFF, #F5F5F7);
+    }
+
+    #nd-formula-home .nd-faq-grid > .nd-reveal:first-child {
+      max-width: none;
+      display: grid;
+      grid-template-columns: minmax(0, .8fr) minmax(340px, .72fr);
+      gap: clamp(24px, 5vw, 72px);
+      align-items: end;
+      margin-bottom: 34px;
+    }
+
+    #nd-formula-home .nd-faq-grid > .nd-reveal:first-child .nd-lede {
+      margin: 0 0 8px;
+    }
+
+    #nd-formula-home .nd-accordion {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    #nd-formula-home .nd-accordion details {
+      min-height: 92px;
+      border: 1px solid rgba(52, 52, 58, .09);
+      background: rgba(255, 255, 255, .78);
+      backdrop-filter: blur(16px);
+      transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease;
+    }
+
+    #nd-formula-home .nd-accordion details:hover {
+      transform: translateY(-3px);
+      border-color: rgba(90, 79, 211, .18);
+      box-shadow: 0 16px 42px rgba(52, 52, 58, .08);
+    }
+
+    #nd-formula-home .nd-accordion summary {
+      font-size: 16px;
+      line-height: 1.25;
+      color: #34343A;
+    }
+
+    #nd-formula-home .nd-final {
+      padding: clamp(78px, 8vw, 122px) 0;
+      background:
+        radial-gradient(ellipse at 78% 48%, rgba(255, 255, 255, .96), transparent 48%),
+        radial-gradient(ellipse at 16% 12%, rgba(218, 248, 85, .15), transparent 34%),
+        radial-gradient(ellipse at 86% 8%, rgba(200, 184, 255, .2), transparent 36%),
+        linear-gradient(180deg, #F5F5F7, #FFFFFF);
+    }
+
+    #nd-formula-home .nd-final-grid {
+      grid-template-columns: minmax(0, .9fr) minmax(300px, .7fr);
+      align-items: center;
+      gap: clamp(34px, 6vw, 82px);
+    }
+
+    #nd-formula-home .nd-final-product {
+      min-height: clamp(360px, 45vw, 560px);
+      border-radius: 44px;
+      background:
+        radial-gradient(ellipse at 50% 46%, rgba(255, 255, 255, .94), transparent 58%),
+        linear-gradient(145deg, rgba(236, 233, 255, .56), rgba(255, 255, 255, .64));
+      border: 1px solid rgba(255, 255, 255, .7);
+    }
+
+    #nd-formula-home .nd-final-product img {
+      max-height: clamp(310px, 42vw, 540px);
+    }
+
+    @media (max-width: 1180px) {
+      #nd-formula-home .nd-hero {
+        min-height: auto;
+      }
+
+      #nd-formula-home .nd-hero-grid,
+      #nd-formula-home .nd-formula-layout {
+        grid-template-columns: 1fr;
+      }
+
+      #nd-formula-home .nd-hero-copy,
+      #nd-formula-home .nd-step-panel {
+        max-width: 760px;
+      }
+
+      #nd-formula-home .nd-hero-visual {
+        min-height: 640px;
+      }
+
+      #nd-formula-home .nd-formula-scroll {
+        min-height: auto;
+      }
+
+      #nd-formula-home .nd-formula-stage {
+        position: relative;
+        min-height: auto;
+      }
+
+      #nd-formula-home .nd-formula-canvas {
+        height: 660px;
+        min-height: 660px;
+      }
+
+      #nd-formula-home .nd-accordion {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 780px) {
+      #nd-formula-home .nd-shell {
+        padding: 0 18px;
+      }
+
+      #nd-formula-home .nd-section {
+        padding: 72px 0;
+      }
+
+      #nd-formula-home .nd-h1 {
+        font-size: clamp(48px, 15vw, 64px);
+        line-height: .9;
+      }
+
+      #nd-formula-home .nd-h2 {
+        font-size: clamp(38px, 11vw, 54px);
+        line-height: .96;
+      }
+
+      #nd-formula-home .nd-lede {
+        font-size: 16px;
+        line-height: 1.54;
+      }
+
+      #nd-formula-home .nd-eyebrow,
+      #nd-formula-home .nd-step-count {
+        font-size: 12px;
+      }
+
+      #nd-formula-home .nd-eyebrow::before,
+      #nd-formula-home .nd-step-count::before {
+        width: 34px;
+        height: 2px;
+      }
+
+      #nd-formula-home .nd-hero {
+        padding: 28px 0 70px;
+      }
+
+      #nd-formula-home .nd-hero-top {
+        gap: 18px;
+      }
+
+      #nd-formula-home .nd-hero-visual {
+        min-height: clamp(470px, 118vw, 560px);
+      }
+
+      #nd-formula-home .nd-studio-plate {
+        inset: 4% -10% 3%;
+        border-radius: 34px;
+      }
+
+      #nd-formula-home .nd-product-campaign {
+        height: clamp(430px, 108vw, 530px);
+      }
+
+      #nd-formula-home .nd-bottle-1l {
+        left: 7%;
+        width: 42%;
+      }
+
+      #nd-formula-home .nd-bottle-500 {
+        left: 39%;
+        width: 33%;
+      }
+
+      #nd-formula-home .nd-bottle-250 {
+        right: 3%;
+        width: 27%;
+      }
+
+      #nd-formula-home .nd-hero-proof {
+        grid-template-columns: 1fr;
+      }
+
+      #nd-formula-home .nd-proof-tile {
+        min-height: auto;
+        grid-template-columns: 46px 1fr;
+        align-items: center;
+        padding: 14px;
+      }
+
+      #nd-formula-home .nd-proof-tile > span:not(.nd-proof-icon) {
+        grid-column: 2;
+      }
+
+      #nd-formula-home .nd-intro-grid,
+      #nd-formula-home .nd-faq-grid > .nd-reveal:first-child {
+        grid-template-columns: 1fr;
+      }
+
+      #nd-formula-home .nd-formula-stage {
+        padding: 70px 0;
+      }
+
+      #nd-formula-home .nd-step-copy article {
+        padding-left: 44px;
+      }
+
+      #nd-formula-home .nd-formula-canvas {
+        height: 540px;
+        min-height: 540px;
+        border-radius: 34px;
+      }
+
+      #nd-formula-home .nd-ing svg {
+        --size: 64px;
+        padding: 11px;
+        border-radius: 22px;
+      }
+
+      #nd-formula-home .nd-ing em {
+        display: none;
+      }
+
+      #nd-formula-home .nd-ing-olive { --left: 6%; --top: 28%; --tx: 132px; --ty: 82px; }
+      #nd-formula-home .nd-ing-coco { --left: 14%; --top: 68%; --tx: 118px; --ty: -126px; }
+      #nd-formula-home .nd-ing-lavender { --left: 69%; --top: 16%; --tx: -112px; --ty: 138px; }
+      #nd-formula-home .nd-ing-water { --left: 42%; --top: 10%; --tx: -14px; --ty: 150px; }
+      #nd-formula-home .nd-ing-mineral { --left: 74%; --top: 64%; --tx: -142px; --ty: -102px; }
+      #nd-formula-home .nd-ing-vitamin { --left: 8%; --top: 52%; --tx: 154px; --ty: -40px; }
+
+      #nd-formula-home .nd-emulsion-reveal {
+        width: 170px;
+      }
+
+      #nd-formula-home .nd-formula-product {
+        width: 148px !important;
+        bottom: 38px;
+      }
+
+      #nd-formula-home .nd-accordion {
+        grid-template-columns: 1fr;
+      }
+
+      #nd-formula-home .nd-final-grid {
+        grid-template-columns: 1fr;
+      }
+
+      #nd-formula-home .nd-final-product {
+        order: -1;
+        min-height: 320px;
+      }
+    }
+
+    @media (max-width: 430px) {
+      #nd-formula-home .nd-hero-proof {
+        gap: 10px;
+      }
+
+      #nd-formula-home .nd-hero-actions {
+        align-items: stretch;
+      }
+
+      #nd-formula-home .nd-hero-actions .nd-btn {
+        width: 100%;
+      }
+
+      #nd-formula-home .nd-hero-visual {
+        min-height: 430px;
+      }
+
+      #nd-formula-home .nd-product-campaign {
+        height: 410px;
+      }
+
+      #nd-formula-home .nd-formula-canvas {
+        height: 500px;
+        min-height: 500px;
+      }
+    }
+
+    /* QA composition corrections */
+    #nd-formula-home .nd-step-panel .nd-h2 {
+      max-width: 520px;
+      font-size: clamp(44px, 4.4vw, 72px);
+      line-height: .96;
+    }
+
+    #nd-formula-home .nd-step-panel .nd-lede {
+      margin-top: 22px;
+      font-size: clamp(16px, 1.18vw, 19px);
+      line-height: 1.5;
+    }
+
+    #nd-formula-home .nd-step-copy {
+      margin-top: 24px;
+    }
+
+    #nd-formula-home .nd-step-copy article {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+
+    #nd-formula-home .nd-step-copy h3 {
+      font-size: 16px;
+    }
+
+    #nd-formula-home .nd-step-copy p {
+      margin-top: 6px;
+      font-size: 13px;
+      line-height: 1.38;
+    }
+
+    #nd-formula-home .nd-formula-stage {
+      min-height: 100vh;
+      padding: clamp(40px, 5vh, 58px) 0;
+    }
+
+    #nd-formula-home .nd-formula-layout {
+      align-items: center;
+    }
+
+    #nd-formula-home .nd-formula-canvas {
+      height: min(72vh, 720px);
+      min-height: 600px;
+    }
+
+    #nd-formula-home .nd-formula-product {
+      width: min(24%, 205px);
+    }
+
+    @media (min-width: 1181px) {
+      #nd-formula-home .nd-step-panel {
+        max-height: 86vh;
+      }
+    }
+
+    @media (max-width: 1180px) {
+      #nd-formula-home .nd-formula-stage {
+        padding: 76px 0;
+      }
+
+      #nd-formula-home .nd-formula-canvas {
+        height: 620px;
+        min-height: 620px;
+      }
+    }
+
+    @media (max-width: 780px) {
+      #nd-formula-home .nd-hero-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+
+      #nd-formula-home .nd-hero-copy {
+        order: 1;
+        padding: 18px 0 0;
+      }
+
+      #nd-formula-home .nd-hero-visual {
+        order: -1;
+        width: 100%;
+        margin: 8px 0 0;
+        min-height: clamp(330px, 58vw, 430px);
+      }
+
+      #nd-formula-home .nd-studio-plate {
+        inset: 2% 0 0;
+      }
+
+      #nd-formula-home .nd-product-campaign {
+        width: 100%;
+        height: clamp(315px, 56vw, 410px);
+      }
+
+      #nd-formula-home .nd-bottle-1l {
+        left: 7%;
+        bottom: 6%;
+        width: 39%;
+      }
+
+      #nd-formula-home .nd-bottle-500 {
+        left: 40%;
+        bottom: 6%;
+        width: 30%;
+      }
+
+      #nd-formula-home .nd-bottle-250 {
+        right: 6%;
+        bottom: 6%;
+        width: 24%;
+      }
+
+      #nd-formula-home .nd-hero-botanical {
+        opacity: .14;
+      }
+
+      #nd-formula-home .nd-step-panel .nd-h2 {
+        font-size: clamp(38px, 10.6vw, 52px);
+      }
+
+      #nd-formula-home .nd-step-copy p {
+        font-size: 13.5px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      #nd-formula-home .nd-leaf-rain i,
+      #nd-formula-home .nd-cinema-orbit,
+      #nd-formula-home .nd-emulsion-drop,
+      #nd-formula-home .nd-hero-splash span {
+        animation: none !important;
+      }
+    }
   </style>
 
   <div class="nd-root">
@@ -3393,6 +4801,9 @@
       <img class="nd-page-leaf nd-page-leaf-d" src="../Assets/nd-leaf-1.webp" width="520" height="560" alt="">
       <img class="nd-page-leaf nd-page-leaf-e" src="../Assets/nd-leaf-3.webp" width="620" height="461" alt="">
       <img class="nd-page-leaf nd-page-leaf-f" src="../Assets/nd-leaf-2.webp" width="760" height="627" alt="">
+    </div>
+    <div class="nd-leaf-rain" aria-hidden="true">
+      <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
     </div>
     <section class="nd-hero" aria-labelledby="nd-hero-title">
       <div class="nd-shell nd-hero-inner">
@@ -3421,14 +4832,15 @@
               <a class="nd-btn nd-btn-secondary" href="#nd-ingredientes">Ver ingredientes</a>
             </div>
             <div class="nd-hero-proof" aria-label="Datos principales">
-              <div class="nd-proof-tile"><strong>Sin nocivos</strong><span>Sin PEG, PPG, DEA, MEA, TEA, parabenos, ftalatos ni alcohol.</span></div>
-              <div class="nd-proof-tile"><strong>Todo tipo de piel</strong><span>Incluidas pieles sensibles y atópicas según la información de producto.</span></div>
-              <div class="nd-proof-tile"><strong>250 ml · 500 ml · 1 L</strong><span>Tres formatos para probar, uso diario o formato familiar.</span></div>
+              <div class="nd-proof-tile"><span class="nd-proof-icon"><svg viewBox="0 0 48 48"><path d="M14 15h20"/><path d="M12 24h24"/><path d="M16 33h16"/><path d="M24 5v38"/></svg></span><strong>Sin nocivos</strong><span>PEG, PPG, DEA, MEA, TEA, parabenos, ftalatos y alcohol fuera.</span></div>
+              <div class="nd-proof-tile"><span class="nd-proof-icon"><svg viewBox="0 0 48 48"><path d="M9 35c12-24 23-28 31-27-1 16-11 27-31 27Z"/><path d="M15 32c8-3 15-9 21-20"/></svg></span><strong>Piel sensible</strong><span>Para todo tipo de pieles, incluidas sensibles y atópicas.</span></div>
+              <div class="nd-proof-tile"><span class="nd-proof-icon"><svg viewBox="0 0 48 48"><path d="M13 39h22"/><path d="M17 39V12h14v27"/><path d="M19 12l2-5h6l2 5"/><path d="M19 22h10"/></svg></span><strong>250 · 500 · 1 L</strong><span>Prueba, rutina diaria y formato familiar.</span></div>
             </div>
           </div>
 
           <div class="nd-hero-visual nd-reveal" aria-label="Lavanda Flash en formatos 1 litro, 500 mililitros y 250 mililitros">
             <div class="nd-studio-plate" aria-hidden="true"></div>
+            <div class="nd-hero-splash" aria-hidden="true"><span></span><span></span><span></span></div>
             <img class="nd-hero-botanical nd-hero-leaf" src="../Assets/nd-leaf-3.webp" width="620" height="461" alt="" loading="eager" aria-hidden="true">
             <img class="nd-hero-botanical nd-hero-lavender" src="../Assets/nd-lavender-2.webp" width="520" height="444" alt="" loading="eager" aria-hidden="true">
             <div class="nd-product-campaign" data-nd-parallax>
@@ -3447,7 +4859,7 @@
     <section class="nd-transition-band" aria-labelledby="nd-intro-title">
       <div class="nd-shell nd-intro-grid">
         <div class="nd-intro-note nd-reveal">
-          <p class="nd-eyebrow">Lectura cosmética</p>
+          <p class="nd-eyebrow">Fórmula cotidiana</p>
           <h2 class="nd-h2" id="nd-intro-title">Una fórmula cotidiana con intención clara.</h2>
         </div>
         <div class="nd-intro-list nd-reveal">
@@ -3465,27 +4877,41 @@
           <div class="nd-shell nd-formula-layout">
             <div class="nd-step-panel nd-reveal">
               <p class="nd-step-count">Historia de fórmula</p>
-              <h2 class="nd-h2" id="nd-formula-title">Aceites botánicos en una fórmula suave.</h2>
-              <p class="nd-lede">Oliva BIO, coco, lavanda, agua y glicerina se integran en un jabón líquido de Castilla natural, vegano y listo para el cuidado diario.</p>
+              <h2 class="nd-h2" id="nd-formula-title">Los ingredientes se encuentran. Lavanda Flash aparece.</h2>
+              <p class="nd-lede">Oliva BIO, coco, lavanda, agua, glicerina, sales, vitamina E y girasol avanzan hacia una emulsión suave antes de revelar el jabón líquido de Castilla.</p>
               <div class="nd-step-copy" data-nd-steps>
-                <article class="is-active"><h3>Aceite de oliva BIO</h3><p>La base mediterránea de la fórmula: vegetal, limpia y naturalmente amable para el cuidado diario.</p></article>
-                <article><h3>Aceite de coco</h3><p>Aporta espuma suave y sensación emoliente, manteniendo la fórmula simple y versátil.</p></article>
-                <article><h3>Lavanda BIO</h3><p>Define el carácter aromático natural de Lavanda Flash sin perfumes sintéticos añadidos.</p></article>
-                <article><h3>Agua, glicerina y sales</h3><p>Construyen la textura líquida de la emulsión con sodium lactate para equilibrio y confort.</p></article>
-                <article><h3>Vitamina E y girasol</h3><p>Redondean el cuidado vegetal con vitamina E y aceite de girasol.</p></article>
+                <article class="is-active"><h3>Oliva BIO</h3><p>La base mediterránea entra primero: aceite vegetal, noble y naturalmente suave.</p></article>
+                <article><h3>Coco</h3><p>El aceite de coco aporta espuma amable y tacto emoliente.</p></article>
+                <article><h3>Lavanda</h3><p>El aceite esencial define el carácter aromático natural de Lavanda Flash.</p></article>
+                <article><h3>Agua y glicerina</h3><p>La textura se ordena: agua, glicerina, sal y sodium lactate construyen la emulsión.</p></article>
+                <article><h3>Fórmula completa</h3><p>Vitamina E y aceite de girasol cierran una mezcla vegetal lista para el cuidado diario.</p></article>
               </div>
               <div class="nd-progress-track" aria-hidden="true"><span></span></div>
             </div>
 
             <div class="nd-formula-canvas nd-reveal" aria-hidden="true">
-              <img class="nd-formula-botanical nd-formula-leaf-accent" src="../Assets/nd-leaf-1.webp" width="520" height="560" alt="" loading="lazy">
+              <div class="nd-cinema-field">
+                <span class="nd-cinema-orbit nd-orbit-a"></span>
+                <span class="nd-cinema-orbit nd-orbit-b"></span>
+                <span class="nd-cinema-orbit nd-orbit-c"></span>
+              </div>
               <img class="nd-formula-botanical nd-formula-olive" src="../Assets/nd-leaf-2.webp" width="380" height="420" alt="" loading="lazy">
               <img class="nd-formula-botanical nd-formula-lavender" src="../Assets/nd-lavender-1.webp" width="420" height="560" alt="" loading="lazy">
-              <div class="nd-formula-flow" aria-hidden="true">
-                <span class="nd-formula-flow-a"></span>
-                <span class="nd-formula-flow-b"></span>
-                <span class="nd-formula-flow-c"></span>
-                <span class="nd-formula-flow-d"></span>
+              <img class="nd-formula-botanical nd-formula-leaf-accent" src="../Assets/nd-leaf-1.webp" width="520" height="560" alt="" loading="lazy">
+              <div class="nd-ingredient-system" aria-hidden="true">
+                <span class="nd-ing nd-ing-olive"><svg viewBox="0 0 64 64"><path d="M12 44c15-30 31-36 43-35-2 22-17 36-43 35Z"/><path d="M20 39c12-4 23-13 31-26"/></svg><em>Oliva BIO</em></span>
+                <span class="nd-ing nd-ing-coco"><svg viewBox="0 0 64 64"><path d="M20 48c-9-9-7-25 5-32 13-7 30 1 33 16-11 0-20 6-24 17-5 1-10 1-14-1Z"/><path d="M36 20c-5 7-7 15-6 24"/></svg><em>Coco</em></span>
+                <span class="nd-ing nd-ing-lavender"><svg viewBox="0 0 64 64"><path d="M32 58V12"/><path d="M32 22c-12-1-18-5-18-12 11 0 17 4 18 12Z"/><path d="M32 34c13-1 19-5 19-12-12 0-18 4-19 12Z"/><path d="M32 46c-11-1-17-5-17-12 11 0 16 4 17 12Z"/></svg><em>Lavanda</em></span>
+                <span class="nd-ing nd-ing-water"><svg viewBox="0 0 64 64"><path d="M32 6C20 21 14 31 14 42a18 18 0 0 0 36 0C50 31 44 21 32 6Z"/><path d="M24 42c0 6 4 10 10 10"/></svg><em>Agua + glicerina</em></span>
+                <span class="nd-ing nd-ing-mineral"><svg viewBox="0 0 64 64"><path d="M18 22l14-8 14 8v18L32 50l-14-10Z"/><path d="M32 14v36"/><path d="M18 22l14 9 14-9"/></svg><em>Sales</em></span>
+                <span class="nd-ing nd-ing-vitamin"><svg viewBox="0 0 64 64"><path d="M20 42c-4-15 6-28 21-30 6 15-4 29-21 30Z"/><path d="M24 39c8-4 13-11 16-22"/><path d="M41 43l9 9"/></svg><em>Vitamina E</em></span>
+              </div>
+              <div class="nd-emulsion-reveal">
+                <span class="nd-emulsion-glow"></span>
+                <span class="nd-emulsion-drop"></span>
+                <span class="nd-splash-dot nd-splash-dot-a"></span>
+                <span class="nd-splash-dot nd-splash-dot-b"></span>
+                <span class="nd-splash-dot nd-splash-dot-c"></span>
               </div>
               <div class="nd-formula-lab">
                 <img class="nd-formula-product" src="../Assets/nd-product-main.png" width="420" height="1180" alt="" loading="lazy">
@@ -3502,14 +4928,14 @@
           <img src="../Assets/nd-product-main.png" width="420" height="1180" alt="Lavanda Flash Jabón líquido de Castilla BIO" loading="lazy">
         </div>
         <div class="nd-product-copy nd-reveal">
-          <p class="nd-eyebrow">Producto protagonista</p>
+          <p class="nd-eyebrow">Lavanda Flash</p>
           <h2 class="nd-h2" id="nd-product-title">Lavanda Flash.</h2>
           <p class="nd-lede">Jabón líquido de Castilla BIO elaborado con aceite de oliva BIO y aceite esencial de lavanda. Suave, versátil, natural, vegano y libre de ingredientes nocivos.</p>
           <ul class="nd-specs" aria-label="Especificaciones de Lavanda Flash">
-            <li><strong>BIO, Natural & Vegan</strong>Certificación ACENE confirmada en los assets reales.</li>
-            <li><strong>Base de oliva</strong>Aceite de oliva BIO como base mediterránea de la fórmula.</li>
-            <li><strong>Toda la familia</strong>Para todo tipo de pieles, incluidas pieles sensibles y atópicas.</li>
-            <li><strong>Multiuso</strong>Manos, cuerpo, rostro, afeitado y limpieza diluida del hogar.</li>
+            <li><span class="nd-spec-icon"><svg viewBox="0 0 48 48"><path d="M24 6l5 11 12 1-9 8 3 12-11-6-11 6 3-12-9-8 12-1Z"/></svg></span><strong>BIO, Natural & Vegan</strong>Certificación ACENE confirmada en los assets reales.</li>
+            <li><span class="nd-spec-icon"><svg viewBox="0 0 48 48"><path d="M8 35c13-25 24-30 34-29-1 20-14 31-34 29Z"/><path d="M15 32c9-3 17-11 24-22"/></svg></span><strong>Base de oliva</strong>Aceite de oliva BIO como base mediterránea de la fórmula.</li>
+            <li><span class="nd-spec-icon"><svg viewBox="0 0 48 48"><path d="M15 21a7 7 0 1 0 0-14 7 7 0 0 0 0 14Z"/><path d="M32 24a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z"/><path d="M4 42c1-9 5-14 12-14s11 5 12 14"/><path d="M26 42c1-7 5-11 10-11 4 0 7 3 8 11"/></svg></span><strong>Toda la familia</strong>Para todo tipo de pieles, incluidas pieles sensibles y atópicas.</li>
+            <li><span class="nd-spec-icon"><svg viewBox="0 0 48 48"><path d="M12 12h24v24H12Z"/><path d="M18 18h12v12H18Z"/><path d="M24 6v8M24 34v8M6 24h8M34 24h8"/></svg></span><strong>Multiuso</strong>Manos, cuerpo, rostro, afeitado y limpieza diluida del hogar.</li>
           </ul>
           <div class="nd-hero-actions">
             <a class="nd-btn nd-btn-primary" href="/products/jabon-lavanda-flash">Ver Lavanda Flash</a>
@@ -3522,9 +4948,9 @@
       <div class="nd-shell">
         <div class="nd-benefit-system">
           <div class="nd-benefit-hero nd-reveal">
-            <p class="nd-eyebrow">Confianza real</p>
-            <h2 class="nd-h2" id="nd-benefits-title">Natural, certificado y con lectura premium.</h2>
-            <p class="nd-lede">Lavanda Flash concentra claims claros, certificación real y una fórmula vegetal con presencia de marca: directa, limpia y preparada para uso diario.</p>
+            <p class="nd-eyebrow">Certificación ACENE</p>
+            <h2 class="nd-h2" id="nd-benefits-title">Cuidado natural con respaldo visible.</h2>
+            <p class="nd-lede">Lavanda Flash une certificación real, fórmula vegetal y origen familiar: una lectura clara para comprar con confianza.</p>
             <img class="nd-benefit-mark" src="../Assets/nd-acene-badge.webp" width="320" height="110" alt="ACENE BIO Natural Vegan" loading="lazy">
           </div>
           <div class="nd-benefit-grid">
@@ -3543,9 +4969,9 @@
       <div class="nd-shell">
         <div class="nd-use-board nd-reveal">
           <div class="nd-use-copy">
-            <p class="nd-eyebrow">Multiuso comercial</p>
-            <h2 class="nd-h2" id="nd-multiuse-title">Un jabón. Muchas rutinas diarias.</h2>
-            <p class="nd-lede">Manos, ducha, rostro, afeitado, familia, hogar diluido, ropa, vajilla, suelos y mascotas. Una base simple para limpiar mejor, con menos ruido.</p>
+            <p class="nd-eyebrow">Un jabón, muchos usos</p>
+            <h2 class="nd-h2" id="nd-multiuse-title">Del baño al hogar, sin cambiar de fórmula.</h2>
+            <p class="nd-lede">Manos, ducha, rostro, afeitado, familia, hogar diluido, ropa, vajilla, suelos y mascotas. Un básico diario con lectura cosmética y uso práctico.</p>
             <div class="nd-use-groups">
               <div class="nd-use-group"><h3>Cuidado personal</h3><div class="nd-use-tags"><span>Manos</span><span>Ducha</span><span>Rostro</span><span>Afeitado</span></div></div>
               <div class="nd-use-group"><h3>Familia</h3><div class="nd-use-tags"><span>Bebés y niños</span><span>Uso diario</span><span>Piel sensible</span></div></div>
@@ -3564,7 +4990,7 @@
       <div class="nd-shell">
         <div class="nd-section-head">
           <div class="nd-reveal">
-            <p class="nd-eyebrow">Ingredientes 100 % naturales</p>
+            <p class="nd-eyebrow">Transparencia total</p>
             <h2 class="nd-h2" id="nd-ingredients-title">Cada ingrediente tiene una función.</h2>
           </div>
           <p class="nd-copy nd-reveal">Un dossier transparente: aceites botánicos, base acuosa, emulsionantes de saponificación y componentes aromáticos presentes de forma natural.</p>
@@ -3654,7 +5080,7 @@
     <section class="nd-section nd-faq" aria-labelledby="nd-faq-title">
       <div class="nd-shell nd-faq-grid">
         <div class="nd-reveal">
-          <p class="nd-eyebrow">FAQ</p>
+          <p class="nd-eyebrow">Dudas habituales</p>
           <h2 class="nd-h2" id="nd-faq-title">Preguntas frecuentes.</h2>
           <p class="nd-lede">Respuestas claras para entender qué es Lavanda Flash, cómo se usa y qué contiene.</p>
         </div>
@@ -3744,6 +5170,7 @@
         var docHeight = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
         var pageProgress = clamp(window.scrollY / docHeight, 0, 1);
         root.style.setProperty('--nd-scroll', pageProgress.toFixed(4));
+        root.style.setProperty('--nd-scroll-fall', (((window.scrollY % 1400) / 1400) * 120 - 20).toFixed(2) + 'px');
         root.style.setProperty('--nd-section-drift', ((pageProgress - .5) * 34).toFixed(2) + 'px');
 
         if (formula) {
