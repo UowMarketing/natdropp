@@ -87,7 +87,7 @@ def main() -> None:
       <p>Introduce la contraseña para ver la landing completa.</p>
       <label>
         <span>Contraseña</span>
-        <input data-preview-gate-input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña del preview">
+        <input data-preview-gate-input type="password" autocomplete="off" autocapitalize="none" spellcheck="false" inputmode="text" placeholder="Contraseña" aria-label="Contraseña del preview">
       </label>
       <button type="submit">Entrar al preview</button>
       <p class="nd-preview-gate-error" data-preview-gate-error aria-live="polite"></p>
@@ -97,7 +97,7 @@ def main() -> None:
     gate_script = """
 <script>
 (function(){
-  var password = "natdrop4321";
+  var passwords = ["natdrop4321", "natdropp4321"];
   var key = "natdropp_preview_access_v1";
   var body = document.body;
   var gate = document.querySelector("[data-preview-gate]");
@@ -119,7 +119,8 @@ def main() -> None:
   if (!form) return;
   form.addEventListener("submit", function(event){
     event.preventDefault();
-    if (input && input.value === password) {
+    var value = input ? String(input.value || "").trim().toLowerCase() : "";
+    if (passwords.indexOf(value) !== -1) {
       unlock();
       return;
     }

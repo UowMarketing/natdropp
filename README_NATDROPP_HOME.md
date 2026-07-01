@@ -37,7 +37,7 @@ Incluye schema para configurar:
 
 - Preview local: `dist/natdropp-preview.html`
 - Preview deployable: `index.html`
-- Contrasena del preview: `natdrop4321`
+- Contrasena del preview: `natdrop4321` (tambien acepta `natdropp4321`)
 
 Se regenera con:
 
@@ -118,7 +118,7 @@ No se uso generacion nueva con OpenAI API. Se trabajo con producto real, pack re
 - Motion global confirmado: `nd-leaf-rain` con scroll y caida/giro.
 - Auditoria de assets botanicos visible: fondos/decorativos apuntan a `nd-single-leaf-*`, sin `nd-leaf-*` ni `nd-lavender-*` como background/src decorativo.
 - Formula sticky confirmado: `.nd-ingredient-system`, `.nd-emulsion-reveal` y producto final.
-- Preview gate confirmado con contrasena `natdrop4321`.
+- Preview gate confirmado con contrasena `natdrop4321` y alias `natdropp4321`.
 - Deploy Vercel verificado con Playwright en URL live.
 - Encoding UTF-8 verificado en live: acentos correctos y sin mojibake (`Jabón`, `España`, `fórmula`).
 - GitHub sincronizado en `main`.
