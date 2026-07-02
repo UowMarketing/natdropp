@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T19:50:09.032833+00:00",
+  "generated_at": "2026-07-02T00:02:08.544247+00:00",
   "source_root": "Assets",
   "assets": [
     {
@@ -173,10 +173,40 @@
       }
     },
     {
+      "file": "assets/nd-olive-photo.webp",
+      "source": "Assets/oliva.jpg",
+      "bytes": 23918,
+      "sha1": "992789d9d5",
+      "dimensions": {
+        "width": 709,
+        "height": 472
+      }
+    },
+    {
+      "file": "assets/nd-coconut-photo.webp",
+      "source": "Assets/ChatGPT Image 1 jul 2026, 10_02_20 a.m..png",
+      "bytes": 35574,
+      "sha1": "7f17b7da60",
+      "dimensions": {
+        "width": 760,
+        "height": 507
+      }
+    },
+    {
+      "file": "assets/nd-vitamin-photo.webp",
+      "source": "Assets/vit.jpg",
+      "bytes": 12388,
+      "sha1": "f88c07b8e2",
+      "dimensions": {
+        "width": 709,
+        "height": 472
+      }
+    },
+    {
       "file": "assets/nd-logo.svg",
       "source": "assets/nd-logo.svg",
-      "bytes": 4592,
-      "sha1": "1005e5be2d",
+      "bytes": 4602,
+      "sha1": "472c384875",
       "dimensions": null
     },
     {
