@@ -137,6 +137,8 @@ No se uso generacion nueva con OpenAI API. Se trabajo con producto real, pack re
 - `dist/qa-final/multiuse-1440.png`
 - `dist/qa-final/final-1440.png`
 - `dist/qa-live/live-hero-390.png`
+- `dist/qa-live/formula-390.png`
+- `dist/qa-live/formula-1440.png`
 
 ## Limitaciones conocidas
 
