@@ -83,9 +83,9 @@ No destruye originales: copia fuentes en `Assets/raw` y regenera derivados optim
 
 - Hero con pack recto, sin inclinaciones ni superposiciones sobre botellas.
 - Producto protagonista con composicion de estudio y fondo editorial.
-- Hojas globales semitransparentes con movimiento natural de scroll, giro y caida suave.
+- Hojas globales y acentos botanicos conservados como fondo estatico, sin caida, giro ni parallax.
 - Fondos y acentos botanicos visibles resueltos con hojas individuales `nd-single-leaf-*`; no se usan ramas ni clusters como fondo decorativo.
-- Historia de formula reconstruida con stage sticky mas corto, pasos legibles, fotos reales/recortadas de oliva, coco y vitamina E, sin dibujos superpuestos ni texto encima de imagenes.
+- Historia de formula reconstruida como bloque estatico legible, sin stage sticky ni scroll-story animado.
 - Chips de multiuso con iconos SVG y cards de Lavanda Flash con padding corregido.
 - FAQ compacta en tres columnas desktop, dos en tablet y una columna mobile.
 - CTA final reequilibrado con mas contenido de confianza y producto menos invasivo.
@@ -103,7 +103,7 @@ Tambien embebe como data URI el pack hero y las hojas sueltas generadas para que
 - Cambiar producto: editar `jabon-lavanda-flash` en el Custom Liquid o usar `product_handle` en la seccion formal.
 - Cambiar CTA principal: editar `nd_main_cta_label` o usar el setting de la seccion.
 - Cambiar CTA secundario: editar `nd_secondary_cta_label` o usar el setting de la seccion.
-- Desactivar motion: en Custom Liquid cambiar `data-nd-motion="true"` a `data-nd-motion="false"`; en seccion formal usar el checkbox.
+- Motion: el Custom Liquid queda por defecto en `data-nd-motion="false"` y la seccion formal tiene `enable_motion` desactivado por defecto.
 
 ## IA / generacion de assets
 
@@ -118,8 +118,8 @@ No se uso generacion nueva con OpenAI API en esta pasada. Se trabajo con product
 - Revision de overflow horizontal: `0`.
 - Revision de imagenes rotas: `0`.
 - Revision de errores de consola: `0`.
-- Motion global confirmado: `nd-leaf-rain` con scroll y caida/giro.
-- Formula sticky confirmada: scroll mas corto, progreso visible, pasos activos y producto final con ingredientes reales en escena.
+- Motion global desactivado por pedido: sin `nd-leaf-rain`, sin parallax, sin reveals animados.
+- Formula confirmada en modo estatico: no hay stage sticky ni progreso dependiente del scroll.
 - Preview gate confirmado con contrasena `natdrop4321` y alias `natdropp4321`.
 - Deploy Vercel verificado con HTTP y Playwright en URL live.
 - Live confirmado: `https://natdropp-preview.vercel.app` responde 200, contiene gate, logo violeta y formula actual.

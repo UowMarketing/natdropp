@@ -27,6 +27,9 @@ SECTION_ASSIGN = """{% liquid
   assign nd_leaf_2_url = 'nd-leaf-2.webp' | asset_url
   assign nd_leaf_3_url = 'nd-leaf-3.webp' | asset_url
   assign nd_acene_url = 'nd-acene-badge.webp' | asset_url
+  assign nd_olive_photo_url = 'nd-olive-photo.webp' | asset_url
+  assign nd_coconut_photo_url = 'nd-coconut-photo.webp' | asset_url
+  assign nd_vitamin_photo_url = 'nd-vitamin-photo.webp' | asset_url
   assign nd_single_leaf_1_url = 'nd-single-leaf-1.webp' | asset_url
   assign nd_single_leaf_2_url = 'nd-single-leaf-2.webp' | asset_url
   assign nd_single_leaf_3_url = 'nd-single-leaf-3.webp' | asset_url
@@ -68,7 +71,7 @@ SCHEMA = """
       "type": "checkbox",
       "id": "enable_motion",
       "label": "Activar motion",
-      "default": true
+      "default": false
     },
     {
       "type": "checkbox",
@@ -98,6 +101,7 @@ def main() -> None:
     content = content.lstrip("\ufeff")
     content = re.sub(r"(?s)\A(?:\{% assign .+? %\}\r?\n)+", SECTION_ASSIGN, content)
     content = content.replace('data-nd-motion="true"', 'data-nd-motion="{{ section.settings.enable_motion }}"')
+    content = content.replace('data-nd-motion="false"', 'data-nd-motion="{{ section.settings.enable_motion }}"')
     content = content.replace(
         '    <section class="nd-section nd-formula" id="nd-formula" data-nd-formula aria-labelledby="nd-formula-title">',
         '    {% if section.settings.show_ingredient_story %}\n    <section class="nd-section nd-formula" id="nd-formula" data-nd-formula aria-labelledby="nd-formula-title">',
