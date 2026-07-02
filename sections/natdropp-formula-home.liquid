@@ -8863,6 +8863,138 @@
       }
     }
 
+    #nd-formula-home .nd-hero-visual {
+      min-height: clamp(540px, 43vw, 680px) !important;
+      overflow: visible !important;
+    }
+
+    #nd-formula-home .nd-hero-pack {
+      width: min(104%, 760px) !important;
+      max-width: none !important;
+      transform: translate3d(-50%, 0, 0) scale(1.055) !important;
+      transform-origin: center bottom !important;
+      z-index: 3 !important;
+      filter: drop-shadow(0 36px 30px rgba(52,52,58,.16)) !important;
+    }
+
+    #nd-formula-home .nd-hero-botanic {
+      z-index: 0 !important;
+      opacity: .12 !important;
+      filter: saturate(.78) contrast(.9) blur(.25px) !important;
+      pointer-events: none !important;
+    }
+
+    #nd-formula-home .nd-hero-botanic-olive {
+      width: clamp(260px, 28vw, 430px) !important;
+      right: -18% !important;
+      top: 4% !important;
+      transform: rotate(-16deg) !important;
+      opacity: .105 !important;
+    }
+
+    #nd-formula-home .nd-hero-botanic-lavender {
+      width: clamp(220px, 22vw, 350px) !important;
+      left: -13% !important;
+      bottom: -16% !important;
+      transform: rotate(18deg) !important;
+      opacity: .09 !important;
+    }
+
+    #nd-formula-home .nd-formula-v3 .nd-formula-map {
+      min-height: 0;
+      padding: clamp(18px, 2.4vw, 30px) 0;
+    }
+
+    #nd-formula-home .nd-formula-route {
+      display: none !important;
+    }
+
+    #nd-formula-home .nd-formula-map::before {
+      inset: 4% 0;
+      opacity: .72;
+    }
+
+    #nd-formula-home .nd-formula-edge {
+      opacity: .055 !important;
+      filter: saturate(.72) contrast(.86) blur(.4px) !important;
+    }
+
+    #nd-formula-home .nd-formula-edge-olive {
+      left: -220px !important;
+      bottom: -180px !important;
+    }
+
+    #nd-formula-home .nd-formula-edge-lavender {
+      right: -185px !important;
+      top: -160px !important;
+    }
+
+    #nd-formula-home .nd-formula-rail {
+      gap: clamp(12px, 1.25vw, 16px) !important;
+    }
+
+    #nd-formula-home .nd-formula-rail article {
+      min-height: 112px !important;
+      padding: 16px 16px 15px !important;
+      border: 1px solid rgba(52,52,58,.105) !important;
+      border-radius: 20px !important;
+      background: rgba(255,255,255,.68) !important;
+      box-shadow: 0 18px 48px rgba(52,52,58,.055) !important;
+      backdrop-filter: blur(16px);
+    }
+
+    #nd-formula-home .nd-formula-rail article span {
+      align-self: start !important;
+      margin-top: 0 !important;
+      width: 32px !important;
+      height: 32px !important;
+      border-color: rgba(90,79,211,.22) !important;
+      box-shadow: 0 8px 18px rgba(90,79,211,.08) !important;
+    }
+
+    #nd-formula-home .nd-formula-rail h3 {
+      padding-top: 1px;
+    }
+
+    #nd-formula-home .nd-formula-result {
+      width: 100%;
+      padding: 18px 18px 0 !important;
+      margin-top: 16px !important;
+    }
+
+    @media (max-width: 990px) {
+      #nd-formula-home .nd-hero-visual {
+        min-height: clamp(430px, 62vw, 560px) !important;
+      }
+
+      #nd-formula-home .nd-hero-pack {
+        width: min(96vw, 560px) !important;
+        transform: translate3d(-50%, 0, 0) scale(1.03) !important;
+      }
+
+      #nd-formula-home .nd-hero-botanic {
+        opacity: .075 !important;
+      }
+    }
+
+    @media (max-width: 560px) {
+      #nd-formula-home .nd-hero-pack {
+        width: min(94vw, 440px) !important;
+        transform: translate3d(-50%, 0, 0) scale(1.02) !important;
+      }
+
+      #nd-formula-home .nd-formula-rail article {
+        grid-template-columns: 34px minmax(0, 1fr);
+        min-height: 0 !important;
+        padding: 14px 14px 13px !important;
+        border-radius: 18px !important;
+      }
+
+      #nd-formula-home .nd-formula-result {
+        padding-inline: 0 !important;
+      }
+    }
+
   </style>
 
   <div class="nd-root">
