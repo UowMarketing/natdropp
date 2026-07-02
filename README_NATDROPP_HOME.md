@@ -69,6 +69,9 @@ Assets principales usados:
 - `nd-single-leaf-4.webp`
 - `nd-acene-badge.webp`
 - `nd-pack-hero.webp`
+- `nd-olive-photo.webp`
+- `nd-coconut-photo.webp`
+- `nd-vitamin-photo.webp`
 
 El pipeline esta en:
 
@@ -82,7 +85,7 @@ No destruye originales: copia fuentes en `Assets/raw` y regenera derivados optim
 - Producto protagonista con composicion de estudio y fondo editorial.
 - Hojas globales semitransparentes con movimiento natural de scroll, giro y caida suave.
 - Fondos y acentos botanicos visibles resueltos con hojas individuales `nd-single-leaf-*`; no se usan ramas ni clusters como fondo decorativo.
-- Historia de formula reconstruida con stage sticky mas corto, pasos legibles, ingredientes vectoriales, emulsion central y revelado final del producto.
+- Historia de formula reconstruida con stage sticky mas corto, pasos legibles, fotos reales/recortadas de oliva, coco y vitamina E, sin dibujos superpuestos ni texto encima de imagenes.
 - Chips de multiuso con iconos SVG y cards de Lavanda Flash con padding corregido.
 - FAQ compacta en tres columnas desktop, dos en tablet y una columna mobile.
 - CTA final reequilibrado con mas contenido de confianza y producto menos invasivo.
@@ -104,7 +107,7 @@ Tambien embebe como data URI el pack hero y las hojas sueltas generadas para que
 
 ## IA / generacion de assets
 
-No se uso generacion nueva con OpenAI API. Se trabajo con producto real, pack real, ACENE real, olivo/lavanda existentes y assets procesados locales. Generaciones nuevas realizadas: `0`.
+No se uso generacion nueva con OpenAI API en esta pasada. Se trabajo con producto real, pack real, ACENE real, olivo/lavanda existentes y assets procesados locales, incluyendo imagenes ya presentes en el workspace. Generaciones nuevas realizadas: `0`.
 
 ## Pruebas realizadas
 
@@ -116,12 +119,12 @@ No se uso generacion nueva con OpenAI API. Se trabajo con producto real, pack re
 - Revision de imagenes rotas: `0`.
 - Revision de errores de consola: `0`.
 - Motion global confirmado: `nd-leaf-rain` con scroll y caida/giro.
-- Auditoria de assets botanicos visible: fondos/decorativos apuntan a `nd-single-leaf-*`, sin `nd-leaf-*` ni `nd-lavender-*` como background/src decorativo.
-- Formula sticky confirmado: `.nd-ingredient-system`, `.nd-emulsion-reveal` y producto final.
+- Formula sticky confirmada: scroll mas corto, progreso visible, pasos activos y producto final con ingredientes reales en escena.
 - Preview gate confirmado con contrasena `natdrop4321` y alias `natdropp4321`.
-- Deploy Vercel verificado con Playwright en URL live.
-- Encoding UTF-8 verificado en live: acentos correctos y sin mojibake (`Jabón`, `España`, `fórmula`).
-- GitHub sincronizado en `main`.
+- Deploy Vercel verificado con HTTP y Playwright en URL live.
+- Live confirmado: `https://natdropp-preview.vercel.app` responde 200, contiene gate, logo violeta y formula actual.
+- Contrasena live confirmada con Playwright: `natdrop4321`.
+- GitHub sincronizado en `main` con commit `993563b`.
 
 ## Capturas generadas
 
@@ -137,7 +140,8 @@ No se uso generacion nueva con OpenAI API. Se trabajo con producto real, pack re
 - `dist/qa-final/formula-1440.png`
 - `dist/qa-final/multiuse-1440.png`
 - `dist/qa-final/final-1440.png`
-- `dist/qa-live/live-hero-390.png`
+- `dist/qa-final/formula-mid-390.png`
+- `dist/qa-final/formula-mid-1440.png`
 
 ## Limitaciones conocidas
 
