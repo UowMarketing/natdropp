@@ -124,7 +124,7 @@ No se uso generacion nueva con OpenAI API en esta pasada. Se trabajo con product
 - Deploy Vercel verificado con HTTP y Playwright en URL live.
 - Live confirmado: `https://natdropp-preview.vercel.app` responde 200, contiene gate, logo violeta y formula actual.
 - Contrasena live confirmada con Playwright: `natdrop4321`.
-- GitHub sincronizado en `main` con commit `c426b6e`.
+- GitHub sincronizado en `main`.
 
 ## Capturas generadas
 
