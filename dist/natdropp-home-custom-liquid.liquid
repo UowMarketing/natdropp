@@ -8476,6 +8476,387 @@
         grid-row: 2;
       }
     }
+    #nd-formula-home .nd-formula-v3 {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(48px, 6vw, 82px) 0;
+      background:
+        radial-gradient(circle at 7% 18%, rgba(218,248,85,.13), transparent 30%),
+        radial-gradient(circle at 95% 12%, rgba(236,233,255,.56), transparent 34%),
+        linear-gradient(180deg, rgba(250,250,247,.98), rgba(245,245,247,.92));
+    }
+
+    #nd-formula-home .nd-formula-v3 .nd-formula-scroll {
+      height: auto !important;
+      min-height: 0 !important;
+      position: relative !important;
+    }
+
+    #nd-formula-home .nd-formula-v3 .nd-formula-stage {
+      position: relative !important;
+      top: auto !important;
+      display: block !important;
+      min-height: 0 !important;
+      padding: 0 !important;
+      overflow: visible !important;
+    }
+
+    #nd-formula-home .nd-formula-v3 .nd-formula-layout {
+      display: grid;
+      grid-template-columns: minmax(560px, 1.08fr) minmax(390px, .82fr) !important;
+      gap: clamp(42px, 6vw, 86px) !important;
+      align-items: center !important;
+    }
+
+    #nd-formula-home .nd-formula-map {
+      position: relative;
+      order: 1;
+      min-height: clamp(350px, 31vw, 440px);
+      padding: clamp(20px, 2.8vw, 34px) 0;
+      overflow: hidden;
+      isolation: isolate;
+      border-top: 1px solid rgba(52,52,58,.11);
+      border-bottom: 1px solid rgba(52,52,58,.11);
+    }
+
+    #nd-formula-home .nd-formula-map::before {
+      content: "";
+      position: absolute;
+      inset: 8% 0;
+      z-index: -2;
+      background:
+        linear-gradient(90deg, rgba(255,255,255,.78), rgba(255,255,255,.34) 48%, rgba(236,233,255,.28)),
+        repeating-linear-gradient(90deg, rgba(52,52,58,.045) 0 1px, transparent 1px 118px),
+        repeating-linear-gradient(0deg, rgba(52,52,58,.035) 0 1px, transparent 1px 94px);
+      mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+    }
+
+    #nd-formula-home .nd-formula-map::after {
+      content: "";
+      position: absolute;
+      inset: 18% 9%;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 35% 48%, rgba(218,248,85,.18), transparent 28%),
+        radial-gradient(circle at 72% 34%, rgba(200,184,255,.18), transparent 32%);
+      filter: blur(10px);
+    }
+
+    #nd-formula-home .nd-formula-edge {
+      position: absolute;
+      z-index: -1;
+      pointer-events: none;
+      object-fit: contain;
+      opacity: .13;
+      filter: saturate(.86) contrast(.92);
+    }
+
+    #nd-formula-home .nd-formula-edge-olive {
+      width: clamp(240px, 22vw, 360px);
+      height: auto;
+      left: -150px;
+      bottom: -120px;
+      transform: rotate(-9deg);
+    }
+
+    #nd-formula-home .nd-formula-edge-lavender {
+      width: clamp(210px, 18vw, 310px);
+      height: auto;
+      right: -120px;
+      top: -102px;
+      transform: rotate(16deg);
+      opacity: .105;
+    }
+
+    #nd-formula-home .nd-formula-route {
+      position: absolute;
+      left: 6%;
+      right: 8%;
+      top: 50%;
+      height: 1px;
+      z-index: 0;
+      background: linear-gradient(90deg, rgba(90,79,211,.2), rgba(218,248,85,.62), rgba(126,139,91,.18));
+      transform: translateY(-50%);
+    }
+
+    #nd-formula-home .nd-formula-route span {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      width: 9px;
+      height: 9px;
+      border-radius: 999px;
+      background: #DAF855;
+      box-shadow: 0 0 0 8px rgba(218,248,85,.16);
+      transform: translate(50%, -50%);
+    }
+
+    #nd-formula-home .nd-formula-rail {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: clamp(12px, 1.3vw, 18px) clamp(18px, 2.4vw, 34px);
+      margin: 0;
+      padding: 0;
+    }
+
+    #nd-formula-home .nd-formula-rail article {
+      position: relative;
+      display: grid;
+      grid-template-columns: 34px minmax(0, 1fr);
+      column-gap: 13px;
+      align-content: start;
+      min-height: 116px;
+      padding: 15px 0 16px;
+      border-top: 1px solid rgba(52,52,58,.14);
+      background: transparent !important;
+      box-shadow: none !important;
+      border-radius: 0 !important;
+      opacity: 1 !important;
+      transform: none !important;
+    }
+
+    #nd-formula-home .nd-formula-rail article::before {
+      content: none !important;
+    }
+
+    #nd-formula-home .nd-formula-rail article span {
+      grid-row: 1 / 3;
+      display: grid;
+      place-items: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.78);
+      border: 1px solid rgba(90,79,211,.18);
+      color: #5A4FD3;
+      font-size: 11px;
+      font-weight: 760;
+      line-height: 1;
+      box-shadow: 0 10px 24px rgba(52,52,58,.06);
+    }
+
+    #nd-formula-home .nd-formula-rail h3 {
+      margin: 1px 0 5px;
+      color: #34343A;
+      font-size: clamp(14px, 1.04vw, 16px);
+      line-height: 1.14;
+      font-weight: 760;
+      letter-spacing: 0;
+    }
+
+    #nd-formula-home .nd-formula-rail p {
+      margin: 0;
+      color: rgba(52,52,58,.68);
+      font-size: clamp(13px, .95vw, 15px);
+      line-height: 1.38;
+      font-weight: 560;
+    }
+
+    #nd-formula-home .nd-formula-result {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      gap: 18px;
+      width: min(100%, 760px);
+      margin-top: clamp(18px, 2.2vw, 28px);
+      padding: 18px 0 0;
+      border-top: 1px solid rgba(52,52,58,.14);
+    }
+
+    #nd-formula-home .nd-formula-result span {
+      color: #5A4FD3;
+      font-size: 12px;
+      line-height: 1;
+      font-weight: 820;
+      letter-spacing: 0;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    #nd-formula-home .nd-formula-result strong {
+      color: #34343A;
+      font-size: clamp(18px, 1.55vw, 25px);
+      line-height: 1.1;
+      font-weight: 760;
+      letter-spacing: -.015em;
+    }
+
+    #nd-formula-home .nd-formula-copy {
+      order: 2;
+      max-width: 560px !important;
+      padding-top: 0 !important;
+    }
+
+    #nd-formula-home .nd-formula-copy .nd-h2 {
+      max-width: 560px !important;
+      color: #34343A;
+      font-size: clamp(38px, 4.15vw, 62px) !important;
+      line-height: .94 !important;
+      letter-spacing: -.045em;
+    }
+
+    #nd-formula-home .nd-formula-copy .nd-lede {
+      max-width: 560px !important;
+      margin-top: 20px;
+      color: rgba(52,52,58,.74);
+      font-size: clamp(16px, 1.23vw, 20px) !important;
+      line-height: 1.55 !important;
+      font-weight: 620;
+    }
+
+    #nd-formula-home .nd-formula-highlights {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+      margin-top: clamp(22px, 2.2vw, 32px);
+      border-top: 1px solid rgba(52,52,58,.14);
+    }
+
+    #nd-formula-home .nd-formula-highlights span {
+      display: grid;
+      grid-template-columns: minmax(120px, .36fr) 1fr;
+      gap: 18px;
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(52,52,58,.11);
+      color: rgba(52,52,58,.7);
+      font-size: 14px;
+      line-height: 1.38;
+      font-weight: 560;
+    }
+
+    #nd-formula-home .nd-formula-highlights b {
+      color: #34343A;
+      font-weight: 780;
+    }
+
+    #nd-formula-home .nd-leaf-rain {
+      position: fixed !important;
+      inset: -18vh 0 0 !important;
+      z-index: 0 !important;
+      pointer-events: none !important;
+      overflow: hidden !important;
+      opacity: 1 !important;
+      mix-blend-mode: multiply;
+    }
+
+    #nd-formula-home .nd-leaf-rain i {
+      position: absolute !important;
+      display: block !important;
+      width: var(--w) !important;
+      height: var(--h) !important;
+      left: var(--x) !important;
+      top: var(--y) !important;
+      background-image: var(--leaf-url) !important;
+      background-repeat: no-repeat !important;
+      background-size: contain !important;
+      background-position: center !important;
+      border-radius: 0 !important;
+      background-color: transparent !important;
+      opacity: 0;
+      transform-origin: 50% 50%;
+      filter: saturate(.8) contrast(.95) blur(.15px);
+      animation: nd-leaf-sidefall var(--d) linear infinite !important;
+      animation-delay: var(--delay) !important;
+    }
+
+    #nd-formula-home .nd-leaf-rain i::after {
+      display: none !important;
+    }
+
+    #nd-formula-home .nd-leaf-rain i:nth-child(1) { --leaf-url: url("{{ nd_single_leaf_1_url }}"); --x: 2%; --y: -10%; --w: 76px; --h: 48px; --o: .10; --r: 14deg; --d: 24s; --delay: -6s; --wind: 26px; }
+    #nd-formula-home .nd-leaf-rain i:nth-child(2) { --leaf-url: url("{{ nd_single_leaf_2_url }}"); --x: 96%; --y: -22%; --w: 46px; --h: 78px; --o: .085; --r: -18deg; --d: 29s; --delay: -18s; --wind: -34px; }
+    #nd-formula-home .nd-leaf-rain i:nth-child(3) { --leaf-url: url("{{ nd_single_leaf_3_url }}"); --x: 7%; --y: 12%; --w: 86px; --h: 45px; --o: .075; --r: 42deg; --d: 31s; --delay: -22s; --wind: 42px; }
+    #nd-formula-home .nd-leaf-rain i:nth-child(4) { --leaf-url: url("{{ nd_single_leaf_4_url }}"); --x: 91%; --y: 5%; --w: 66px; --h: 66px; --o: .08; --r: 22deg; --d: 27s; --delay: -10s; --wind: -46px; }
+    #nd-formula-home .nd-leaf-rain i:nth-child(5) { --leaf-url: url("{{ nd_single_leaf_1_url }}"); --x: -2%; --y: 34%; --w: 70px; --h: 44px; --o: .07; --r: -12deg; --d: 34s; --delay: -27s; --wind: 52px; }
+    #nd-formula-home .nd-leaf-rain i:nth-child(6) { --leaf-url: url("{{ nd_single_leaf_2_url }}"); --x: 99%; --y: 40%; --w: 40px; --h: 70px; --o: .07; --r: -38deg; --d: 36s; --delay: -31s; --wind: -58px; }
+    #nd-formula-home .nd-leaf-rain i:nth-child(n+7) { display: none !important; }
+
+    @keyframes nd-leaf-sidefall {
+      0% { opacity: 0; transform: translate3d(0, -14vh, 0) rotate(var(--r)); }
+      12% { opacity: var(--o); }
+      88% { opacity: var(--o); }
+      100% { opacity: 0; transform: translate3d(var(--wind), 122vh, 0) rotate(calc(var(--r) + 410deg)); }
+    }
+
+    @media (max-width: 990px) {
+      #nd-formula-home .nd-formula-v3 {
+        padding: 52px 0 58px;
+      }
+
+      #nd-formula-home .nd-formula-v3 .nd-formula-layout {
+        grid-template-columns: 1fr !important;
+        gap: 28px !important;
+      }
+
+      #nd-formula-home .nd-formula-copy {
+        order: 1;
+        max-width: none !important;
+      }
+
+      #nd-formula-home .nd-formula-map {
+        order: 2;
+        min-height: 0;
+        padding: 18px 0 20px;
+      }
+
+      #nd-formula-home .nd-formula-rail {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px 18px;
+      }
+
+      #nd-formula-home .nd-formula-rail article {
+        min-height: 100px;
+      }
+
+      #nd-formula-home .nd-formula-route {
+        display: none;
+      }
+
+      #nd-formula-home .nd-formula-copy .nd-h2 {
+        font-size: clamp(34px, 7vw, 48px) !important;
+      }
+    }
+
+    @media (max-width: 560px) {
+      #nd-formula-home .nd-formula-v3 {
+        padding: 44px 0 48px;
+      }
+
+      #nd-formula-home .nd-formula-rail {
+        grid-template-columns: 1fr;
+      }
+
+      #nd-formula-home .nd-formula-rail article {
+        min-height: 0;
+        padding: 14px 0;
+      }
+
+      #nd-formula-home .nd-formula-result {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      #nd-formula-home .nd-formula-highlights span {
+        grid-template-columns: 1fr;
+        gap: 4px;
+      }
+
+      #nd-formula-home .nd-formula-edge {
+        opacity: .08;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      #nd-formula-home .nd-leaf-rain i {
+        animation: none !important;
+        opacity: .055 !important;
+      }
+    }
+
   </style>
 
   <div class="nd-root">
@@ -8555,43 +8936,60 @@
       </div>
     </section>
 
-    <section class="nd-section nd-formula" id="nd-formula" data-nd-formula aria-labelledby="nd-formula-title">
+    <section class="nd-section nd-formula nd-formula-v3" id="nd-formula" data-nd-formula aria-labelledby="nd-formula-title">
       <div class="nd-formula-scroll">
         <div class="nd-formula-stage">
           <div class="nd-shell nd-formula-layout">
-            <div class="nd-step-panel nd-reveal">
-              <p class="nd-step-count">Historia de fórmula</p>
-              <h2 class="nd-h2" id="nd-formula-title">De aceites BIO a una emulsión suave.</h2>
-              <p class="nd-lede">Oliva, coco, lavanda, agua, glicerina, sales, vitamina E y girasol se ordenan en una fórmula vegetal para el cuidado diario.</p>
-              <div class="nd-step-copy" data-nd-steps>
-                <article class="is-active"><h3>Oliva BIO</h3><p>La base mediterránea entra primero: aceite vegetal, noble y naturalmente suave.</p></article>
-                <article><h3>Coco</h3><p>El aceite de coco aporta espuma amable y tacto emoliente.</p></article>
-                <article><h3>Lavanda</h3><p>El aceite esencial define el carácter aromático natural de Lavanda Flash.</p></article>
-                <article><h3>Agua y glicerina</h3><p>La textura se ordena: agua, glicerina, sal y sodium lactate construyen la emulsión.</p></article>
-                <article><h3>Fórmula completa</h3><p>Vitamina E y aceite de girasol cierran una mezcla vegetal lista para el cuidado diario.</p></article>
+            <div class="nd-formula-map nd-reveal" aria-label="Secuencia de ingredientes principales">
+              <img class="nd-formula-edge nd-formula-edge-olive" src="{{ nd_leaf_2_url }}" width="760" height="627" alt="" loading="lazy" aria-hidden="true">
+              <img class="nd-formula-edge nd-formula-edge-lavender" src="{{ nd_lavender_2_url }}" width="520" height="444" alt="" loading="lazy" aria-hidden="true">
+              <div class="nd-formula-route" aria-hidden="true"><span></span></div>
+              <div class="nd-formula-rail" data-nd-steps>
+                <article class="is-active">
+                  <span>01</span>
+                  <h3>Aceite de oliva BIO</h3>
+                  <p>Base mediterránea vegetal.</p>
+                </article>
+                <article>
+                  <span>02</span>
+                  <h3>Aceite de coco</h3>
+                  <p>Espuma suave y tacto emoliente.</p>
+                </article>
+                <article>
+                  <span>03</span>
+                  <h3>Lavanda BIO</h3>
+                  <p>Aroma natural del aceite esencial.</p>
+                </article>
+                <article>
+                  <span>04</span>
+                  <h3>Agua y glicerina</h3>
+                  <p>Textura líquida de la emulsión.</p>
+                </article>
+                <article>
+                  <span>05</span>
+                  <h3>Sales y sodium lactate</h3>
+                  <p>Equilibrio y confort de uso.</p>
+                </article>
+                <article>
+                  <span>06</span>
+                  <h3>Vitamina E y girasol</h3>
+                  <p>Cierre vegetal de la fórmula.</p>
+                </article>
               </div>
-              <div class="nd-progress-track" aria-hidden="true"><span></span></div>
+              <div class="nd-formula-result">
+                <span>Lavanda Flash</span>
+                <strong>Jabón líquido de Castilla BIO: suave, natural y multiuso.</strong>
+              </div>
             </div>
 
-            <div class="nd-formula-canvas nd-reveal" aria-hidden="true">
-              <div class="nd-formula-studio"></div>
-              <img class="nd-formula-asset nd-formula-asset-olive" src="{{ nd_leaf_2_url }}" width="760" height="627" alt="" loading="lazy">
-              <img class="nd-formula-asset nd-formula-asset-lavender" src="{{ nd_lavender_2_url }}" width="520" height="444" alt="" loading="lazy">
-              <img class="nd-formula-asset nd-formula-asset-leaf-a" src="{{ nd_single_leaf_1_url }}" width="180" height="120" alt="" loading="lazy">
-              <img class="nd-formula-asset nd-formula-asset-leaf-b" src="{{ nd_single_leaf_4_url }}" width="120" height="120" alt="" loading="lazy">
-              <div class="nd-formula-synthesis">
-                <div class="nd-formula-core">
-                  <span>Fórmula vegetal</span>
-                  <strong>Lavanda Flash</strong>
-                </div>
-                <div class="nd-formula-flow">
-                  <span><b>Oliva BIO</b><em>Base mediterránea</em></span>
-                  <span><b>Coco</b><em>Espuma suave</em></span>
-                  <span><b>Lavanda</b><em>Aroma natural</em></span>
-                  <span><b>Agua + glicerina</b><em>Textura líquida</em></span>
-                  <span><b>Sales</b><em>Equilibrio</em></span>
-                  <span><b>Vitamina E + girasol</b><em>Cierre vegetal</em></span>
-                </div>
+            <div class="nd-step-panel nd-formula-copy nd-reveal">
+              <p class="nd-step-count">Historia de fórmula</p>
+              <h2 class="nd-h2" id="nd-formula-title">Fórmula BIO, suave y transparente.</h2>
+              <p class="nd-lede">Aceite de oliva BIO, coco y lavanda se combinan con agua, glicerina, sal, sodium lactate, vitamina E y girasol para crear un jabón líquido de Castilla natural, vegano y pensado para el uso diario.</p>
+              <div class="nd-formula-highlights" aria-label="Resumen de fórmula">
+                <span><b>Base BIO</b>Aceites botánicos como punto de partida.</span>
+                <span><b>Textura suave</b>Agua, glicerina y sales en equilibrio.</span>
+                <span><b>Aroma natural</b>Lavanda sin perfume sintético añadido.</span>
               </div>
             </div>
           </div>

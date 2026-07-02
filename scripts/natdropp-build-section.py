@@ -99,8 +99,8 @@ def main() -> None:
     content = content.replace('data-nd-motion="true"', 'data-nd-motion="{{ section.settings.enable_motion }}"')
     content = content.replace('data-nd-motion="false"', 'data-nd-motion="{{ section.settings.enable_motion }}"')
     content = content.replace(
-        '    <section class="nd-section nd-formula" id="nd-formula" data-nd-formula aria-labelledby="nd-formula-title">',
-        '    {% if section.settings.show_ingredient_story %}\n    <section class="nd-section nd-formula" id="nd-formula" data-nd-formula aria-labelledby="nd-formula-title">',
+        '    <section class="nd-section nd-formula nd-formula-v3" id="nd-formula" data-nd-formula aria-labelledby="nd-formula-title">',
+        '    {% if section.settings.show_ingredient_story %}\n    <section class="nd-section nd-formula nd-formula-v3" id="nd-formula" data-nd-formula aria-labelledby="nd-formula-title">',
     )
     content = content.replace(
         '    <section class="nd-section nd-reveal-product" aria-labelledby="nd-product-title">',
