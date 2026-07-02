@@ -16,7 +16,6 @@ SECTION_ASSIGN = """{% liquid
   assign nd_main_cta_label = section.settings.main_cta_label | default: 'Descubrir Lavanda Flash'
   assign nd_secondary_cta_label = section.settings.secondary_cta_label | default: 'Ver ingredientes'
   assign nd_logo_url = 'nd-logo.svg' | asset_url
-  assign nd_product_main_url = 'nd-product-main.png' | asset_url
   assign nd_product_250_url = 'nd-product-250.webp' | asset_url
   assign nd_product_500_url = 'nd-product-500.webp' | asset_url
   assign nd_product_1l_url = 'nd-product-1l.webp' | asset_url
@@ -27,9 +26,6 @@ SECTION_ASSIGN = """{% liquid
   assign nd_leaf_2_url = 'nd-leaf-2.webp' | asset_url
   assign nd_leaf_3_url = 'nd-leaf-3.webp' | asset_url
   assign nd_acene_url = 'nd-acene-badge.webp' | asset_url
-  assign nd_olive_photo_url = 'nd-olive-photo.webp' | asset_url
-  assign nd_coconut_photo_url = 'nd-coconut-photo.webp' | asset_url
-  assign nd_vitamin_photo_url = 'nd-vitamin-photo.webp' | asset_url
   assign nd_single_leaf_1_url = 'nd-single-leaf-1.webp' | asset_url
   assign nd_single_leaf_2_url = 'nd-single-leaf-2.webp' | asset_url
   assign nd_single_leaf_3_url = 'nd-single-leaf-3.webp' | asset_url
@@ -71,7 +67,7 @@ SCHEMA = """
       "type": "checkbox",
       "id": "enable_motion",
       "label": "Activar motion",
-      "default": false
+      "default": true
     },
     {
       "type": "checkbox",

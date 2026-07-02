@@ -202,6 +202,7 @@ def save_pack_hero(product_1l: Path, product_500: Path, product_250: Path) -> li
     paste_product(canvas, product_1l, 820, 502, 920, 1.15)
     paste_product(canvas, product_500, 760, 780, 920, 1.03)
     paste_product(canvas, product_250, 642, 1007, 920, .92)
+    canvas = trim_alpha(canvas, padding=32)
 
     png = OUT / "nd-pack-hero.png"
     webp = OUT / "nd-pack-hero.webp"
@@ -216,6 +217,16 @@ def preserve_svg(name: str) -> dict | None:
         return None
     copy_raw(target)
     return asset_record(target, target)
+
+
+def recolor_logo_svg() -> None:
+    target = OUT / "nd-logo.svg"
+    if not target.exists():
+        return
+    text = target.read_text(encoding="utf-8")
+    text = text.replace("#DAF855", "#5A4FD3")
+    text = text.replace("#daf855", "#5A4FD3")
+    target.write_text(text, encoding="utf-8")
 
 
 def write_svg(name: str, content: str) -> dict:
@@ -254,6 +265,9 @@ def main() -> None:
     lavender_2 = first_existing([SOURCE_ROOT / "lavanda 2.png", SOURCE_ROOT / "lavanda 3.png"])
     leaf = first_existing([SOURCE_ROOT / "591591-pixels-hojas-de-arbol-11563585679lindrkulsp-Photoroom.png"])
     acene = first_existing([SOURCE_ROOT / "logo-acene-certificacion-web.png", SOURCE_ROOT / "cert.png"])
+    olive_photo = first_existing([SOURCE_ROOT / "oliva.jpg"])
+    coconut_photo = first_existing([SOURCE_ROOT / "ChatGPT Image 1 jul 2026, 10_02_20 a.m..png"])
+    vitamin_photo = first_existing([SOURCE_ROOT / "vit.jpg"])
 
     if product_main:
         generated.append(save_webp(product_main, "nd-product-main.webp", 1320, 86, True))
@@ -277,7 +291,14 @@ def main() -> None:
         generated.extend(save_single_leaf_webps(leaf))
     if acene:
         generated.append(save_webp(acene, "nd-acene-badge.webp", 480, 86, True))
+    if olive_photo:
+        generated.append(save_webp(olive_photo, "nd-olive-photo.webp", 760, 80, False))
+    if coconut_photo:
+        generated.append(save_webp(coconut_photo, "nd-coconut-photo.webp", 760, 78, False))
+    if vitamin_photo:
+        generated.append(save_webp(vitamin_photo, "nd-vitamin-photo.webp", 760, 80, False))
 
+    recolor_logo_svg()
     generated.extend(item for item in [preserve_svg("nd-logo.svg"), preserve_svg("nd-favicon.svg")] if item)
 
     generated.append(write_svg("nd-liquid-ribbon.svg", """

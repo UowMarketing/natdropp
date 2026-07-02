@@ -37,7 +37,7 @@ Incluye schema para configurar:
 
 - Preview local: `dist/natdropp-preview.html`
 - Preview deployable: `index.html`
-- Contrasena del preview: `natdrop4321` (tambien acepta `natdropp4321`)
+- Contrasena del preview: `natdrop4321`
 
 Se regenera con:
 
@@ -69,9 +69,6 @@ Assets principales usados:
 - `nd-single-leaf-4.webp`
 - `nd-acene-badge.webp`
 - `nd-pack-hero.webp`
-- `nd-olive-photo.webp`
-- `nd-coconut-photo.webp`
-- `nd-vitamin-photo.webp`
 
 El pipeline esta en:
 
@@ -81,14 +78,13 @@ No destruye originales: copia fuentes en `Assets/raw` y regenera derivados optim
 
 ## Ultima reconstruccion
 
-- Hero con pack recto, sin inclinaciones ni superposiciones sobre botellas.
-- Producto protagonista con composicion de estudio y fondo editorial.
-- Hojas globales y acentos botanicos conservados como fondo estatico, sin caida, giro ni parallax.
-- Fondos y acentos botanicos visibles resueltos con hojas individuales `nd-single-leaf-*`; no se usan ramas ni clusters como fondo decorativo.
-- Historia de formula reconstruida como bloque estatico legible, sin stage sticky ni scroll-story animado.
-- Chips de multiuso con iconos SVG y cards de Lavanda Flash con padding corregido.
-- FAQ compacta en tres columnas desktop, dos en tablet y una columna mobile.
-- CTA final reequilibrado con mas contenido de confianza y producto menos invasivo.
+- Hero reequilibrado desde la version aprobable: logo violeta, fondo editorial suave, pack completo y recto, sin ramas cortadas ni elementos delante de las botellas.
+- Producto protagonista con composicion de estudio, sombras suaves y acentos verde/lavanda mas controlados.
+- Hojas globales semitransparentes con movimiento natural de scroll, giro y caida suave.
+- Historia de formula reconstruida como dossier compacto y ancho: sin collage, sin botella forzada, sin scroll pesado y con pasos legibles.
+- Numeros de la historia de formula corregidos dentro de circulos estables en desktop y mobile.
+- Modulo Lavanda Flash con producto real, cards con padding corregido y sin iconos desalineados.
+- Multiuso, certificacion, FAQ y CTA final conservan la estructura completa, con escala general mas contenida.
 - Botones y CTAs con contraste corregido.
 - `.theme-check.yml` desactiva solo `UndefinedObject` porque el validador local no reconoce `section.settings`, aunque es Liquid valido en secciones Shopify.
 
@@ -103,11 +99,11 @@ Tambien embebe como data URI el pack hero y las hojas sueltas generadas para que
 - Cambiar producto: editar `jabon-lavanda-flash` en el Custom Liquid o usar `product_handle` en la seccion formal.
 - Cambiar CTA principal: editar `nd_main_cta_label` o usar el setting de la seccion.
 - Cambiar CTA secundario: editar `nd_secondary_cta_label` o usar el setting de la seccion.
-- Motion: el Custom Liquid queda por defecto en `data-nd-motion="false"` y la seccion formal tiene `enable_motion` desactivado por defecto.
+- Desactivar motion: en Custom Liquid cambiar `data-nd-motion="true"` a `data-nd-motion="false"`; en seccion formal usar el checkbox.
 
 ## IA / generacion de assets
 
-No se uso generacion nueva con OpenAI API en esta pasada. Se trabajo con producto real, pack real, ACENE real, olivo/lavanda existentes y assets procesados locales, incluyendo imagenes ya presentes en el workspace. Generaciones nuevas realizadas: `0`.
+No se uso generacion nueva con OpenAI API. Se trabajo con producto real, pack real, ACENE real, olivo/lavanda existentes y assets procesados locales. Generaciones nuevas realizadas: `0`.
 
 ## Pruebas realizadas
 
@@ -118,12 +114,12 @@ No se uso generacion nueva con OpenAI API en esta pasada. Se trabajo con product
 - Revision de overflow horizontal: `0`.
 - Revision de imagenes rotas: `0`.
 - Revision de errores de consola: `0`.
-- Motion global desactivado por pedido: sin `nd-leaf-rain`, sin parallax, sin reveals animados.
-- Formula confirmada en modo estatico: no hay stage sticky ni progreso dependiente del scroll.
-- Preview gate confirmado con contrasena `natdrop4321` y alias `natdropp4321`.
-- Deploy Vercel verificado con HTTP y Playwright en URL live.
-- Live confirmado: `https://natdropp-preview.vercel.app` responde 200, contiene gate, logo violeta y formula actual.
-- Contrasena live confirmada con Playwright: `natdrop4321`.
+- Motion global confirmado: `nd-leaf-rain` con scroll y caida/giro.
+- Historia de formula confirmada como seccion compacta, sin pinned scroll ni texto superpuesto.
+- Numeros de pasos revisados visualmente dentro de sus circulos.
+- Preview gate confirmado con contrasena `natdrop4321`.
+- Deploy Vercel verificado con Playwright en URL live.
+- Encoding UTF-8 verificado en live: acentos correctos y sin mojibake (`Jabón`, `España`, `fórmula`).
 - GitHub sincronizado en `main`.
 
 ## Capturas generadas
@@ -140,8 +136,7 @@ No se uso generacion nueva con OpenAI API en esta pasada. Se trabajo con product
 - `dist/qa-final/formula-1440.png`
 - `dist/qa-final/multiuse-1440.png`
 - `dist/qa-final/final-1440.png`
-- `dist/qa-final/formula-mid-390.png`
-- `dist/qa-final/formula-mid-1440.png`
+- `dist/qa-live/live-hero-390.png`
 
 ## Limitaciones conocidas
 

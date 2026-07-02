@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T00:02:08.544247+00:00",
+  "generated_at": "2026-07-02T08:37:47.817789+00:00",
   "source_root": "Assets",
   "assets": [
     {
@@ -55,21 +55,21 @@
     {
       "file": "assets/nd-pack-hero.png",
       "source": "generated",
-      "bytes": 886673,
-      "sha1": "e476956024",
+      "bytes": 851923,
+      "sha1": "6f7e2fc062",
       "dimensions": {
-        "width": 1500,
-        "height": 1080
+        "width": 851,
+        "height": 924
       }
     },
     {
       "file": "assets/nd-pack-hero.webp",
       "source": "generated",
-      "bytes": 93996,
-      "sha1": "3487d2c3c6",
+      "bytes": 92702,
+      "sha1": "704acd50f2",
       "dimensions": {
-        "width": 1500,
-        "height": 1080
+        "width": 851,
+        "height": 924
       }
     },
     {
